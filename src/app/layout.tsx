@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { ThemeProviders } from '../theme/theme';
 import { GlobalStyles } from '../styles/GlobalStyles';
+import NavBar from '../components/NavBar';
 
 export const metadata = {
   // Site title (shows in browser tab and search results)
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body>
         <ThemeProviders>
           <GlobalStyles />
+          <NavBar />
           {children}
         </ThemeProviders>
       </body>
