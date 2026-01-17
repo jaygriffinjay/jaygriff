@@ -2,6 +2,7 @@
 
 import { notFound } from "next/navigation";
 import { use, useState, useEffect } from "react";
+import { Container } from "@/components/Primitives";
 
 export default function Page({
   params,
@@ -45,8 +46,10 @@ export default function Page({
   }
 
   return (
-    <article>
-      <PostComponent />
-    </article>
+    <Container size="md">
+      <article>
+        <PostComponent />
+      </article>
+    </Container>
   );
 }
