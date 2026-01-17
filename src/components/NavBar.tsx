@@ -2,8 +2,10 @@
 
 import Link from 'next/link';
 import { css, keyframes } from '@emotion/react';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Sekuya } from 'next/font/google';
+import Navigator from './Navigator';
+import type { RouteEntry } from '@/lib/routes';
 
 const sekuya = Sekuya({ subsets: ['latin'], weight: ['400'] });
 
@@ -21,6 +23,7 @@ const particleFloat = keyframes({
 const navBarStyles = css({
   display: 'flex',
   alignItems: 'center',
+  justifyContent: 'space-between',
   gap: '1rem',
   padding: '1.5rem 2rem 1.5rem 1rem',
   zIndex: 1000,
@@ -77,10 +80,38 @@ const particleStyles = css({
   animation: `${particleFloat} 1.5s ease-out forwards`,
 });
 
-export default function NavBar() {
+const navigatorIconStyles = css({
+  width: '48px',
+  height: '48px',
+  borderRadius: '50%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: '#fff',
+  textDecoration: 'none',
+  transition: 'background-color 0.3s ease, color 0.3s ease',
+  fontSize: '1.5rem',
+  cursor: 'pointer',
+  position: 'relative',
+  border: 'none',
+  background: 'transparent',
+  padding: 0,
+  '&:hover': {
+    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    color: '#00d4ff',
+  },
+});
+
+interface NavBarProps {
+  routes: RouteEntry[];
+}
+
+export default function NavBar({ routes }: NavBarProps) {
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; tx: number; ty: number }>>([]);
+  const [isNavigatorOpen, setIsNavigatorOpen] = useState(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const particleIdRef = useRef(0);
+  const navigatorRef = useRef<HTMLDivElement>(null);
 
   const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -117,6 +148,31 @@ export default function NavBar() {
     }
   };
 
+  // Close navigator on click outside
+  useEffect(() => {
+    if (!isNavigatorOpen) return;
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (navigatorRef.current && !navigatorRef.current.contains(event.target as Node)) {
+        setIsNavigatorOpen(false);
+      }
+    };
+
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsNavigatorOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleEscape);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, [isNavigatorOpen]);
+
   return (
     <nav css={navBarStyles}>
       <div css={titleContainerStyles}>
@@ -141,6 +197,22 @@ export default function NavBar() {
             } as React.CSSProperties}
           />
         ))}
+      </div>
+      <div ref={navigatorRef} css={{ position: 'relative' }}>
+        <button
+          css={navigatorIconStyles}
+          onClick={() => setIsNavigatorOpen(!isNavigatorOpen)}
+          title="Navigator"
+          aria-label="Toggle Navigator"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </button>
+        {isNavigatorOpen && (
+          <Navigator routes={routes} onClose={() => setIsNavigatorOpen(false)} />
+        )}
       </div>
     </nav>
   );

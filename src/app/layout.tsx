@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { ThemeProviders } from '../theme/theme';
 import { GlobalStyles } from '../styles/GlobalStyles';
 import NavBar from '../components/NavBar';
+import { getAllRoutes } from '@/lib/routes';
 
 export const metadata = {
   // Site title (shows in browser tab and search results)
@@ -25,17 +26,19 @@ export const metadata = {
   robots: "index, follow",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: ReactNode;
 }) {
+  const routes = await getAllRoutes();
+  
   return (
     <html lang="en">
       <body>
         <ThemeProviders>
           <GlobalStyles />
-          <NavBar />
+          <NavBar routes={routes} />
           {children}
         </ThemeProviders>
       </body>
