@@ -13,14 +13,12 @@ export const metadata: PostMeta = {
   description:
     'How documentation pages are separated from blog posts using type-based routing, allowing docs to live at /docs/ while posts stay at /posts/.',
   topics: ['dev-docs', 'Architecture'],
-  tags: ['routing', 'nextjs', 'architecture', 'docs', 'posts'],
+  tags: ['routing', 'nextjs', 'architecture'],
 };
 
 const DocsRoutingArchitecture = () => {
   return (
-    <article>
-      <Heading level={1}>Separating Docs from Posts: Routing Architecture</Heading>
-      
+    <article>      
       <Paragraph>
         This site serves two types of content: blog posts and technical documentation. While they share 
         the same file structure in the codebase (both live in <code>src/posts/</code>), they need 

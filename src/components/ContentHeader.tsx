@@ -75,6 +75,45 @@ const badgeStyles = css({
 export function ContentHeader({ metadata }: ContentHeaderProps) {
   const repoUrl = 'https://github.com/jaygriffinjay/my-website-v3';
   
+  // Handle author as string or array
+  const authorText = metadata.author 
+    ? (Array.isArray(metadata.author) 
+        ? metadata.author.join(', ')
+        : metadata.author)
+    : null;
+  
+  const authorStyles = css({
+    position: 'relative',
+    display: 'inline-block',
+    ...(metadata.authorshipNote && {
+      padding: '0.125rem 0.5rem',
+      marginLeft: '-0.5rem',
+      borderRadius: '12px',
+      transition: 'background-color 0.2s ease',
+      '&:hover': {
+        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+      },
+      '&:hover::after': {
+        content: `"${metadata.authorshipNote.replace(/"/g, '\\"')}"`,
+        position: 'absolute',
+        bottom: '100%',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        marginBottom: '0.5rem',
+        padding: '0.5rem 0.75rem',
+        backgroundColor: 'rgba(255, 255, 255, 0.99)',
+        color: '#000',
+        fontSize: '0.75rem',
+        borderRadius: '8px',
+        width: '150px',
+        whiteSpace: 'normal',
+        pointerEvents: 'none',
+        zIndex: 1000,
+        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
+      },
+    }),
+  });
+  
   return (
     <header css={headerStyles}>
       {metadata.type === 'doc:commit' && (
@@ -96,7 +135,7 @@ export function ContentHeader({ metadata }: ContentHeaderProps) {
                 }
               }}
             >
-              View commit on GitHub →
+              View on GitHub →
             </a>
           )}
         </div>
@@ -105,7 +144,11 @@ export function ContentHeader({ metadata }: ContentHeaderProps) {
       <h1 css={titleStyles}>{metadata.title}</h1>
       
       <div css={metaTextStyles}>
-        {metadata.author && <span>Author: {metadata.author} · </span>}
+        {authorText && (
+          <span css={authorStyles}>
+            By {authorText} ·
+          </span>
+        )}
         <span>{formatPostDate(metadata.date)}</span>
         {metadata.updated && (
           <div>Last updated: {formatPostDate(metadata.updated)}</div>

@@ -19,9 +19,7 @@ export const metadata: PostMeta = {
 
 const DynamicRoutesPost = () => {
   return (
-    <article>
-      <Heading level={1}>Dynamic Routes in Next.js</Heading>
-      
+    <article>      
       <Paragraph>
         This site uses Next.js dynamic routes to serve both blog posts and documentation pages. 
         While both types of content live in the same directory (<Code>src/posts/</Code>), they're 

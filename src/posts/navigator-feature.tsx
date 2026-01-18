@@ -13,14 +13,12 @@ export const metadata: PostMeta = {
   description:
     'A complete walkthrough of the Navigator feature - a popover search tool for quickly finding and navigating to any route in the application.',
   topics: ['dev-docs', 'Features'],
-  tags: ['navigator', 'search', 'routing', 'architecture', 'react', 'nextjs'],
+  tags: ['search', 'routing', 'architecture', 'react', 'nextjs'],
 };
 
 const NavigatorFeatureDocs = () => {
   return (
-    <article>
-      <Heading level={1}>Building the Navigator: A Route Search Tool</Heading>
-      
+    <article>      
       <Paragraph>
         The Navigator is a popover search tool that lets you quickly find and jump to any route in the application. 
         Think of it as a command palette for navigation - type to search, click to navigate.

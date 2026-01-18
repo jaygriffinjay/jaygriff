@@ -5,7 +5,8 @@ export interface PostMeta {
   description: string;
   type?: 'post' | 'doc' | 'doc:commit'; // Default is 'post'
   
-  author?: string;
+  author?: string | string[]; // Single author or multiple authors
+  authorshipNote?: string; // Optional tooltip explaining authorship context
   feature?: string;
   projectId?: string;
   topics?: string[];

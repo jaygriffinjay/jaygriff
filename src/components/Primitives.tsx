@@ -25,10 +25,6 @@ const headingStyles = () => `
   color: ${(props: any) => props.theme.colors.text};
   font-weight: 700;
   line-height: 1.2;
-  
-  &:first-of-type {
-    margin-top: 0;
-  }
 `;
 
 const H1 = styled.h1`
@@ -174,10 +170,11 @@ export const Code = styled.code`
   font-family: ${props => props.theme.fonts.mono};
   font-size: 0.9em;
   background: ${props => props.theme.colors.hover};
-  border: 1px solid ${props => props.theme.colors.border};
+  border-left: 2px solid ${props => props.theme.colors.primary}33;
   border-radius: ${props => props.theme.radii.small};
-  padding: 0.2em 0.4em;
-  color: ${props => props.theme.colors.text};
+  padding: 0.15em 0.4em 0.15em 0.35em;
+  color: hsl(210, 100%, 60%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
 `;
 
 

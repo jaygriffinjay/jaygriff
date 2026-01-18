@@ -7,7 +7,8 @@ export const metadata: PostMeta = {
   title: 'Why My Blog Posts Are Programs, Not Documents',
   slug: 'programs-not-documents',
   date: '2026-01-13T21:40:00Z',
-  author: 'Jay Griffin',
+  author: ['Claude', 'Jay Griffin'],
+  authorshipNote: 'AI-synthesized from my rants about markdown',
   projectId: 'my-website-v3',
   description:
     'Exploring why my blog posts are written as executable TSX programs instead of traditional markdown files, and the tradeoffs that come with this approach.',
@@ -18,8 +19,6 @@ export const metadata: PostMeta = {
 const ProgramsNotDocumentsPost = () => {
   return (
     <article>
-      <Heading level={1}>{metadata.title}</Heading>
-
       <Heading level={2}>Markdown Sounds Really Good</Heading>
       <Paragraph>
         I wanted what sounded like a really good idea: a clean separation of content and code. A

@@ -1,6 +1,6 @@
 "use client";
 
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import { use, useState, useEffect } from "react";
 import { Container } from "@/components/Primitives";
 import { ContentHeader } from "@/components/ContentHeader";
@@ -30,16 +30,6 @@ export default function Page({
         
         // Dynamically import the doc using the filename
         const docModule = await import(`@/posts/${filename}`);
-        
-        // Check if this is a commit doc and redirect to /docs/commits/{slug}
-        if (docModule.metadata.type === 'doc:commit') {
-          const currentPath = window.location.pathname;
-          if (!currentPath.startsWith('/docs/commits/')) {
-            window.location.href = `/docs/commits/${docModule.metadata.slug}`;
-            return;
-          }
-        }
-        
         setDocComponent(() => docModule.default);
         setMetadata(docModule.metadata);
         setLoading(false);

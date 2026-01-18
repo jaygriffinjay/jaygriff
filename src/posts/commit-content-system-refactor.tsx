@@ -4,7 +4,7 @@ import type { PostMeta } from '@/types/post';
 
 export const metadata: PostMeta = {
   title: 'Content System Refactor - Docs/Posts Separation',
-  slug: 'commit-content-system-refactor',
+  slug: 'content-system-refactor',
   date: '2026-01-17T22:30:00Z',
   type: 'doc:commit',
   author: 'Claude Sonnet 4.5',
@@ -13,15 +13,12 @@ export const metadata: PostMeta = {
   commitHash: '9cbde96ec935dd5c7e2d6cf07ba8756d90d96d2e',
   description:
     'Complete refactor of content infrastructure: separated docs from posts with type-based routing, added comprehensive metadata system, improved Navigator UX, and created ContentHeader component.',
-  topics: ['commit-log', 'Architecture', 'Navigator', 'Content System'],
   tags: ['refactor', 'routing', 'metadata'],
 };
 
 const CommitContentSystemRefactor = () => {
   return (
-    <article>
-      <Heading level={1}>Commit: Content System Refactor</Heading>
-      
+    <article>      
       <Paragraph>
         This commit represents a major refactor of how content is organized, routed, and displayed 
         on the site. What started as a simple Navigator tweak evolved into a complete rethinking of 
@@ -230,19 +227,6 @@ const CommitContentSystemRefactor = () => {
         The site now has a clear content model that can grow without becoming chaotic. Each piece 
         of content knows what it is, who wrote it, what feature it documents, and where it belongs.
       </Paragraph>
-
-      <Heading level={2}>Git Commit Message</Heading>
-      
-      <CodeBlock language="bash">{`git commit -m "Refactor content system: separate docs from posts, add metadata system
-
-- Add type-based routing (/docs/ vs /posts/)
-- Create ContentHeader component for metadata display
-- Remove URL paths from Navigator for cleaner UX
-- Add author, feature fields to PostMeta
-- Update Container spacing and inline code styling
-- Create comprehensive documentation
-
-See /docs/commit-2026-01-17-content-system for full details"`}</CodeBlock>
 
     </article>
   );
