@@ -1,6 +1,6 @@
 {
-  "name": "bootstrap-fullstack-webapp",
-  "version": "0.1.0",
+  "name": "jay",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
