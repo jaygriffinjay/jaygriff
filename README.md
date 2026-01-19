@@ -2,13 +2,9 @@
 
 This is the source code for my website where I publish all my software development work and some personal stuff too!
 
+This website is written entirely in TypeScript using React, Next.js, and Emotion. 
 
-## Stack
-- **Language**: Typescript
-- **Framework**: Next.js 16 (App Router)
-- **Styling**: Emotion (CSS-in-JS)
-- **UI**: Custom primitives with Radix UI foundation
-- **Theme**: Custom theme system with Tailwind-inspired design tokens
+To learn more about this repo I would browse the meta docs on the site itself!
 
 ## Getting Started
 Clone this repo and then:
