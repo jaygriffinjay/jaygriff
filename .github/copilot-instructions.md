@@ -43,6 +43,7 @@ This is a modern web application built with **Next.js** and **TypeScript**. The 
 - **Content Structure**: Content files live in `content/tsx/` (TSX components) and `content/md/` (Markdown files).
   - Use `@content/*` path alias for imports (maps to `./content/*`)
   - Content discovery handled by `getAllPosts()` and `getAllDocs()` in `src/lib/posts.ts`
+  - **Always check `src/types/post.ts` for the `PostMeta` interface when adding or modifying content metadata fields**
 - **Theme Management**: Themes are defined in `src/theme/themeData.ts` and applied using `src/app/emotion-provider.tsx`.
 
 ### Styling
