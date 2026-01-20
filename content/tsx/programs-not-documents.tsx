@@ -14,6 +14,7 @@ export const metadata: PostMeta = {
     'Exploring why my blog posts are written as code instead of simple markdown files, and the tradeoffs that come with this approach.',
   topics: ['React', 'TypeScript', 'Web Development', 'Content Strategy'],
   tags: ['react', 'tsx', 'markdown', 'cms', 'blogging'],
+  relatedPosts: ['md-vs-tsx'],
 };
 
 const ProgramsNotDocumentsPost = () => {

@@ -3,14 +3,15 @@ import { CodeBlock } from '@/components/CodeBlock/CodeBlock';
 import type { PostMeta } from '@/types/post';
 
 export const metadata: PostMeta = {
-  title: 'Content Architecture: TSX-First with MD Fallback',
+  title: 'Content Architecture: TSX-First with markdown Fallback',
   slug: 'md-vs-tsx',
   date: '2026-01-13T00:00:00Z',
-  author: 'Jay Griffin',
+  author: 'Claude Sonnet 4.5',
   type: 'post',
   description: 'Why TSX is the first-class citizen and Markdown is just an input format',
   tags: ['architecture', 'tsx', 'markdown', 'content'],
   relatedPosts: ['programs-not-documents'],
+  updated: '2026-01-20T00:00:00Z',
 };
 
 const MdVsTsxPost = () => {
@@ -23,7 +24,7 @@ const MdVsTsxPost = () => {
       </Paragraph>
 
       <Paragraph>
-        We write 95% JSX. Content and logic are inherently coupled in this paradigm. Instead of fighting that reality, we embrace it.
+        We write 95% TSX. Content and logic are inherently coupled in this paradigm. Instead of fighting that reality, we embrace it.
       </Paragraph>
 
       <Heading level={2}>The System</Heading>
@@ -152,6 +153,28 @@ const MdVsTsxPost = () => {
         <ListItem>MD files are treated as content ingestion points (like copying a conversation into the repo)</ListItem>
         <ListItem>Everything renders through the same component system</ListItem>
       </List>
+
+      <Heading level={2}>Update: January 20 2026</Heading>
+
+      <Paragraph>
+        The directory structure has evolved since this was originally written:
+      </Paragraph>
+
+      <CodeBlock language="plaintext">
+{`/content/
+  tsx/     <- TSX posts (preferred)
+  md/      <- Markdown posts (fallback)
+/src/
+  app/
+  components/
+  lib/`}
+      </CodeBlock>
+
+      <Paragraph>
+        Content files now live in <Code>/content/tsx/</Code> and <Code>/content/md/</Code> 
+        directories at the root level, separate from the source code. The philosophy remains 
+        the same: TSX is first-class, markdown is a fallback format.
+      </Paragraph>
     </>
   );
 };
