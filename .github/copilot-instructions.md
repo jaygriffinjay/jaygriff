@@ -20,6 +20,22 @@ This is a modern web application built with **Next.js** and **TypeScript**. The 
 - **Primitive Components**: Constraint-based design system with all primitives exported from `src/components/Primitives.tsx`. Use these as building blocks instead of creating one-off components.
 - **Code Block Component**: A styled code block component (`src/components/CodeBlock/`)
 
+### Component Import Rules (CRITICAL)
+When creating content files in `content/tsx/`:
+
+**CORRECT imports:**
+```typescript
+import { Heading, Paragraph, List, ListItem } from '@/components/Primitives';
+import { CodeBlock } from '@/components/CodeBlock/CodeBlock';
+```
+
+**WRONG - DO NOT DO THIS:**
+```typescript
+import { Heading, Paragraph, CodeBlock } from '@/components/Primitives'; // CodeBlock is NOT in Primitives
+```
+
+**Key rule:** CodeBlock lives in its own directory and MUST be imported separately from `@/components/CodeBlock/CodeBlock`. All other UI components (Heading, Paragraph, List, ListItem) come from `@/components/Primitives`.
+
 ---
 
 ## Developer Workflows

@@ -18,17 +18,17 @@ const RoadmapDoc = () => {
   return (
     <>
       <Heading level={2}>🚧 Active Work</Heading>
-      <List>
-        <ListItem>
-          <strong>Markdown File Support</strong> - Parse JSON frontmatter, render with react-markdown + remark-gfm.
-          Drop .md files into content/ and publish immediately.
-        </ListItem>
-      </List>
+      <Paragraph>No active work items. Check the backlog for what's next!</Paragraph>
 
       <Heading level={2}>📋 Backlog (Prioritized)</Heading>
       
       <Heading level={3}>Content System</Heading>
       <List>
+        <ListItem>
+          <strong>AI-Powered Metadata Editor (Dev Mode)</strong> - Click ContentHeader to open modal with smart editing.
+          Natural language interface for each field type: "jan 19 5pm" → ISO date, "add tags: ui, styling" → array.
+          AI returns JSON, no manual code editing required. Proper UI fallbacks (date picker, tag selector, etc.).
+        </ListItem>
         <ListItem>
           <strong>AI Metadata Generator</strong> - Automatically generate metadata for markdown files using AI API.
           Analyze content to suggest title, description, tags, projectId, and type.
@@ -36,10 +36,6 @@ const RoadmapDoc = () => {
         <ListItem>
           <strong>Activity Timeline/Feed</strong> - Timestamped stream of all docs/posts showing daily work.
           Proof of constant shipping.
-        </ListItem>
-        <ListItem>
-          <strong>Metadata Editor (Dev Mode)</strong> - Edit frontmatter without leaving browser.
-          Update dates, tags, projectId on the fly.
         </ListItem>
         <ListItem>
           <strong>Content Analytics</strong> - Track what gets read, how long people spend, popular topics.
@@ -143,6 +139,10 @@ const RoadmapDoc = () => {
 
       <Heading level={2}>✅ Completed</Heading>
       <List>
+        <ListItem>
+          <strong>Markdown File Support</strong> - Parse JSON frontmatter, render with react-markdown + remark-gfm.
+          Drop .md files into content/ and publish immediately.
+        </ListItem>
         <ListItem>
           <strong>Server Components Refactor</strong> - Moved from API routes to direct loading.
           60→25 lines per route, pre-rendered pages, better SEO.
