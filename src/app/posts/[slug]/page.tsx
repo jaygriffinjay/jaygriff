@@ -3,6 +3,7 @@ import { Container } from "@/components/Primitives";
 import { ContentHeader } from "@/components/ContentHeader";
 import { ContentWrapper } from "@/components/ContentWrapper";
 import RelatedPosts from "@/components/RelatedPosts";
+import MarkdownRenderer from "@/components/MarkdownRenderer";
 import { loadContentBySlug, getAllPostSlugs } from "@/lib/content-loader";
 import { getAllPosts } from "@/lib/posts";
 
@@ -23,7 +24,7 @@ export default async function Page({
     notFound();
   }
 
-  const { Component: PostComponent, metadata } = content;
+  const { metadata } = content;
   const allPosts = await getAllPosts();
 
   return (
@@ -31,7 +32,11 @@ export default async function Page({
       <article>
         <ContentHeader metadata={metadata} />
         <ContentWrapper>
-          <PostComponent />
+          {content.type === 'tsx' && content.Component ? (
+            <content.Component />
+          ) : content.type === 'markdown' && content.markdownContent ? (
+            <MarkdownRenderer content={content.markdownContent} />
+          ) : null}
         </ContentWrapper>
         {metadata.relatedPosts && metadata.relatedPosts.length > 0 && (
           <RelatedPosts slugs={metadata.relatedPosts} allPosts={allPosts} />

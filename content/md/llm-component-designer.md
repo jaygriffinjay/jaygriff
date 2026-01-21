@@ -1,3 +1,15 @@
+---json
+{
+  "title": "Intelligent Component Designer API",
+  "slug": "llm-component-designer",
+  "date": "2026-01-17T00:00:00Z",
+  "author": ["Jay Griffin"],
+  "type": "doc",
+  "description": "Design document for an AI-powered component composition system using LLM intelligence with deterministic, type-safe output",
+  "tags": ["llm", "ai", "component-design", "harness", "architecture"]
+}
+---
+
 # Intelligent Component Designer API
 ## Design Document & Implementation Guide
 

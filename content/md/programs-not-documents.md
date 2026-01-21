@@ -1,3 +1,15 @@
+---json
+{
+  "title": "Why My Blog Posts Are Programs, Not Documents",
+  "slug": "programs-not-documents",
+  "date": "2026-01-13T00:00:00Z",
+  "author": ["Jay Griffin"],
+  "type": "post",
+  "description": "My content is interactive programs, not static markdown. TSX enables publishing executable experiences.",
+  "tags": ["tsx", "markdown", "content-philosophy", "interactive"]
+}
+---
+
 # Why My Blog Posts Are Programs, Not Documents
 
 ## Markdown Sounds Really Good

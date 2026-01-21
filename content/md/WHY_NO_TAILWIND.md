@@ -1,3 +1,15 @@
+---json
+{
+  "title": "Why No Tailwind",
+  "slug": "why-no-tailwind",
+  "date": "2025-12-08T00:00:00Z",
+  "author": ["Jay Griffin"],
+  "type": "post",
+  "description": "Anti-Tailwind manifesto: why design tokens and CSS-in-JS beat utility classes",
+  "tags": ["css", "tailwind", "emotion", "styling", "design-tokens"]
+}
+---
+
 # Why No Tailwind
 
 **Date:** December 8, 2025  

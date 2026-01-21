@@ -236,7 +236,7 @@ export const Callout = styled.div<{ type?: 'info' | 'success' | 'warning' | 'err
 
 export const Divider = styled.hr`
   border: none;
-  border-top: 2px solid ${props => props.theme.colors.primary};
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin: ${props => props.theme.spacing.md} 0;
 `;
 

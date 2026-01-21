@@ -1,3 +1,15 @@
+---json
+{
+  "title": "Why Markdown Works (And Why Obsidian Misses the Point)",
+  "slug": "markdown-format-rant",
+  "date": "2026-01-17T00:00:00Z",
+  "author": ["Jay Griffin"],
+  "type": "post",
+  "description": "Markdown philosophy: constraints force clarity, syntax serves the parser, not the writer",
+  "tags": ["markdown", "obsidian", "writing", "constraints", "philosophy"]
+}
+---
+
 # Why Markdown Works (And Why Obsidian Misses the Point)
 
 **Date:** January 17, 2026  

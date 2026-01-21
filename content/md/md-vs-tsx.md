@@ -1,3 +1,15 @@
+---json
+{
+  "title": "Content Architecture: TSX-First with MD Fallback",
+  "slug": "md-vs-tsx",
+  "date": "2026-01-19T00:00:00Z",
+  "author": ["Jay Griffin"],
+  "type": "doc",
+  "description": "TSX-first content system with markdown fallback: embracing coupled content and logic",
+  "tags": ["tsx", "markdown", "architecture", "content-system"]
+}
+---
+
 # Content Architecture: TSX-First with MD Fallback
 
 ## Philosophy

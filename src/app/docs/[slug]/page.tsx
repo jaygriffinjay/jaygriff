@@ -2,6 +2,7 @@ import { notFound, redirect } from "next/navigation";
 import { Container } from "@/components/Primitives";
 import { ContentHeader } from "@/components/ContentHeader";
 import { ContentWrapper } from "@/components/ContentWrapper";
+import MarkdownRenderer from "@/components/MarkdownRenderer";
 import { loadContentBySlug, getAllDocSlugs } from "@/lib/content-loader";
 
 // Pre-render all docs at build time
@@ -21,7 +22,7 @@ export default async function Page({
     notFound();
   }
 
-  const { Component: DocComponent, metadata } = content;
+  const { metadata } = content;
 
   // Redirect commit docs to /docs/commits/{slug}
   if (metadata.type === 'doc:commit') {
@@ -33,7 +34,11 @@ export default async function Page({
       <article>
         <ContentHeader metadata={metadata} />
         <ContentWrapper>
-          <DocComponent />
+          {content.type === 'tsx' && content.Component ? (
+            <content.Component />
+          ) : content.type === 'markdown' && content.markdownContent ? (
+            <MarkdownRenderer content={content.markdownContent} />
+          ) : null}
         </ContentWrapper>
       </article>
     </Container>

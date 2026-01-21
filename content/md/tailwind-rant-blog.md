@@ -1,3 +1,16 @@
+---json
+{
+  "title": "Why I Choose CSS-in-JS Over Tailwind",
+  "slug": "tailwind-rant-blog",
+  "date": "2026-01-13T00:00:00Z",
+  "author": ["Claude Sonnet 4.5", "Jay Griffin"],
+  "authorshipNote": "Jay ranted about Tailwind, Claude Sonnet 4.5 summarized and structured it",
+  "type": "post",
+  "description": "A personal defense of CSS-in-JS over Tailwind's utility-first approach",
+  "tags": ["css", "tailwind", "css-in-js", "emotion", "styling"]
+}
+---
+
 # Why I Choose CSS-in-JS Over Tailwind
 
 > **Note:** I don't hate Tailwind. I've used it personally and I even enjoyed using it. And if it works for you I am totally fine with that. This is just my inner monologue defending my choice for CSS-in-JS. Think of it as a personal decision log, not a call to arms.

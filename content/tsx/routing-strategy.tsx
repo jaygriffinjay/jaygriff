@@ -1,4 +1,4 @@
-import { Heading, Paragraph, List, ListItem } from '@/components/Primitives';
+import { Heading, Paragraph, List, ListItem, Divider } from '@/components/Primitives';
 import { CodeBlock } from '@/components/CodeBlock/CodeBlock';
 import type { PostMeta } from '@/types/post';
 
@@ -17,6 +17,19 @@ export const metadata: PostMeta = {
 const RoutingStrategyDoc = () => {
   return (
     <>
+      <Paragraph>
+        We already have design tokens (theme objects) and full CSS power (Emotion). Tailwind adds:
+      </Paragraph>
+      <List>
+        <ListItem>❌ Learning overhead (hundreds of class names)</ListItem>
+        <ListItem>❌ Messy markup (class soup)</ListItem>
+        <ListItem>❌ Limited customization (predefined values)</ListItem>
+        <ListItem>❌ Extra tooling (config files, build setup)</ListItem>
+        <ListItem>❌ Mixed styling paradigms (when you inevitably need real CSS)</ListItem>
+      </List>
+
+      <Divider />
+
       <Heading level={2}>The Challenge</Heading>
       <Paragraph>
         This site hosts multiple projects: the jaygriff.com site itself, a Strava analyzer, 

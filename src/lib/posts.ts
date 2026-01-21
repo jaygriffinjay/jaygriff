@@ -2,19 +2,19 @@
 import fs from 'fs';
 import path from 'path';
 import type { PostMeta, Post } from '@/types/post';
+import { parseMarkdownWithJsonFrontmatter } from './md-json-parser';
 
 export async function getAllPosts(): Promise<Post[]> {
-  const postsDirectory = path.join(process.cwd(), 'content/tsx');
-  const filenames = fs.readdirSync(postsDirectory);
+  const tsxDirectory = path.join(process.cwd(), 'content/tsx');
+  const mdDirectory = path.join(process.cwd(), 'content/md');
   
-  const posts = await Promise.all(
-    filenames
+  // Get TSX posts
+  const tsxFilenames = fs.readdirSync(tsxDirectory);
+  const tsxPosts = await Promise.all(
+    tsxFilenames
       .filter((filename) => filename.endsWith('.tsx'))
       .map(async (filename) => {
-        // Dynamically import the post file to get its metadata
-        const filePath = path.join(postsDirectory, filename);
         const module = await import(`@content/tsx/${filename.replace('.tsx', '')}`);
-        
         return {
           filename: filename.replace('.tsx', ''),
           metadata: module.metadata as PostMeta,
@@ -22,22 +22,47 @@ export async function getAllPosts(): Promise<Post[]> {
       })
   );
   
+  // Get MD posts
+  const mdFilenames = fs.readdirSync(mdDirectory);
+  const mdPosts = mdFilenames
+    .filter((filename) => filename.endsWith('.md'))
+    .map((filename) => {
+      const filePath = path.join(mdDirectory, filename);
+      const fileContent = fs.readFileSync(filePath, 'utf-8');
+      try {
+        const { metadata } = parseMarkdownWithJsonFrontmatter(fileContent);
+        return {
+          filename: filename.replace('.md', ''),
+          metadata,
+        };
+      } catch (error) {
+        // Skip MD files without valid JSON frontmatter
+        console.warn(`Skipping ${filename}: missing or invalid JSON frontmatter`);
+        return null;
+      }
+    })
+    .filter((post): post is { filename: string; metadata: PostMeta } => post !== null);
+  
+  // Combine and dedupe (TSX takes priority)
+  const tsxSlugs = new Set(tsxPosts.map(p => p.metadata.slug));
+  const uniqueMdPosts = mdPosts.filter(p => !tsxSlugs.has(p.metadata.slug));
+  const allPosts = [...tsxPosts, ...uniqueMdPosts];
+  
   // Filter to only return actual posts (not docs)
-  return posts.filter((p) => !p.metadata.type || p.metadata.type === 'post');
+  return allPosts.filter((p) => !p.metadata.type || p.metadata.type === 'post');
 }
 
 export async function getAllDocs(): Promise<Post[]> {
-  const postsDirectory = path.join(process.cwd(), 'content/tsx');
-  const filenames = fs.readdirSync(postsDirectory);
+  const tsxDirectory = path.join(process.cwd(), 'content/tsx');
+  const mdDirectory = path.join(process.cwd(), 'content/md');
   
-  const docs = await Promise.all(
-    filenames
+  // Get TSX docs
+  const tsxFilenames = fs.readdirSync(tsxDirectory);
+  const tsxDocs = await Promise.all(
+    tsxFilenames
       .filter((filename) => filename.endsWith('.tsx'))
       .map(async (filename) => {
-        // Dynamically import the file to get its metadata
-        const filePath = path.join(postsDirectory, filename);
         const module = await import(`@content/tsx/${filename.replace('.tsx', '')}`);
-        
         return {
           filename: filename.replace('.tsx', ''),
           metadata: module.metadata as PostMeta,
@@ -45,8 +70,34 @@ export async function getAllDocs(): Promise<Post[]> {
       })
   );
   
+  // Get MD docs
+  const mdFilenames = fs.readdirSync(mdDirectory);
+  const mdDocs = mdFilenames
+    .filter((filename) => filename.endsWith('.md'))
+    .map((filename) => {
+      const filePath = path.join(mdDirectory, filename);
+      const fileContent = fs.readFileSync(filePath, 'utf-8');
+      try {
+        const { metadata } = parseMarkdownWithJsonFrontmatter(fileContent);
+        return {
+          filename: filename.replace('.md', ''),
+          metadata,
+        };
+      } catch (error) {
+        // Skip MD files without valid JSON frontmatter
+        console.warn(`Skipping ${filename}: missing or invalid JSON frontmatter`);
+        return null;
+      }
+    })
+    .filter((doc): doc is { filename: string; metadata: PostMeta } => doc !== null);
+  
+  // Combine and dedupe (TSX takes priority)
+  const tsxSlugs = new Set(tsxDocs.map(d => d.metadata.slug));
+  const uniqueMdDocs = mdDocs.filter(d => !tsxSlugs.has(d.metadata.slug));
+  const allDocs = [...tsxDocs, ...uniqueMdDocs];
+  
   // Filter to only return docs (including doc:commit, doc:* variants)
-  return docs.filter((d) => d.metadata.type?.startsWith('doc'));
+  return allDocs.filter((d) => d.metadata.type?.startsWith('doc'));
 }
 
 export async function getPostBySlug(slug: string): Promise<string | null> {

@@ -145,17 +145,24 @@ export function ContentHeader({ metadata }: ContentHeaderProps) {
       
       <h1 css={titleStyles}>{metadata.title}</h1>
       
+      {/* Author and date metadata with conditional asterisk and spacing */}
       <div css={metaTextStyles}>
         {authorText && (
           <span css={authorStyles}>
-            By {authorText} ·
+            By {authorText}{metadata.authorshipNote && <span css={{ color: '#fbbf24' }}>*</span>}
           </span>
         )}
-        <span>{formatPostDate(metadata.date)}</span>
+        {/* Conditional spacing: no asterisk needs extra space before dot */}
+        {metadata.authorshipNote ? (
+          <span>·&nbsp; {formatPostDate(metadata.date)}</span>
+        ) : (
+          <span>&nbsp;&nbsp;·&nbsp; {formatPostDate(metadata.date)}</span>
+        )}
         {metadata.updated && (
           <div>Last updated: {formatPostDate(metadata.updated)}</div>
         )}
       </div>
+      {/* End of cursed formatting logic */}
       
       <div css={badgeContainerStyles}>
         {metadata.type === 'doc' && <span css={badgeStyles}>docs</span>}
