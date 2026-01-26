@@ -1,10 +1,13 @@
-import { getAllPosts, getAllDocs } from '@/lib/posts';
+import { getAllPosts, getAllDocs, getAllAppRoutes } from '@/lib/posts';
 import { HomePage } from './HomePage';
 
 export default async function Page() {
-  const posts = await getAllPosts();
-  const docs = await getAllDocs();
-  const allContent = [...posts, ...docs];
+  const [posts, docs, appRoutes] = await Promise.all([
+    getAllPosts(),
+    getAllDocs(),
+    getAllAppRoutes(),
+  ]);
+  const allContent = [...posts, ...docs, ...appRoutes];
   
   return <HomePage allContent={allContent} />;
 }

@@ -58,11 +58,14 @@ export function HomePage({ allContent }: HomePageProps) {
             margin: '0.5rem 0 0 0',
           }}>
             {items.map((item) => {
-              const href = item.metadata.type === 'doc:commit' 
-                ? `/docs/commits/${item.metadata.slug}`
-                : item.metadata.type === 'doc'
-                ? `/docs/${item.metadata.slug}`
-                : `/posts/${item.metadata.slug}`;
+              // Use path if available (app routes), otherwise construct from type
+              const href = item.metadata.path || (
+                item.metadata.type === 'doc:commit' 
+                  ? `/docs/commits/${item.metadata.slug}`
+                  : item.metadata.type === 'doc'
+                  ? `/docs/${item.metadata.slug}`
+                  : `/posts/${item.metadata.slug}`
+              );
               
               return (
                 <ListItem key={item.metadata.slug} css={{ marginBottom: '0.5rem' }}>

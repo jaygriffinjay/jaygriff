@@ -13,8 +13,7 @@ export const metadata: PostMeta = {
   projectId: 'jaygriff',
   description:
     'A summary of implementing dynamic routes for posts, improving the homepage layout, and ensuring Next.js compatibility.',
-  topics: ['Next.js', 'Dynamic Routes', 'Web Development'],
-  tags: ['nextjs', 'routing', 'typescript'],
+  tags: ['nextjs', 'routing', 'typescript', 'web-development', 'dynamic-routes'],
 };
 
 const DynamicRoutesPost = () => {

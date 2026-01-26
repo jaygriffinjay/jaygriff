@@ -12,8 +12,7 @@ export const metadata: PostMeta = {
   projectId: 'jaygriff',
   description:
     'A complete walkthrough of the Navigator feature - a popover search tool for quickly finding and navigating to any route in the application.',
-  topics: ['dev-docs', 'Features'],
-  tags: ['search', 'routing', 'architecture', 'react', 'nextjs'],
+  tags: ['search', 'routing', 'architecture', 'react', 'nextjs', 'dev-docs', 'features'],
 };
 
 const NavigatorFeatureDocs = () => {
@@ -130,7 +129,6 @@ export async function getAllRoutes(): Promise<RouteEntry[]> {
           title: post.metadata.title,
           description: post.metadata.description,
           keywords: [
-            ...(post.metadata.topics || []),
             ...(post.metadata.tags || []),
             post.metadata.slug,
           ],

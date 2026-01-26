@@ -29,7 +29,6 @@ export async function getAllRoutes(): Promise<RouteEntry[]> {
           title: post.metadata.title,
           description: post.metadata.description,
           keywords: [
-            ...(post.metadata.topics || []),
             ...(post.metadata.tags || []),
             post.metadata.slug,
           ],
@@ -48,7 +47,6 @@ export async function getAllRoutes(): Promise<RouteEntry[]> {
           title: doc.metadata.title,
           description: doc.metadata.description,
           keywords: [
-            ...(doc.metadata.topics || []),
             ...(doc.metadata.tags || []),
             doc.metadata.slug,
           ],

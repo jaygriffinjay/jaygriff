@@ -2,7 +2,7 @@
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { Heading, Paragraph, List, ListItem, Code, Divider, Blockquote } from '@/components/Primitives';
+import { Heading, Paragraph, List, ListItem, Code, Divider, Blockquote, Link, Table, Thead, Tbody, Tr, Th, Td } from '@/components/Primitives';
 import { CodeBlock } from '@/components/CodeBlock/CodeBlock';
 
 interface MarkdownRendererProps {
@@ -24,6 +24,7 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
         ul: ({ children }) => <List>{children}</List>,
         ol: ({ children }) => <List ordered>{children}</List>,
         li: ({ children }) => <ListItem>{children}</ListItem>,
+        a: ({ href, children }) => <Link href={href}>{children}</Link>,
         // Block code: pre wraps code blocks, extract content and render CodeBlock
         pre: ({ children }: any) => {
           const codeProps = children?.props;
@@ -33,6 +34,13 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
         },
         // Inline code: single backticks only
         code: ({ children }) => <Code>{children}</Code>,
+        // Tables
+        table: ({ children }) => <Table>{children}</Table>,
+        thead: ({ children }) => <Thead>{children}</Thead>,
+        tbody: ({ children }) => <Tbody>{children}</Tbody>,
+        tr: ({ children }) => <Tr>{children}</Tr>,
+        th: ({ children }) => <Th>{children}</Th>,
+        td: ({ children }) => <Td>{children}</Td>,
       }}
     >
       {content}

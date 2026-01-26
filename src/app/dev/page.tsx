@@ -1,5 +1,16 @@
 import Link from 'next/link';
 import { Container, Heading, List, ListItem } from '@/components/Primitives';
+import type { PostMeta } from '@/types/post';
+
+export const routeMetadata: PostMeta = {
+  title: 'Dev Tools',
+  slug: 'dev',
+  date: '2026-01-19T00:00:00Z',
+  description: 'Internal dev routes, test utilities, and behind-the-scenes infrastructure.',
+  type: 'doc',
+  tags: ['dev', 'tools', 'internal'],
+  author: 'Jay Griffin',
+};
 
 export default function DevPage() {
   return (

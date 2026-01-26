@@ -241,7 +241,46 @@ export const Divider = styled.hr`
 `;
 
 // ============================================================================
-// 10. LAYOUT HELPERS
+// 10. TABLE
+// ============================================================================
+
+export const Table = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+  margin: ${props => props.theme.spacing.lg} 0;
+  font-family: ${props => props.theme.fonts.body};
+  font-size: ${props => props.theme.fontSizes.base};
+  color: ${props => props.theme.colors.text};
+`;
+
+export const Thead = styled.thead`
+  border-bottom: 4px solid rgba(255, 255, 255, 0.1);
+`;
+
+export const Tbody = styled.tbody``;
+
+export const Tr = styled.tr`
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  
+  &:last-child {
+    border-bottom: none;
+  }
+`;
+
+export const Th = styled.th`
+  padding: ${props => props.theme.spacing.sm} ${props => props.theme.spacing.md};
+  text-align: left;
+  font-weight: 600;
+  color: ${props => props.theme.colors.text};
+`;
+
+export const Td = styled.td`
+  padding: ${props => props.theme.spacing.sm} ${props => props.theme.spacing.md};
+  vertical-align: top;
+`;
+
+// ============================================================================
+// 11. LAYOUT HELPERS
 // ============================================================================
 
 interface StackProps {
@@ -263,7 +302,7 @@ export const Inline = styled.div<{ spacing?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' }>
 `;
 
 // ============================================================================
-// 11. BOX - Universal Container
+// 12. BOX - Universal Container
 // ============================================================================
 
 interface BoxProps {
@@ -288,7 +327,7 @@ export const Box = styled.div<BoxProps>`
 `;
 
 // ============================================================================
-// 12. CONTAINER - Centered Max-Width
+// 13. CONTAINER - Centered Max-Width
 // ============================================================================
 
 interface ContainerProps {
@@ -315,7 +354,7 @@ export const Container = styled.div<{ size?: 'sm' | 'md' | 'lg' | 'xl' | 'full' 
 `;
 
 // ============================================================================
-// 13. FLEX - Explicit Flexbox Control
+// 14. FLEX - Explicit Flexbox Control
 // ============================================================================
 
 interface FlexProps {

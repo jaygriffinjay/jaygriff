@@ -111,3 +111,61 @@ export async function getDocBySlug(slug: string): Promise<string | null> {
   const doc = docs.find((d) => d.metadata.slug === slug);
   return doc ? doc.filename : null;
 }
+
+export async function getAllAppRoutes(): Promise<Post[]> {
+  const appDir = path.join(process.cwd(), 'src/app');
+  const routes: Post[] = [];
+
+  // Recursively find all page.tsx files
+  function findPageFiles(dir: string, basePath = ''): string[] {
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    const pages: string[] = [];
+
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      const relativePath = basePath ? `${basePath}/${entry.name}` : entry.name;
+
+      if (entry.isDirectory()) {
+        // Skip dynamic routes (containing [])
+        if (entry.name.includes('[')) continue;
+        // Recursively scan subdirectories
+        pages.push(...findPageFiles(fullPath, relativePath));
+      } else if (entry.name === 'page.tsx') {
+        pages.push(relativePath);
+      }
+    }
+
+    return pages;
+  }
+
+  const pageFiles = findPageFiles(appDir);
+
+  // Import each page and check for routeMetadata
+  for (const pagePath of pageFiles) {
+    try {
+      // Convert path to URL path: "metadata-scanner/page.tsx" -> "/metadata-scanner"
+      const urlPath = '/' + pagePath.replace('/page.tsx', '').replace('page.tsx', '');
+      
+      // Convert to module specifier: "metadata-scanner/page.tsx" -> "@/app/metadata-scanner/page"
+      const importPath = `@/app/${pagePath.replace('.tsx', '')}`;
+      const module = await import(importPath);
+
+      // Check for routeMetadata export
+      if (module.routeMetadata) {
+        routes.push({
+          filename: pagePath,
+          metadata: {
+            ...module.routeMetadata,
+            // Ensure path is set
+            path: urlPath === '/' ? '/' : urlPath,
+          } as PostMeta,
+        });
+      }
+    } catch (error) {
+      // Skip files that fail to import or don't have routeMetadata
+      console.warn(`Skipping ${pagePath}: ${error}`);
+    }
+  }
+
+  return routes;
+}

@@ -12,8 +12,7 @@ export const metadata: PostMeta = {
   projectId: 'jaygriff',
   description:
     'Exploring why my blog posts are written as code instead of simple markdown files, and the tradeoffs that come with this approach.',
-  topics: ['React', 'TypeScript', 'Web Development', 'Content Strategy'],
-  tags: ['react', 'tsx', 'markdown', 'cms', 'blogging'],
+  tags: ['react', 'tsx', 'markdown', 'cms', 'blogging', 'typescript', 'web-development', 'content-strategy'],
   relatedPosts: ['md-vs-tsx'],
 };
 

@@ -9,7 +9,7 @@ export interface PostMeta {
   authorshipNote?: string; // Optional tooltip explaining authorship context
   feature?: string;
   projectId?: string;
-  topics?: string[];
+  path?: string; // For app routes - explicit URL path (e.g., "/metadata-scanner")
   
   sourceUrl?: string;
   commitHash?: string; // For doc:commit type - links to GitHub commit

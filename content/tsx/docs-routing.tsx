@@ -12,8 +12,7 @@ export const metadata: PostMeta = {
   projectId: 'jaygriff',
   description:
     'How documentation pages are separated from blog posts using type-based routing, allowing docs to live at /docs/ while posts stay at /posts/.',
-  topics: ['dev-docs', 'Architecture'],
-  tags: ['routing', 'nextjs', 'architecture'],
+  tags: ['routing', 'nextjs', 'architecture', 'dev-docs'],
 };
 
 const DocsRoutingArchitecture = () => {

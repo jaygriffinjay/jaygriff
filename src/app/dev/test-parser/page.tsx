@@ -1,6 +1,18 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import { parseMarkdownWithJsonFrontmatter } from '@/lib/md-json-parser';
+import type { PostMeta } from '@/types/post';
+
+export const routeMetadata: PostMeta = {
+  title: 'Markdown Parser Test',
+  slug: 'test-parser',
+  date: '2026-01-19T00:00:00Z',
+  description: 'Test the JSON frontmatter parser on markdown files.',
+  type: 'doc',
+  tags: ['dev', 'tools', 'markdown', 'parser'],
+  author: 'Jay Griffin',
+  projectId: 'dev',
+};
 
 export default function TestParserPage() {
   const filePath = join(process.cwd(), 'content/md/tailwind-rant-blog.md');

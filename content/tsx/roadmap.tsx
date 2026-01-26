@@ -1,4 +1,4 @@
-import { Heading, Paragraph, List, ListItem } from '@/components/Primitives';
+import { Heading, Paragraph, List, ListItem, Link } from '@/components/Primitives';
 import type { PostMeta } from '@/types/post';
 
 export const metadata: PostMeta = {
@@ -138,32 +138,9 @@ const RoadmapDoc = () => {
       </List>
 
       <Heading level={2}>✅ Completed</Heading>
-      <List>
-        <ListItem>
-          <strong>Markdown File Support</strong> - Parse JSON frontmatter, render with react-markdown + remark-gfm.
-          Drop .md files into content/ and publish immediately.
-        </ListItem>
-        <ListItem>
-          <strong>Server Components Refactor</strong> - Moved from API routes to direct loading.
-          60→25 lines per route, pre-rendered pages, better SEO.
-        </ListItem>
-        <ListItem>
-          <strong>Static Generation</strong> - Added generateStaticParams for build-time pre-rendering.
-          All ~15 content pages are now static HTML.
-        </ListItem>
-        <ListItem>
-          <strong>Routing Strategy</strong> - Defined metadata-based routing for multi-project architecture.
-        </ListItem>
-        <ListItem>
-          <strong>Navigator Component</strong> - Keyboard-friendly content navigation.
-        </ListItem>
-        <ListItem>
-          <strong>Theme Editor</strong> - Visual theme editing with live preview.
-        </ListItem>
-        <ListItem>
-          <strong>Primitive Component System</strong> - Constraint-based design system that can be composed by ai for quick and beautiful pages. 
-        </ListItem>
-      </List>
+      <Paragraph>
+        The completed roadmap items have been moved to a dedicated <Link href="/features">Features</Link> page.
+      </Paragraph>
     </>
   );
 };
