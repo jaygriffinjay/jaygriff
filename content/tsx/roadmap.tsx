@@ -139,7 +139,7 @@ const RoadmapDoc = () => {
 
       <Heading level={2}>✅ Completed</Heading>
       <Paragraph>
-        The completed roadmap items have been moved to a dedicated <Link href="/features">Features</Link> page.
+        The completed roadmap items have been moved to a dedicated <Link href="/docs/features">Features</Link> page.
       </Paragraph>
     </>
   );

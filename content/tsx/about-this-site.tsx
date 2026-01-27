@@ -1,4 +1,4 @@
-import { Heading, Paragraph, List, ListItem } from '@/components/Primitives';
+import { Heading, Paragraph, List, ListItem, Link } from '@/components/Primitives';
 import type { PostMeta } from '@/types/post';
 
 export const metadata: PostMeta = {
@@ -16,11 +16,31 @@ export const metadata: PostMeta = {
 const AboutThisSite = () => {
   return (
     <>
-      <Heading level={2}>What is this?</Heading>
-      <Paragraph>
+    <Heading level={2}>What This Site Is</Heading>
+    <Paragraph>
         This is a personal website built from scratch to work exactly how I want it to work. 
         A place for documenting my work, my thoughts, and anything I find interesting.
       </Paragraph>
+          <Paragraph>
+            This site isn't just for personal publishing. I do my actual web development work here. 
+            I'm currently making mostly TypeScript applications with React and Next.js. 
+            The most sophisticated software I have made to date is this very website, which I built from scratch. 
+            This site is a website in the traditional sense but also a full stack framework for making web applications. 
+            So not only is this website a container for almost all of my work and writing, it's also a back end 
+            system I built to make web applications quickly and efficiently. I try my best to factor out all the good features I build into a reuasble framework for all my future projects.
+          </Paragraph>
+          <Paragraph>
+            No CMS, no WordPress, no templates. Just TypeScript, React, and Next.js with a custom 
+            content system that handles both TSX components and Markdown files. 
+            I built a constraint-based primitive component 
+            system for consistent design, use Emotion for CSS-in-JS styling, and deployed it all on Vercel 
+            with proper CI/CD.
+          </Paragraph>
+          <Paragraph>
+            I've also built internal dev tools right into the site - a metadata scanner to audit all content, 
+            a theme editor for live design adjustments, and other utilities that make my workflow faster. 
+            This isn't just a website. It's my development environment.
+          </Paragraph>      
 
       <Heading level={2}>Why build this?</Heading>
       <Paragraph>
@@ -92,17 +112,10 @@ const AboutThisSite = () => {
       </Paragraph>
 
       <Paragraph>
-        I can see how I can make it even faster and better in a lot of ways (see roadmap for component 
+        I can see how I can make it even faster and better in a lot of ways (see <Link href="/docs/roadmap">roadmap</Link> for component 
         generator spec and metadata editor spec).
       </Paragraph>
-
-      <Heading level={2}>What's here?</Heading>
-      <List>
-        <ListItem>Feature specifications and technical documentation</ListItem>
-        <ListItem>Development logs and commit explanations</ListItem>
-        <ListItem>Thoughts on development practices and tooling choices</ListItem>
-        <ListItem>Documentation of building this site itself (very meta)</ListItem>
-      </List>
+      
     </>
   );
 };

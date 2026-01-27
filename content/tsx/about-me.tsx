@@ -1,4 +1,4 @@
-import { Heading, Paragraph } from '@/components/Primitives';
+import { Heading, Paragraph, Link, Divider } from '@/components/Primitives';
 import type { PostMeta } from '@/types/post';
 
 export const metadata: PostMeta = {
@@ -7,6 +7,7 @@ export const metadata: PostMeta = {
   date: '2026-01-21T00:00:00Z',
   author: ['Jay Griffin'],
   description: '',
+  tags: ['about'],
 };
 
 const AboutMe = () => {
@@ -24,63 +25,48 @@ const AboutMe = () => {
           }} 
         />
       </div>
+      <Heading level={2}>Hi, I'm Jay!</Heading>
 
-      <Paragraph style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        Welcome to my website where I do my work and publish it too. I'm a software developer 
-        currently making mostly TypeScript applications with React and Next.js.
-      </Paragraph>
 
-      <Heading level={2}>Languages</Heading>
       <Paragraph>
-        TypeScript, JavaScript, Python, Shell, HTML, CSS
+        Welcome to my website where I do my work and publish it too. 
+        My work is primarily software development - I am developing thoughtful web apps that make life easier or better in some way.
+        
       </Paragraph>
 
-      <Heading level={2}>Current Dev Tools</Heading>
+      
+
+      <Divider />
+
+      <Heading level={2}>What I Do</Heading>
       <Paragraph>
-        <strong>React, Next.js</strong> - Framework/Library
+        I primarily work with TypeScript, React, and Next.js. 
+        You can see my stack and tooling in <Link href="/docs/my-tools">my tools</Link>.
       </Paragraph>
       <Paragraph>
-        <strong>CSS-in-JS (Emotion)</strong> - Styling
-      </Paragraph>
-      <Paragraph>
-        <strong>Node</strong> - Runtime
-      </Paragraph>
-      <Paragraph>
-        <strong>Vite</strong> - Build Tool
-      </Paragraph>
-      <Paragraph>
-        <strong>Vercel, Cloudflare</strong> - CI/CD & Hosting
-      </Paragraph>
-      <Paragraph>
-        <strong>Git, GitHub</strong> - Version Control and Collaboration
-      </Paragraph>
-      <Paragraph>
-        <strong>GitHub Copilot, Claude Code</strong> - AI Assistance
-      </Paragraph>
-      <Paragraph>
-        <strong>VS Code</strong> - Code Editor
-      </Paragraph>
-      <Paragraph>
-        <strong>Chrome DevTools, React Developer Tools</strong> - Browser Dev Tools
-      </Paragraph>
-      <Paragraph>
-        <strong>Lovable.dev, Bolt.new</strong> - Rapid Prototyping & UI Generation
-      </Paragraph>
-      <Heading level={2}>Previous Dev Tools</Heading>
-      <Paragraph>
-        Hugo, Jekyll, Eleventy, Tailwind, DaisyUI, Django, Flask, WordPress, Netlify, 
-        Express, Hetzner, AutoHotKey
+        My main project is <Link href="https://github.com/jaygriffinjay/jaygriff" target="_blank" rel="noopener noreferrer">this site itself</Link> - a custom-built full-stack web app that serves as 
+        both my workspace and my publishing platform. It is the container for a lot of my other apps where I can just host and 
+        demo them on this site.  While on the front end this just looks like a website, on the back end this site is a testbed 
+        for my full-featured application framework I use to make all my apps. It's an excuse to improve the framework and 
+        factor out my best work into a reusable system I endearingly call my <Link href="https://github.com/jaygriffinjay/bootstrap-fullstack-webapp" target="_blank" rel="noopener noreferrer">Bootstrap Repo</Link>, otherwise known as a "boilerplate". Read more about the architecture and 
+        features in <Link href="/docs/about-this-site">about this site</Link> or check out 
+        the <Link href="/docs/roadmap">roadmap</Link> for what's coming next.
       </Paragraph>
 
-      <Heading level={2}>Current Productivity & Creative Tools</Heading>
+      <Divider />
+
+      <Heading level={2}>What I Write About</Heading>
       <Paragraph>
-        Notion, Affinity, OBS, Excel, Google Sheets, and a custom Chrome extension 
-        I built for bookmark launching that I use every single day.
+        Software, business, entrepreneurship, money, fitness and training 
+        data, productivity, games, puzzles, and whatever else I'm interested in. This site is where I document my work, share my thoughts, and maybe post some personal stuff too!
       </Paragraph>
 
-      <Heading level={2}>Previous Productivity & Creative Tools</Heading>
+      <Divider />
+
+      <Heading level={2}>Background</Heading>
       <Paragraph>
-        Microsoft Office Suite for work, Photoshop, Photopea, GIMP, Inkscape, Obsidian
+        I worked in public tax accounting before transitioning to software development. 
+        Read the full story in <Link href="/posts/accounting-to-dev">accounting → software development?</Link>
       </Paragraph>
     </>
   );

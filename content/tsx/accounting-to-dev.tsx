@@ -389,10 +389,6 @@ export default function AccountingToDevPost() {
         not doing glorified software-assisted paperwork anymore. I'm building systems, 
         solving problems, creating tools that actually matter. This is what I was meant to do.
       </Paragraph>
-
-      <Paragraph>
-        <strong>That's not quitting. That's leveling up.</strong>
-      </Paragraph>
     </>
   );
 }
