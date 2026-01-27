@@ -24,8 +24,8 @@ const AboutThisSite = () => {
           <Paragraph>
             This site isn't just for personal publishing. I do my actual web development work here. 
             I'm currently making mostly TypeScript applications with React and Next.js. 
-            The most sophisticated software I have made to date is this very website, which I built from scratch. 
-            This site is a website in the traditional sense but also a full stack framework for making web applications. 
+            The most sophisticated software I have made to date is this very website. 
+            While it's a website in the traditional sense it's also a full stack framework for making web applications. 
             So not only is this website a container for almost all of my work and writing, it's also a back end 
             system I built to make web applications quickly and efficiently. I try my best to factor out all the good features I build into a reuasble framework for all my future projects.
           </Paragraph>

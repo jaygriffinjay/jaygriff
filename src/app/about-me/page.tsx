@@ -1,19 +1,22 @@
-import { Heading, Paragraph, Link, Divider } from '@/components/Primitives';
+import { Heading, Paragraph, Link, Divider, Container } from '@/components/Primitives';
+import { ContentWrapper } from '@/components/ContentWrapper';
 import type { PostMeta } from '@/types/post';
 
-export const metadata: PostMeta = {
+export const routeMetadata: PostMeta = {
   title: 'About Me',
   slug: 'about-me',
   date: '2026-01-21T00:00:00Z',
   author: ['Jay Griffin'],
   description: '',
   tags: ['about'],
+  path: '/about-me',
 };
 
-const AboutMe = () => {
+export default function AboutMePage() {
   return (
-    <>
-      <div style={{ marginBottom: '2rem', textAlign: 'center' }}>
+    <Container size="sm">
+      <ContentWrapper>
+        <div style={{ marginBottom: '2rem', textAlign: 'center' }}>
         <img 
           src="/images/me.jpg" 
           alt="Jay Griffin" 
@@ -68,8 +71,7 @@ const AboutMe = () => {
         I worked in public tax accounting before transitioning to software development. 
         Read the full story in <Link href="/posts/accounting-to-dev">accounting → software development?</Link>
       </Paragraph>
-    </>
+      </ContentWrapper>
+    </Container>
   );
-};
-
-export default AboutMe;
+}

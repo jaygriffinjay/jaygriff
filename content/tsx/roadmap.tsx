@@ -17,11 +17,6 @@ export const metadata: PostMeta = {
 const RoadmapDoc = () => {
   return (
     <>
-      <Heading level={2}>🚧 Active Work</Heading>
-      <Paragraph>No active work items. Check the backlog for what's next!</Paragraph>
-
-      <Heading level={2}>📋 Backlog (Prioritized)</Heading>
-      
       <Heading level={3}>Content System</Heading>
       <List>
         <ListItem>
