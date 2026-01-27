@@ -36,4 +36,5 @@ next-env.d.ts
 
 # source files (unoptimized assets, working files)
 /source
-/raw
+/raw/*
+!/raw/content/
