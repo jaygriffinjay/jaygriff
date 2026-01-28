@@ -44,7 +44,7 @@ export default function AboutMePage() {
       <Heading level={2}>What I Do</Heading>
       <Paragraph>
         I primarily work with TypeScript, React, and Next.js. 
-        You can see my stack and tooling in <Link href="/docs/my-tools">my tools</Link>.
+        You can see my stack and tooling in <Link href="/my-tools">my tools</Link>.
       </Paragraph>
       <Paragraph>
         My main project is <Link href="https://github.com/jaygriffinjay/jaygriff" target="_blank" rel="noopener noreferrer">this site itself</Link> - a custom-built full-stack web app that serves as 

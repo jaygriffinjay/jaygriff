@@ -20,9 +20,8 @@ export default function ContentGuidePage() {
         <Heading level={1}>Authorship and Content on This Site</Heading>
 
         <Paragraph>
-          How to interpret content labels, understand workflow transparency badges, and what guarantees (or lack thereof) apply to content on this site.
+          How to interpret content labels and what guarantees (or lack thereof) apply to content on this site.
         </Paragraph>
-
     
         
         <Heading level={3}>No Guarantee of Accuracy</Heading>
@@ -48,7 +47,7 @@ export default function ContentGuidePage() {
           Core principles:
         </Paragraph>
         <List>
-          <ListItem><strong>Velocity over polish</strong> - Ship fast, refine later if needed</ListItem>
+          <ListItem><strong>Iteration over polish</strong> - Ship fast and try things, refine later if needed</ListItem>
           <ListItem><strong>Public collaboration</strong> - Anyone can view source, open PRs, or discuss improvements on GitHub</ListItem>
           <ListItem><strong>Creator superpower</strong> - Getting feedback from strangers who care about your work is incredibly valuable</ListItem>
           <ListItem><strong>Git as memory</strong> - Version history shows how ideas evolve over time</ListItem>
@@ -61,8 +60,21 @@ export default function ContentGuidePage() {
         <Paragraph>
           <strong>On AI:</strong> Publishing also compounds as an AI-augmented knowledge base. I regularly link my own pages into AI conversations for instant context injection. More writing = better retrieval = smarter assistance on future work.
         </Paragraph>
+
+        <Heading level={2}>Why Radical Transparency?</Heading>
         <Paragraph>
-          Some pages are evergreen. Some are snapshots. Some are experiments. That's intentional.
+          The content I've respected most came from creators who shared what everyone else held back:
+        </Paragraph>
+        <List>
+          <ListItem>Personal finance blogs that shared exact net worth, income, and spending details</ListItem>
+          <ListItem>Business blogs that revealed exact revenue, sale prices, and decision-making processes</ListItem>
+          <ListItem>Dev blogs where all the work happened in public—commits, errors, refactors visible to everyone</ListItem>
+        </List>
+        <Paragraph>
+          That radical openness earned my respect. It was the content I <em>actually wanted to see</em>—not polished marketing, but real details and honest process.
+        </Paragraph>
+        <Paragraph>
+          <strong>So this site publishes what I wish existed.</strong> Not a tactical growth strategy—just creating content I'd respect if someone else made it. Working in public because that's what I valued most in others.
         </Paragraph>
 
         <Heading level={2}>Content Categories & Workflow Transparency</Heading>
@@ -92,7 +104,7 @@ export default function ContentGuidePage() {
         <List>
           <ListItem><strong>Author field:</strong> Jay Griffin</ListItem>
           <ListItem><strong>Process:</strong> I wrote this without AI assistance beyond basic tools (spell-check, grammar suggestions).</ListItem>
-          <ListItem><strong>What this means:</strong> Natural voice, my pacing, verbal tics, how I actually think through problems.</ListItem>
+          <ListItem><strong>What this means:</strong> My natural writing and editing reflecting my own thoughts and ideas.</ListItem>
           <ListItem><strong>Accuracy:</strong> Still no guarantee, but reflects my direct understanding without AI intermediary.</ListItem>
           <ListItem><strong>Use case:</strong> Personal reflections, opinions where voice matters, content where AI texture would feel wrong</ListItem>
         </List>
@@ -196,8 +208,7 @@ export default function ContentGuidePage() {
         <List>
           <ListItem>Systems thinking and architecture decisions</ListItem>
           <ListItem>Orchestration skills and AI leverage</ListItem>
-          <ListItem>Shipping velocity and iteration</ListItem>
-          <ListItem>Willingness to experiment and publish rough drafts</ListItem>
+          <ListItem>Willingness to experiment, iterate, and publish rough drafts</ListItem>
         </List>
         <Paragraph>
           <strong>Don't trust blindly:</strong>
@@ -217,7 +228,7 @@ export default function ContentGuidePage() {
           If content here is wrong or misleading and you relied on it, I'm sorry. That's the risk of consuming unedited work-in-progress. The transparency is meant to help you avoid that.
         </Paragraph>
         <Paragraph>
-          If you have questions about a specific page's creation process or want more detail on workflow, check the git history or assume the worst (100% unedited AI dump). I'm not trying to hide anything—I'm just shipping fast and refining selectively.
+          If you have questions about a specific page's creation process or want more detail on workflow, check the git history or assume the worst (100% unedited AI dump). I'm not trying to hide anything—I'm just iterating and refining selectively.
         </Paragraph>
         <Paragraph>
           <strong>Bottom line:</strong> This site is built for me first, shared for others second. The labels help you decide if what I'm sharing is worth your time. Use your judgment. Verify before relying. Enjoy the messy process.
