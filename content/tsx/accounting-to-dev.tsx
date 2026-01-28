@@ -161,7 +161,7 @@ export default function AccountingToDevPost() {
       <Heading level={3}>Level 1: AutoHotkey</Heading>
 
       <Paragraph>
-        After graduating with my accounting degree, I was supposed to be studying for the CPA exam. 
+        After graduating with my master's degree in accounting, I was supposed to be studying for the CPA exam. 
         The CPA exam is particularly grueling - hundreds of hours of study across multiple sections. 
         My only brief respite from the grind was how satisfying it was to play with the computer 
         and work on automation. What started as a distraction became an obsession.
@@ -225,7 +225,7 @@ export default function AccountingToDevPost() {
 
       <Paragraph>
         Once I felt like I truly "got" it, I got very excited. I thought that maybe I really can do this after all. Even though I knew it was a long uphill battle of learning ahead. 
-        But I really was loving it so I moved forward. I completed Harvard's <Link href="https://www.edx.org/learn/python/harvard-university-cs50-s-introduction-to-programming-with-python" target="_blank" rel="noopener noreferrer">CS50P</Link> (Introduction to Programming with Python) and became literate in Python. Finally 
+        But I really was loving it so I moved forward. I <Link href="https://certificates.cs50.io/36ac7977-4aa6-4dd8-bd5c-54398fa0c952.pdf?size=letter" target="_blank" rel="noopener noreferrer">completed</Link> Harvard's <Link href="https://www.edx.org/learn/python/harvard-university-cs50-s-introduction-to-programming-with-python" target="_blank" rel="noopener noreferrer">CS50P</Link> (Introduction to Programming with Python) and became literate in Python. Finally 
         felt like a "real" programmer.
       </Paragraph>
 
@@ -234,7 +234,7 @@ export default function AccountingToDevPost() {
       <Paragraph>
         I started working on Harvard's <Link href="https://www.edx.org/learn/web-development/harvard-university-cs50-s-web-programming-with-python-and-javascript" target="_blank" rel="noopener noreferrer">CS50W</Link> (Web Programming with Python and JavaScript). Didn't 
         finish it, but I did make some functional sites. I learned Django properly, picked up 
-        some JavaScript fundamentals, and started to understand how the web actually worked.
+        some JavaScript fundamentals, and started to understand how some programming on the web actually worked.
       </Paragraph>
 
       <Paragraph>
@@ -243,7 +243,7 @@ export default function AccountingToDevPost() {
       </Paragraph>
 
       <Paragraph>
-        But it was frustrating. Two completely different languages. Two different ecosystems. Every feature meant 
+        But it was not working that well. Two completely different languages. Two different ecosystems. Every feature meant 
         fighting to connect Python backend logic to JavaScript frontend behavior. It felt 
         like I was constantly translating between two languages that didn't want to talk 
         to each other.
@@ -295,8 +295,7 @@ export default function AccountingToDevPost() {
 
       <Heading level={3}>The SSG Detour: Hugo, Jekyll, Eleventy</Heading>
       <Paragraph>
-        I also tried the static site generator route: Hugo, Jekyll, Eleventy. Hugo especially 
-        - I actually put it through its paces, used the conventions, understood the structure.
+        I also tried the static site generator route: Hugo, Jekyll, Eleventy. Hugo especially. I actually put it through its paces, used the conventions, and understood the structure.
       </Paragraph>
 
       <Paragraph>
@@ -306,8 +305,8 @@ export default function AccountingToDevPost() {
       </Paragraph>
 
       <Paragraph>
-        So I took the good parts - the project structure from Hugo, the patterns from Django - 
-        and brought them into Vite and Next.js. Real JavaScript, real components, same clean 
+        So I took the good parts - the project structure from Hugo, the patterns I learned from Django - 
+        and brought them into Vite and Next.js. Real programming, real components, same clean 
         conventions.
       </Paragraph>
 
@@ -324,8 +323,7 @@ export default function AccountingToDevPost() {
       </Paragraph>
 
       <Paragraph>
-        Now I'm building full-stack applications with type safety, server-side rendering, 
-        and proper architecture. The Excel wizard became a software developer.
+        Now I'm building full-stack applications. The Excel wizard became a software developer.
       </Paragraph>
 
       <Paragraph>
@@ -347,9 +345,9 @@ export default function AccountingToDevPost() {
 
       <List>
         <ListItem>How to take a creation and turn it into a real business</ListItem>
-        <ListItem>Organizational controls and data controls</ListItem>
-        <ListItem>Financial compliance, Audit compliance, data compliance</ListItem>
         <ListItem>Financial statements and business performance metrics</ListItem>
+        <ListItem>Taxes, audits, bookkeeping, incorporation, compliance</ListItem>
+        <ListItem>Organizational controls and data controls</ListItem>
       </List>
 
       <Paragraph>
@@ -381,7 +379,7 @@ export default function AccountingToDevPost() {
 
       <Paragraph>
         It's been under 5 years since I wrote my first line of code. I'm self-taught. I have 
-        no CS degree. Just an accounting degree and a healthy dose of computer nerdiness.
+        no CS degree. But I have a master's degree in accounting and a healthy dose of computer nerdiness.
       </Paragraph>
 
       <Paragraph>
