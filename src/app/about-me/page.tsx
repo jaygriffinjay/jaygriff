@@ -5,6 +5,7 @@ import { ContentWrapper } from '@/components/ContentWrapper';
 import type { PostMeta } from '@/types/post';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/react';
+import { SiGithub, SiLinkedin } from 'react-icons/si';
 
 export const routeMetadata: PostMeta = {
   title: 'About Me',
@@ -23,6 +24,7 @@ const shimmer = keyframes`
 `;
 
 const HiringCard = styled.div`
+  position: relative;
   background: ${props => props.theme.colors.background};
   border: 1px solid ${props => props.theme.colors.border};
   border-radius: 12px;
@@ -69,11 +71,45 @@ const BigEmailLink = styled.a`
   }
 `;
 
+const ProfileLinks = styled.div`
+  position: absolute;
+  top: ${props => props.theme.spacing.md};
+  right: ${props => props.theme.spacing.md};
+  display: flex;
+  gap: ${props => props.theme.spacing.sm};
+  
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: ${props => props.theme.radii.medium};
+    color: ${props => props.theme.colors.text};
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: background-color 0.15s ease;
+    line-height: 1;
+    
+    &:hover {
+      background-color: ${props => props.theme.colors.border};
+    }
+  }
+`;
+
 export default function AboutMePage() {
   return (
     <Container size="sm">
       <ContentWrapper>
         <HiringCard>
+          <ProfileLinks>
+            <a href="https://github.com/jaygriffinjay" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <SiGithub />
+            </a>
+            <a href="https://linkedin.com/in/jaygriffinjay" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <SiLinkedin />
+            </a>
+          </ProfileLinks>
           <img 
             src="/images/me.jpg" 
             alt="Jay Griffin" 
@@ -88,7 +124,8 @@ export default function AboutMePage() {
           <HiringText>
             I'm currently seeking full-time roles building modern web and React-based applications! I'm especially interested in AI integrations and building AI-native apps.
           </HiringText>
-          <BigEmailLink href="mailto:jay@jaygriff.com">
+       
+             <BigEmailLink href="mailto:jay@jaygriff.com">
             Email me: jay@jaygriff.com
           </BigEmailLink>
         </HiringCard>
