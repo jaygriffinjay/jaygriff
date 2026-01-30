@@ -31,6 +31,7 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 const STORAGE_KEY = 'starterpack-theme-config';
+const THEME_VERSION = 2; // Increment this when theme structure changes
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   // Start with default config for SSR
@@ -42,7 +43,14 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
-        setConfig(JSON.parse(saved));
+        const data = JSON.parse(saved);
+        // Check version - if mismatch, clear old config
+        if (data.version === THEME_VERSION) {
+          setConfig(data.config);
+        } else {
+          console.log('Theme version mismatch, resetting to defaults');
+          localStorage.removeItem(STORAGE_KEY);
+        }
       }
     } catch (error) {
       console.error('Failed to load theme from localStorage:', error);
@@ -67,7 +75,10 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     // Schedule save for 500ms after last change
     saveTimeoutRef.current = window.setTimeout(() => {
       try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(config));
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({
+          version: THEME_VERSION,
+          config
+        }));
         console.log('Theme saved to localStorage');
       } catch (error) {
         console.error('Failed to save theme to localStorage:', error);

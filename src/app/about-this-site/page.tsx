@@ -28,8 +28,8 @@ export default function AboutThisSite() {
             This site isn't just for personal publishing. I do my actual web development work here. 
             I'm currently making mostly TypeScript applications with React and Next.js. 
             The most sophisticated software I have made to date is this very website. 
-            While it's a website in the traditional sense it's also a full stack framework for making web applications. 
-            So not only is this website a container for almost all of my work and writing, it's also a back end 
+            While it's a website in the traditional sense it's also a full-stack framework for making web applications. 
+            So not only is this website a container for almost all of my work and writing, it's also a backend 
             system I built to make web applications quickly and efficiently. I try my best to factor out all the good features I build into a reuasble framework for all my future projects.
           </Paragraph>
           <Paragraph>
@@ -70,7 +70,7 @@ export default function AboutThisSite() {
 
       <Paragraph>
         The next thing it does is it gives me endless things to work on. There is always a new feature for 
-        the site. The site is never done. And even if the site is in a state of not needing work to be done, 
+        the site. The site is never done. As the site gets bigger with more features and content, novel technical problems naturally arise that need solving. And even if the site doesn't need active work done on it, 
         it serves as the container for all my other development work, which means even when I'm not working 
         on the site directly, I'm working inside of it and using it.
       </Paragraph>
