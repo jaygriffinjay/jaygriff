@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { css } from '@emotion/react';
 import { useState, useMemo } from 'react';
 import type { RouteEntry } from '@/lib/routes';
+import { useTheme } from '@/theme/theme';
 
 const navigatorStyles = css({
   position: 'absolute',
@@ -34,7 +35,7 @@ const navigatorStyles = css({
   },
 });
 
-const searchInputStyles = css({
+const searchInputStyles = (primaryColor: string) => css({
   width: '100%',
   padding: '0.75rem',
   backgroundColor: 'rgba(255, 255, 255, 0.05)',
@@ -44,7 +45,7 @@ const searchInputStyles = css({
   fontSize: '1rem',
   outline: 'none',
   '&:focus': {
-    borderColor: '#00d4ff',
+    borderColor: primaryColor,
     backgroundColor: 'rgba(255, 255, 255, 0.08)',
   },
   '&::placeholder': {
@@ -52,9 +53,22 @@ const searchInputStyles = css({
   },
 });
 
-const resultsContainerStyles = css({
+const resultsContainerStyles = (primaryColor: string, hoverColor: string) => css({
   overflowY: 'auto',
   maxHeight: '400px',
+  '&::-webkit-scrollbar': {
+    width: '8px',
+  },
+  '&::-webkit-scrollbar-track': {
+    background: 'transparent',
+  },
+  '&::-webkit-scrollbar-thumb': {
+    background: primaryColor,
+    borderRadius: '4px',
+  },
+  '&::-webkit-scrollbar-thumb:hover': {
+    background: hoverColor,
+  },
 });
 
 const routeItemStyles = css({
@@ -98,6 +112,7 @@ interface NavigatorProps {
 }
 
 export default function Navigator({ routes, onClose }: NavigatorProps) {
+  const { theme } = useTheme();
   const [searchQuery, setSearchQuery] = useState('');
 
   const filteredRoutes = useMemo(() => {
@@ -120,13 +135,12 @@ export default function Navigator({ routes, onClose }: NavigatorProps) {
     <div css={navigatorStyles}>
       <input
         type="text"
-        placeholder="Search routes..."
+        placeholder="Search pages..."
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
-        css={searchInputStyles}
-        autoFocus
+        css={searchInputStyles(theme.colors.primary)}
       />
-      <div css={resultsContainerStyles}>
+      <div css={resultsContainerStyles(theme.colors.primary, theme.colors.hover)}>
         {filteredRoutes.length === 0 ? (
           <div css={{ color: 'rgba(255, 255, 255, 0.5)', padding: '1rem', textAlign: 'center' }}>
             No routes found

@@ -7,6 +7,7 @@ import { Sekuya } from 'next/font/google';
 import Navigator from './Navigator';
 import { NavMenu } from './NavMenu';
 import type { RouteEntry } from '@/lib/routes';
+import { useTheme } from '@/theme/theme';
 
 const sekuya = Sekuya({ subsets: ['latin'], weight: ['400'] });
 
@@ -77,24 +78,20 @@ const particleStyles = css({
 });
 
 const navigatorIconStyles = css({
-  width: '48px',
-  height: '48px',
-  borderRadius: '50%',
-  display: 'flex',
+  width: '40px',
+  height: '40px',
+  borderRadius: '8px',
+  display: 'inline-flex',
   alignItems: 'center',
   justifyContent: 'center',
   color: '#fff',
-  textDecoration: 'none',
-  transition: 'background-color 0.3s ease, color 0.3s ease',
-  fontSize: '1.5rem',
   cursor: 'pointer',
-  position: 'relative',
   border: 'none',
   background: 'transparent',
   padding: 0,
+  transition: 'background-color 0.15s ease',
   '&:hover': {
-    backgroundColor: 'rgba(0, 0, 0, 0.2)',
-    color: '#00d4ff',
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
   },
   '@media (max-width: 768px)': {
     width: '36px',
@@ -108,6 +105,7 @@ interface NavBarProps {
 }
 
 export default function NavBar({ routes }: NavBarProps) {
+  const { theme } = useTheme();
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; tx: number; ty: number }>>([]);
   const [isNavigatorOpen, setIsNavigatorOpen] = useState(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
