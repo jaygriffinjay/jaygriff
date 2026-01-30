@@ -1,6 +1,10 @@
+'use client';
+
 import { Heading, Paragraph, Link, Divider, Container } from '@/components/Primitives';
 import { ContentWrapper } from '@/components/ContentWrapper';
 import type { PostMeta } from '@/types/post';
+import styled from '@emotion/styled';
+import { keyframes } from '@emotion/react';
 
 export const routeMetadata: PostMeta = {
   title: 'About Me',
@@ -12,23 +16,86 @@ export const routeMetadata: PostMeta = {
   path: '/about-me',
 };
 
+const shimmer = keyframes`
+  to {
+    background-position: -200% 0;
+  }
+`;
+
+const HiringCard = styled.div`
+  background: ${props => props.theme.colors.background};
+  border: 1px solid ${props => props.theme.colors.border};
+  border-radius: 12px;
+  padding: ${props => props.theme.spacing.xl};
+  margin: ${props => props.theme.spacing.xl} 0;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.15);
+`;
+
+const HiringText = styled.div`
+  text-align: center;
+  font-size: ${props => props.theme.fontSizes.xl};
+  font-weight: 500;
+  margin-bottom: ${props => props.theme.spacing.lg};
+`;
+
+const BigEmailLink = styled.a`
+  display: inline-block;
+  font-size: ${props => props.theme.fontSizes.xxxl};
+  font-weight: 700;
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #9400d3,
+    #ff0000
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 8px rgba(255, 100, 100, 0.3);
+  animation: ${shimmer} 3s linear infinite;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 8px 16px rgba(255, 100, 255, 0.5));
+  }
+`;
+
 export default function AboutMePage() {
   return (
     <Container size="sm">
       <ContentWrapper>
         <div style={{ marginBottom: '2rem', textAlign: 'center' }}>
-        <img 
-          src="/images/me.jpg" 
-          alt="Jay Griffin" 
-          style={{ 
-            maxWidth: '250px', 
-            width: '100%', 
-            height: 'auto',
-            borderRadius: '8px'
-          }} 
-        />
-      </div>
-      <Heading level={2}>Hi, I'm Jay!</Heading>
+          <img 
+            src="/images/me.jpg" 
+            alt="Jay Griffin" 
+            style={{ 
+              maxWidth: '250px', 
+              width: '100%', 
+              height: 'auto',
+              borderRadius: '8px'
+            }} 
+          />
+        </div>
+        
+        <HiringCard>
+          <HiringText>
+            I'm currently seeking full-time roles building modern web and React-based applications! I'm especially interested in AI integrations and building AI-native apps.
+          </HiringText>
+          <BigEmailLink href="mailto:jay@jaygriff.com">
+            Email me: jay@jaygriff.com
+          </BigEmailLink>
+        </HiringCard>
+
+        <Heading level={2}>Hi, I'm Jay!</Heading>
 
 
       <Paragraph>

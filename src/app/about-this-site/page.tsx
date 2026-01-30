@@ -20,30 +20,75 @@ export default function AboutThisSite() {
     <Container size="sm">
       <ContentWrapper>
         <Heading level={1}>{routeMetadata.title}</Heading>
-    <Paragraph>
+      <Paragraph>
         This is a personal website built from scratch to work exactly how I want it to work. 
         A place for documenting my work, my thoughts, and anything I find interesting.
       </Paragraph>
-          <Paragraph>
-            This site isn't just for personal publishing. I do my actual web development work here. 
-            I'm currently making mostly TypeScript applications with React and Next.js. 
-            The most sophisticated software I have made to date is this very website. 
-            While it's a website in the traditional sense it's also a full-stack framework for making web applications. 
-            So not only is this website a container for almost all of my work and writing, it's also a backend 
-            system I built to make web applications quickly and efficiently. I try my best to factor out all the good features I build into a reuasble framework for all my future projects.
-          </Paragraph>
-          <Paragraph>
-            No CMS, no WordPress, no templates. Just TypeScript, React, and Next.js with a custom 
-            content system that handles both TSX components and Markdown files. 
-            I built a constraint-based primitive component 
-            system for consistent design, use Emotion for CSS-in-JS styling, and deployed it all on Vercel 
-            with proper CI/CD.
-          </Paragraph>
-          <Paragraph>
-            I've also built internal dev tools right into the site - a metadata scanner to audit all content, 
-            a theme editor for live design adjustments, and other utilities that make my workflow faster. 
-            This isn't just a website. It's my development environment.
-          </Paragraph>      
+
+      <Paragraph>
+        This site isn't just for personal publishing—I do my actual web development work here. 
+        While it's a website in the traditional sense, it's also a full-stack framework I've built 
+        for making web applications quickly and efficiently.
+      </Paragraph>
+
+      <Heading level={2}>The Tech Stack</Heading>
+
+      <Paragraph>
+        The stack used to make this site is the result of years of experimentation on this very project. I've rebuilt it 
+        multiple times, trying different approaches until I landed on what actually works for me.
+      </Paragraph>
+
+      <Paragraph>
+        <strong>Core:</strong>
+      </Paragraph>
+      <List>
+        <ListItem><strong>Next.js and React</strong> - full-stack web application framework</ListItem>
+        <ListItem><strong>TypeScript</strong> - in my opinion the best language to use for web development and programming with AI</ListItem>
+        <ListItem><strong>Emotion</strong> - CSS-in-JS for programmable CSS</ListItem>
+      </List>
+
+      <Paragraph>
+        <strong>Content System:</strong>
+      </Paragraph>
+      <List>
+        <ListItem><strong>TSX Components</strong> - Rich, interactive content with full React capabilities</ListItem>
+        <ListItem><strong>Markdown</strong> - Simple text-based content for quick writing</ListItem>
+        <ListItem><strong>Custom Primitives</strong> - Primitive component system for consistent design</ListItem>
+      </List>
+
+      <Paragraph>
+        <strong>Developer Experience:</strong>
+      </Paragraph>
+      <List>
+        <ListItem><strong>Metadata Scanner</strong> - Audits all content for completeness</ListItem>
+        <ListItem><strong>Theme Editor</strong> - Live design system adjustments</ListItem>
+        <ListItem><strong>Hot Reload</strong> - Instant feedback during development</ListItem>
+      </List>
+
+      <Paragraph>
+        <strong>Infrastructure:</strong>
+      </Paragraph>
+      <List>
+        <ListItem><strong>Vercel</strong> - Deployment and hosting and analytics</ListItem>
+        <ListItem><strong>Cloudflare</strong> - DNS management and email forwarding</ListItem>
+        <ListItem><strong>GitHub</strong> - Source code hosting (open source, public repo)</ListItem>
+      </List>
+
+      <Paragraph>
+        <strong>What does it cost to run this?</strong>
+      </Paragraph>
+      <List>
+        <ListItem><strong>Domain</strong> - $12/year for jaygriff.com</ListItem>
+        <ListItem><strong>Domain Email</strong> - Free (Cloudflare forwarding + Gmail)</ListItem>
+        <ListItem><strong>Hosting</strong> - Free (Vercel's generous free tier)</ListItem>
+        <ListItem><strong>Total</strong> - $12/year, or $1/month</ListItem>
+      </List>
+
+      <Paragraph>
+        Hosting static sites is incredibly cheap and efficient. Full-stack apps need more attention 
+        to serverless and edge function usage, but for a personal site like this, the free tier 
+        handles everything beautifully.
+      </Paragraph>  
 
       <Heading level={2}>Why build this?</Heading>
       <Paragraph>
