@@ -1,7 +1,7 @@
 ---json
 {
-  "title": "Semantic Compression for AI Workflows",
-  "slug": "semantic-compression-for-ai",
+  "title": "Semantic Controls for AI Workflows",
+  "slug": "semantic-controls-for-ai",
   "date": "2026-01-27T00:00:00Z",
   "author": ["Jay Griffin, Claude Sonnet 4.5"],
   "authorshipNote": "🔧 AI-Assisted - Conversation synthesis of Jay's ideas that Claude structured and articulated",
@@ -10,8 +10,6 @@
   "tags": ["ai", "semantic-compression", "dsl", "markdown", "llm", "prompt-engineering", "code-generation"]
 }
 ---
-
-# Semantic Compression for AI Workflows
 
 ## Conversation Journey
 

@@ -194,9 +194,9 @@ export default function AccountingToDevPost() {
       </Paragraph>
 
       <Paragraph>
-        Then I discovered AutoHotkey could create right-click context menus. Little UI elements 
-        that pop up and do things. And I realized: making UI isn't as hard as I thought. You 
-        don't need to understand how pixels render all the way down to binary instructions on 
+        Then I discovered AutoHotkey could create right-click context menus. These are just little UI elements 
+        that pop up and do things kind of like how you might right-click to copy and paste. And I realized: making UI isn't as hard as I thought. You 
+        don't need to understand how to render pixels on the screen all the way down to binary instructions on 
         bare metal. You just... write some code that says "make a right-click menu." That's it.
       </Paragraph>
 
@@ -206,9 +206,9 @@ export default function AccountingToDevPost() {
 
       <Heading level={3}>Level 2: HTML & CSS</Heading>
       <Paragraph>
-        After discovering that little tidbit of how things get rendered, I immediately made the connection to HTML and CSS. HTML is a language where I tell the screen what to do. It's a rendering 
+        After discovering that little tidbit about how things get rendered, I immediately made the connection to HTML and CSS. HTML is a language where I tell the screen what to do. It's a rendering 
         language. It's just instructions that tell the browser what to put on the screen. 
-        CSS tells it how to make it look different.
+        CSS just tells it how to make it look prettier.
       </Paragraph>
 
       <Paragraph>
@@ -250,8 +250,8 @@ export default function AccountingToDevPost() {
       </Paragraph>
 
       <Paragraph>
-        That's when I started looking at Node.js. Played around with it and realized: okay, 
-        Node actually works pretty similar to Python. This could work. But then Express came 
+        That's when I started looking at Node.js. I played around with it and realized: okay, 
+        Node actually works pretty similar to Python, I would just need to learn more JavaScript. This could work. But then Express came 
         into the picture and Express was hard. So I hardly touched it.
       </Paragraph>
 
@@ -290,7 +290,7 @@ export default function AccountingToDevPost() {
 
       <Paragraph>
         This was it. I could finally do full JavaScript without fighting Express. Just build 
-        interactive frontends and worry about backends later when I really needed them. 
+        powerful frontends and worry about backends later when I really needed them. 
       </Paragraph>
 
       <Heading level={3}>The SSG Detour: Hugo, Jekyll, Eleventy</Heading>
@@ -336,22 +336,22 @@ export default function AccountingToDevPost() {
       <Heading level={2}>The Truth: I Never Left Accounting</Heading>
 
       <Paragraph>
-        Here's what people miss: I didn't abandon accounting knowledge. I integrated it.
+        Here's what people miss: I didn't abandon accounting. I integrated it.
       </Paragraph>
 
       <Paragraph>
-        Some developers won't understand:
+        Some developers can't:
       </Paragraph>
 
       <List>
-        <ListItem>How to take a creation and turn it into a real business</ListItem>
-        <ListItem>Financial statements and business performance metrics</ListItem>
-        <ListItem>Taxes, audits, bookkeeping, incorporation, compliance</ListItem>
-        <ListItem>Organizational controls and data controls</ListItem>
+        <ListItem>Take a creation and turn it into a real business</ListItem>
+        <ListItem>Read financial statements or understand business performance metrics</ListItem>
+        <ListItem>Navigate taxes, audits, bookkeeping, incorporation, compliance</ListItem>
+        <ListItem>Design organizational controls, data controls, access controls</ListItem>
       </List>
 
       <Paragraph>
-        That business degree? It's my differentiator. I can build software that could spin off into a business because I understand the business side.
+        That accounting degree? It's my differentiator. I can build the product  <strong>and</strong> the business model. I know how to validate whether something is worth building. I'm not just a dev who can ship features; I'm someone who can turn code into a business and ship products that make financial sense.
       </Paragraph>
 
       <Heading level={2}>The Pattern: Solving Tool Limitations</Heading>
@@ -383,9 +383,8 @@ export default function AccountingToDevPost() {
       </Paragraph>
 
       <Paragraph>
-        And honestly? Software development feels like the highest use of my skills. I'm 
-        not doing glorified software-assisted paperwork anymore. I'm building systems, 
-        solving problems, creating tools that actually matter. This is what I was meant to do.
+        And honestly? Software development feels like the highest use of my skills. I'm building systems, 
+        solving problems,  and creating tools that actually matter, all while enjoying the process. This is what I was meant to do.
       </Paragraph>
     </>
   );

@@ -85,7 +85,7 @@ export default function ContentGuidePage() {
         <Heading level={3}>🤖 100% AI-Generated</Heading>
         <List>
           <ListItem><strong>Author field:</strong> Model name listed (e.g., "Claude Sonnet 4.5") - stylistic transparency, not authorship credit</ListItem>
-          <ListItem><strong>Process:</strong> AI created this based on my prompt. I approved it for publication but didn't edit the content.</ListItem>
+          <ListItem><strong>Process:</strong> AI created this based on my prompt and context. I approved it for publication but didn't edit the content.</ListItem>
           <ListItem><strong>What this means:</strong> Expect smooth AI texture—balanced, diplomatic, but with occasional weird artifacts. I judged it worth sharing as-is.</ListItem>
           <ListItem><strong>Accuracy:</strong> May contain errors. AI-generated content can be confidently wrong about facts, dates, or technical details. Verify before relying on it.</ListItem>
           <ListItem><strong>Use case:</strong> Exploratory content, brainstorming dumps, feature specs, documentation I needed quickly</ListItem>
@@ -96,7 +96,7 @@ export default function ContentGuidePage() {
           <ListItem><strong>Author field:</strong> Jay Griffin, model name listed (sometimes with authorship note explaining AI involvement)</ListItem>
           <ListItem><strong>Process:</strong> AI generated most content. I made editorial decisions, removed weak sections, added my own words, restructured, or heavily edited.</ListItem>
           <ListItem><strong>What this means:</strong> Hybrid texture. You'll feel the seams—AI flow interrupted by genuine human voice and judgment.</ListItem>
-          <ListItem><strong>Accuracy:</strong> Better than 100% AI, but still no guarantee. I exercised judgment on structure and quality, not necessarily fact-checking every detail.</ListItem>
+          <ListItem><strong>Accuracy:</strong> Better than 100% AI, but still no guarantee. I exercised judgment on structure and quality, not necessarily fact-checking every detail. This site reflects my exploration and ideas. Statements of fact may be incomplete or inaccurate—verify independently if needed.</ListItem>
           <ListItem><strong>Use case:</strong> Most blog posts, docs, feature specs, technical writing where I need volume + quality</ListItem>
         </List>
 
@@ -111,10 +111,10 @@ export default function ContentGuidePage() {
 
         <Heading level={2}>About AI "Authorship"</Heading>
         <Paragraph>
-          <strong>Important clarification:</strong> When AI generates content 100%, listing the model name (e.g., "Claude Sonnet 4.5") in the author field is a stylistic transparency choice that serves as a nod to the model providers, not actual authorship credit. AI cannot author content until AGI is achieved or some other AI breakthrough makes me develop empathy for it.
+          <strong>Important clarification:</strong> When AI generates content 100%, listing the model name (e.g., "Claude Sonnet 4.5") in the author field is for transparency and does not imply authorship. I guide, edit, and approve all content for publication.
         </Paragraph>
         <Paragraph>
-          I am always the author/publisher responsible for everything on this site, regardless of the creation process. The labels are informational signals to help you understand:
+          I am the curator and editor of everything on this site, regardless of the creation process. The labels are informational signals to help you understand:
         </Paragraph>
         <List>
           <ListItem><strong>Texture:</strong> How smooth/human/hybrid the writing will feel</ListItem>
@@ -123,7 +123,7 @@ export default function ContentGuidePage() {
           <ListItem><strong>Reading mode:</strong> Treat as exploratory vs authoritative</ListItem>
         </List>
         <Paragraph>
-          If I publish it, I own it—whether I wrote every word or prompted AI and approved the result. That accountability is what makes AI assistance legitimate when used responsibly.
+          If I publish it, I curated and approved it—whether I wrote every word or guided AI to generate content. This editorial role is what makes AI assistance legitimate when used thoughtfully.
         </Paragraph>
 
         <Heading level={2}>What Makes AI Usage Legitimate</Heading>
@@ -178,8 +178,8 @@ export default function ContentGuidePage() {
           Unless otherwise noted, content on this site is shared under MIT License principles:
         </Paragraph>
         <List>
-          <ListItem><strong>Use at your own risk</strong> - No warranties or guarantees</ListItem>
-          <ListItem><strong>No liability</strong> - If you rely on incorrect information, that's on you</ListItem>
+          <ListItem><strong>Use, share, or adapt at your discretion</strong> - Content is provided "as-is" with no warranties or guarantees</ListItem>
+          <ListItem><strong>No liability</strong> - Readers are responsible for verifying information before relying on it</ListItem>
           <ListItem><strong>Verify before using</strong> - Especially for code, configs, or factual claims</ListItem>
           <ListItem><strong>Attribution appreciated but not required</strong> - Link back if you want, not mandatory</ListItem>
         </List>
