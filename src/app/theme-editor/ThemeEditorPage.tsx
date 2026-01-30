@@ -79,21 +79,32 @@ export function ThemeEditorPage() {
           </div>
         </ControlGroup>
         
-        {/* Primary Hue Control */}
+        {/* Primary Color Control */}
         <ControlGroup>
-          <Label>Primary Color Hue: {config.primaryHue}°</Label>
-          <SliderRoot
-            value={[config.primaryHue]}
-            onValueChange={([v]) => updateConfig({ primaryHue: v })}
-            min={0}
-            max={360}
-            step={1}
-          >
-            <SliderTrack>
-              <SliderRange />
-            </SliderTrack>
-            <SliderThumb />
-          </SliderRoot>
+          <Label>Primary Color: {config.primaryColor}</Label>
+          <input
+            type="color"
+            value={config.primaryColor.startsWith('#') ? config.primaryColor : '#3399ff'}
+            onChange={(e) => updateConfig({ primaryColor: e.target.value })}
+            style={{ 
+              width: '100%', 
+              height: '40px', 
+              cursor: 'pointer',
+              borderRadius: '4px',
+              border: '1px solid rgba(255,255,255,0.1)'
+            }}
+          />
+          <div style={{ marginTop: '8px' }}>
+            <Button onClick={() => updateConfig({ primaryColor: 'hsl(210, 100%, 60%)' })}>
+              Blue
+            </Button>
+            <Button onClick={() => updateConfig({ primaryColor: 'hsl(150, 100%, 60%)' })}>
+              Green
+            </Button>
+            <Button onClick={() => updateConfig({ primaryColor: 'hsl(280, 100%, 60%)' })}>
+              Purple
+            </Button>
+          </div>
         </ControlGroup>
         
         {/* Spacing Control */}
