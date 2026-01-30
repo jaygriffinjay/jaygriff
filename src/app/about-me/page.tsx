@@ -73,7 +73,7 @@ export default function AboutMePage() {
   return (
     <Container size="sm">
       <ContentWrapper>
-        <div style={{ marginBottom: '2rem', textAlign: 'center' }}>
+        <HiringCard>
           <img 
             src="/images/me.jpg" 
             alt="Jay Griffin" 
@@ -81,12 +81,10 @@ export default function AboutMePage() {
               maxWidth: '250px', 
               width: '100%', 
               height: 'auto',
-              borderRadius: '8px'
+              borderRadius: '8px',
+              marginBottom: '1.5rem'
             }} 
           />
-        </div>
-        
-        <HiringCard>
           <HiringText>
             I'm currently seeking full-time roles building modern web and React-based applications! I'm especially interested in AI integrations and building AI-native apps.
           </HiringText>
@@ -94,6 +92,7 @@ export default function AboutMePage() {
             Email me: jay@jaygriff.com
           </BigEmailLink>
         </HiringCard>
+
 
         <Heading level={2}>Hi, I'm Jay!</Heading>
 
