@@ -1,5 +1,5 @@
 import type { PostMeta } from '@/types/post';
-import { Heading, Paragraph, List, ListItem, Link } from '@/components/Primitives';
+import { Heading, Paragraph, List, ListItem, Link, Code } from '@/components/Primitives';
 import { CodeBlock } from '@/components/CodeBlock/CodeBlock';
 
 export const metadata: PostMeta = {
@@ -49,7 +49,7 @@ export default function BuildingTimelineComponent() {
 
       <Paragraph>
         I chose SVG over HTML/CSS because it gives precise control over positioning and allows tick marks to 
-        extend dynamically on hover without layout shifts. The viewBox is set to <code>-40 65 290 1490</code> 
+        extend dynamically on hover without layout shifts. The viewBox is set to <Code>-40 65 290 1490</Code> 
         to accommodate year labels on the left while keeping the timeline content properly bounded.
       </Paragraph>
 
@@ -229,7 +229,7 @@ style={{
 
       <Paragraph>
         The full component code is available in <Link href="https://github.com/jaygriffinjay/jaygriff" target="_blank" rel="noopener noreferrer">
-        my site's repository</Link> at <code>src/components/Timeline.tsx</code>.
+        my site's repository</Link> at <Code>src/components/Timeline.tsx</Code>.
       </Paragraph>
     </>
   );
