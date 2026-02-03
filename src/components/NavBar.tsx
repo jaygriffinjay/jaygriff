@@ -23,16 +23,25 @@ const particleFloat = keyframes({
 });
 
 const navBarStyles = css({
+  position: 'fixed',
+  bottom: '1.5rem',
+  left: '50%',
+  transform: 'translateX(-50%)',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  gap: '1rem',
-  padding: '1.5rem 2rem 1.5rem 1rem',
+  gap: '0.5rem',
+  padding: '0.3rem 0.75rem',
+  backgroundColor: '#1a1a24',
+  border: '1px solid rgba(255, 255, 255, 0.1)',
+  borderRadius: '999px',
+  boxShadow: '0 4px 20px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05)',
   zIndex: 1000,
-  '@media (max-width: 768px)': {
-    gap: '0.5rem',
-    padding: '1rem 1rem 1rem 0.75rem',
-  },
+  // '@media (max-width: 768px)': {
+  //   gap: '0.5rem',
+  //   padding: '0.4rem 0.8rem',
+  //   bottom: '1rem',
+  // },
 });
 
 const titleContainerStyles = css({

@@ -33,7 +33,7 @@ export function NavMenu() {
     justifyContent: 'center',
     width: 40,
     height: 40,
-    borderRadius: theme.radii.medium,
+    borderRadius: theme.radii.full,
     cursor: 'pointer',
     color: theme.colors.text,
     transition: 'background-color 0.15s ease',
@@ -99,7 +99,7 @@ export function NavMenu() {
       </DropdownMenu.Trigger>
 
       <DropdownMenu.Portal>
-        <DropdownMenu.Content css={contentStyles} align="start" sideOffset={5}>
+        <DropdownMenu.Content css={contentStyles} side="top" align="start" sideOffset={25}>
           <DropdownMenu.Item css={itemStyles} asChild>
             <Link href="/">Home</Link>
           </DropdownMenu.Item>

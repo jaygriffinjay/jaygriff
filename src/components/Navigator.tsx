@@ -38,7 +38,7 @@ export default function Navigator({ routes }: NavigatorProps) {
     justifyContent: 'center',
     width: 40,
     height: 40,
-    borderRadius: theme.radii.medium,
+    borderRadius: theme.radii.full,
     cursor: 'pointer',
     color: theme.colors.text,
     transition: 'background-color 0.15s ease',
@@ -140,7 +140,7 @@ export default function Navigator({ routes }: NavigatorProps) {
       </Popover.Trigger>
 
       <Popover.Portal>
-        <Popover.Content css={contentStyles} align="end" sideOffset={8}>
+        <Popover.Content css={contentStyles} side="top" align="end" sideOffset={25}>
           <input
             type="text"
             placeholder="Search pages..."
