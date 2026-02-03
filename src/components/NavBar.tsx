@@ -24,12 +24,14 @@ const particleFloat = keyframes({
 
 const navBarStyles = css({
   position: 'fixed',
-  bottom: '1.5rem',
+  top: '1.5rem',
   left: '50%',
   transform: 'translateX(-50%)',
+  width: '100%',
+  maxWidth: '640px',
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center',
+  justifyContent: 'space-between',
   gap: '0.5rem',
   padding: '0.15rem 0.75rem',
   backgroundColor: '#1a1a24',
@@ -38,7 +40,7 @@ const navBarStyles = css({
   boxShadow: '0 4px 20px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05)',
   zIndex: 1000,
   '@media (max-width: 768px)': {
-    bottom: 0,
+    top: 0,
   },
   // '@media (max-width: 768px)': {
   //   gap: '0.5rem',
@@ -119,10 +121,14 @@ interface NavBarProps {
 export default function NavBar({ routes }: NavBarProps) {
   const { theme } = useTheme();
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; tx: number; ty: number }>>([]);
+  const [isHovered, setIsHovered] = useState(false);
+  const isHoveredRef = useRef(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const particleIdRef = useRef(0);
 
-  const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
+    setIsHovered(true);
+    isHoveredRef.current = true;
     const rect = e.currentTarget.getBoundingClientRect();
     
     intervalRef.current = setInterval(() => {
@@ -141,7 +147,11 @@ export default function NavBar({ routes }: NavBarProps) {
         ty,
       };
 
-      setParticles(prev => [...prev, particle]);
+      // Only add particles if still hovering
+      setParticles(prev => {
+        if (!isHoveredRef.current) return prev;
+        return [...prev, particle];
+      });
 
       // Remove particle after animation
       setTimeout(() => {
@@ -151,24 +161,27 @@ export default function NavBar({ routes }: NavBarProps) {
   };
 
   const handleMouseLeave = () => {
+    setIsHovered(false);
+    isHoveredRef.current = false;
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
       intervalRef.current = null;
     }
+    // Clear all particles immediately
+    setParticles([]);
   };
 
   return (
     <nav css={navBarStyles}>
       <NavMenu />
       <div css={titleContainerStyles}>
-        <Link
-          href="/"
+        <div
           css={titleStyles}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           Jay Griffin
-        </Link>
+        </div>
         {particles.map(particle => (
           <div
             key={particle.id}

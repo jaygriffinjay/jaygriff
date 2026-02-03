@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { useTheme } from '@/theme/theme';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import Link from 'next/link';
@@ -25,6 +26,16 @@ function HamburgerIcon() {
 
 export function NavMenu() {
   const { theme } = useTheme();
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (open) setOpen(false);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [open]);
 
   const triggerStyles = {
     all: 'unset' as const,
@@ -40,10 +51,6 @@ export function NavMenu() {
     transition: 'background-color 0.15s ease',
     '&:hover': {
       backgroundColor: theme.colors.border,
-    },
-    '&:focus-visible': {
-      outline: `2px solid ${theme.colors.primary}`,
-      outlineOffset: 2,
     },
   };
 
@@ -94,13 +101,13 @@ export function NavMenu() {
   const isDev = process.env.NODE_ENV === 'development';
 
   return (
-    <DropdownMenu.Root>
+    <DropdownMenu.Root modal={false} open={open} onOpenChange={setOpen}>
       <DropdownMenu.Trigger css={triggerStyles}>
         <HamburgerIcon />
       </DropdownMenu.Trigger>
 
       <DropdownMenu.Portal>
-        <DropdownMenu.Content css={contentStyles} side="top" align="start" sideOffset={25}>
+        <DropdownMenu.Content css={contentStyles} side="bottom" align="start" sideOffset={20}>
           <DropdownMenu.Item css={itemStyles} asChild>
             <Link href="/">Home</Link>
           </DropdownMenu.Item>

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import type { RouteEntry } from '@/lib/routes';
 import { useTheme } from '@/theme/theme';
 import * as Popover from '@radix-ui/react-popover';
@@ -30,6 +30,15 @@ export default function Navigator({ routes }: NavigatorProps) {
       return titleMatch || pathMatch || descriptionMatch || keywordMatch;
     });
   }, [routes, searchQuery]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (open) setOpen(false);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [open]);
 
   const triggerStyles = {
     all: 'unset' as const,
@@ -141,13 +150,25 @@ export default function Navigator({ routes }: NavigatorProps) {
       </Popover.Trigger>
 
       <Popover.Portal>
-        <Popover.Content css={contentStyles} side="top" align="end" sideOffset={25}>
+        {/* Prevent auto-focus on mobile to avoid keyboard popup, but allow on desktop for better UX */}
+        <Popover.Content 
+          css={contentStyles} 
+          side="bottom" 
+          align="end" 
+          sideOffset={20}
+          onOpenAutoFocus={(e) => {
+            if (window.innerWidth <= 768) {
+              e.preventDefault();
+            }
+          }}
+        >
           <input
             type="text"
             placeholder="Search pages..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             css={searchInputStyles}
+            autoFocus={false}
           />
           <div css={resultsContainerStyles}>
             {filteredRoutes.length === 0 ? (

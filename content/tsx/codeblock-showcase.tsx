@@ -1,4 +1,4 @@
-import { Heading, Paragraph } from '@/components/Primitives';
+import { Heading, Paragraph, Code, List, ListItem } from '@/components/Primitives';
 import { CodeBlock } from '@/components/CodeBlock/CodeBlock';
 import type { PostMeta } from '@/types/post';
 
@@ -60,12 +60,10 @@ export default function CodeBlockShowcase() {
         CSS transitions create a problem here. When the button switches from checkmark back to copy icon, 
         it needs different visibility behavior depending on hover state:
       </Paragraph>
-      <Paragraph>
-        - If hovering: opacity should be 1 (visible)
-      </Paragraph>
-      <Paragraph>
-        - If not hovering: opacity should instantly snap to 0, with no transition
-      </Paragraph>
+      <List>
+        <ListItem>If hovering: opacity should be 1 (visible)</ListItem>
+        <ListItem>If not hovering: opacity should instantly snap to 0, with no transition</ListItem>
+      </List>
       <Paragraph>
         The issue is that a transition on opacity means there's a brief moment where the copy button 
         fades out, creating a flash of visibility even when you're not hovering.
@@ -76,22 +74,16 @@ export default function CodeBlockShowcase() {
       </Paragraph>
       <Paragraph>
         I used a combination of data attributes and conditional CSS transitions. The button has a 
-        `data-copied` attribute that tracks whether it's showing the checkmark or copy icon. When 
-        `data-copied="false"` (transitioning back to copy icon), I apply `transition: none` which 
+        <Code>data-copied</Code> attribute that tracks whether it's showing the checkmark or copy icon. When 
+        <Code>data-copied="false"</Code> (transitioning back to copy icon), I apply <Code>transition: none</Code> which 
         makes the opacity change instant rather than animated. This means:
       </Paragraph>
-      <Paragraph>
-        - Checkmark always fades in/out smoothly (better UX)
-      </Paragraph>
-      <Paragraph>
-        - Copy button appears smoothly when you hover (good)
-      </Paragraph>
-      <Paragraph>
-        - Copy button instantly disappears when switching from checkmark if not hovering (exactly what we want)
-      </Paragraph>
-      <Paragraph>
-        - Copy button stays visible if you're hovering during the transition (also exactly what we want)
-      </Paragraph>
+      <List>
+        <ListItem>Checkmark always fades in/out smoothly (better UX)</ListItem>
+        <ListItem>Copy button appears smoothly when you hover (good)</ListItem>
+        <ListItem>Copy button instantly disappears when switching from checkmark if not hovering (exactly what we want)</ListItem>
+        <ListItem>Copy button stays visible if you're hovering during the transition (also exactly what we want)</ListItem>
+      </List>
       
       <Paragraph>
         Additionally, I render both SVG icons simultaneously with crossfading opacity transitions. 
@@ -101,6 +93,38 @@ export default function CodeBlockShowcase() {
       <Paragraph>
         The result is an interaction that feels completely natural - the copy button never flashing briefly, and the checkmark confirmation is always visible long enough to 
         register.
+      </Paragraph>
+
+      <Heading level={3}>Transition Timing Details</Heading>
+      <Paragraph>
+        Getting the timing right was critical for the feel of the interaction. The copy button uses:
+      </Paragraph>
+      <Paragraph>
+        <strong>Base transition:</strong> <Code>transition: opacity 0.25s ease 0.15s</Code>
+      </Paragraph>
+      <Paragraph>
+        This means when you hover over the code block, the button waits 0.15 seconds (delay) before 
+        starting to fade in, then takes 0.25 seconds to complete the fade. Total time from hover to 
+        fully visible: 0.4 seconds.
+      </Paragraph>
+      <Paragraph>
+        <strong>The instant-hide logic:</strong> <Code>&:not(:hover) button[data-copied="false"]</Code>
+      </Paragraph>
+      <Paragraph>
+        When the code block is NOT being hovered AND the button is in copy mode (not checkmark mode), 
+        we apply <Code>transition: none</Code>. This selector is key - it only matches when both 
+        conditions are true, which means:
+      </Paragraph>
+      <List>
+        <ListItem>During hover: button fades in smoothly (base transition applies)</ListItem>
+        <ListItem>During checkmark display: checkmark stays visible (data-copied="true", so this rule doesn't match)</ListItem>
+        <ListItem>After checkmark → copy transition while not hovering: button instantly disappears (transition: none applies)</ListItem>
+        <ListItem>After checkmark → copy transition while hovering: button stays visible (still hovering, so rule doesn't match)</ListItem>
+      </List>
+      <Paragraph>
+        The 0.15s delay prevents the button from flashing briefly as your cursor 
+        sweeps across the page. You have to intentionally hover on the code block for a moment before 
+        the button appears, which feels more deliberate and less distracting.
       </Paragraph>
 
       <Heading level={2}>TypeScript Files</Heading>

@@ -10,12 +10,12 @@ export const codeBlockTheme = css`
     opacity: 1;
   }
 
-  button[data-copied="true"] {
-    opacity: 1;
+  &:not(:hover) button[data-copied="false"] {
+    transition: none;
   }
 
-  button[data-copied="false"] {
-    transition: none;
+  button[data-copied="true"] {
+    opacity: 1;
   }
 
   pre[class*="language-"],
@@ -320,7 +320,7 @@ export const copyButtonStyles = css`
   padding: 4px;
   border-radius: 4px;
   cursor: pointer;
-  transition: opacity 0.2s;
+  transition: opacity 0.15s ease 0.10s;
   display: flex;
   align-items: center;
   justify-content: center;

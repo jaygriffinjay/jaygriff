@@ -30,6 +30,10 @@ export function GlobalStyles() {
           MozOsxFontSmoothing: 'grayscale',
           minHeight: '100vh',   
           paddingBottom: '1px', // Safari margin collapse fix - see /docs/safari-margin-hack
+          paddingTop: '4rem', // Space for fixed navbar at top
+          '@media (max-width: 768px)': {
+            paddingTop: '1rem', // Reduced space on mobile
+          },
         },
       }}
     />

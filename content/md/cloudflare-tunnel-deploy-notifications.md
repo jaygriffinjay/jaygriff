@@ -11,11 +11,7 @@
 }
 ---
 
-**Why:** Stop refresh-spamming my site 13 times waiting for deploys. Get notified automatically and keep working.
-
-## The Setup
-
-### What I'm Building
+## What I'm Building
 
 `
 git push → GitHub → Vercel builds → Vercel webhook → Cloudflare Tunnel → Local server → 🔔 DING
