@@ -100,7 +100,10 @@ function getDisplayName(filename: string | undefined, language: string | undefin
 // Ensure Prism.js highlights the code correctly
 export function CodeBlock({ language, children, showHeader = true, filename }: CodeBlockProps) {
   const codeRef = useRef<HTMLElement>(null);
+  const preRef = useRef<HTMLPreElement>(null);
   const [copied, setCopied] = useState(false);
+  const [isWrapped, setIsWrapped] = useState(false);
+  const [hasOverflow, setHasOverflow] = useState(false);
   
   const iconConfig = getIconConfig(filename, language);
   const displayName = getDisplayName(filename, language);
@@ -110,6 +113,20 @@ export function CodeBlock({ language, children, showHeader = true, filename }: C
       Prism.highlightElement(codeRef.current);
     }
   }, [children, language]);
+
+  useEffect(() => {
+    // Check if content overflows horizontally
+    const checkOverflow = () => {
+      if (preRef.current) {
+        const hasHorizontalOverflow = preRef.current.scrollWidth > preRef.current.clientWidth;
+        setHasOverflow(hasHorizontalOverflow);
+      }
+    };
+
+    checkOverflow();
+    window.addEventListener('resize', checkOverflow);
+    return () => window.removeEventListener('resize', checkOverflow);
+  }, [children, isWrapped]);
 
   const handleCopy = async () => {
     try {
@@ -156,14 +173,38 @@ export function CodeBlock({ language, children, showHeader = true, filename }: C
               }}>{displayName}</span>
             )}
           </span>
-          <button
-            css={copied ? copiedButtonStyles : copyButtonStyles}
-            onClick={handleCopy}
-            aria-label="Copy code"
-            title={copied ? 'Copied!' : 'Copy code'}
-            data-copied={copied}
-            style={{ position: 'relative' }}
-          >
+          <div style={{ display: 'flex', gap: '8px' }}>
+            {(hasOverflow || isWrapped) && (
+              <button
+                css={copyButtonStyles}
+                onClick={() => setIsWrapped(!isWrapped)}
+                aria-label={isWrapped ? 'Unwrap lines' : 'Wrap lines'}
+                title={isWrapped ? 'Unwrap lines' : 'Wrap lines'}
+                data-copied="false"
+              >
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                  {isWrapped ? (
+                    // Wrapped state - lines of varying lengths
+                    <>
+                      <path d="M2 4h12M2 8h9M2 12h7" strokeWidth="1.5" strokeLinecap="round" />
+                    </>
+                  ) : (
+                    // Unwrapped state - all lines same length
+                    <>
+                      <path d="M2 4h12M2 8h12M2 12h12" strokeWidth="1.5" strokeLinecap="round" />
+                    </>
+                  )}
+                </svg>
+              </button>
+            )}
+            <button
+              css={copied ? copiedButtonStyles : copyButtonStyles}
+              onClick={handleCopy}
+              aria-label="Copy code"
+              title={copied ? 'Copied!' : 'Copy code'}
+              data-copied={copied}
+              style={{ position: 'relative' }}
+            >
             <svg 
               viewBox="0 0 16 16" 
               fill="currentColor"
@@ -187,9 +228,10 @@ export function CodeBlock({ language, children, showHeader = true, filename }: C
               <path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" />
             </svg>
           </button>
+          </div>
         </div>
       )}
-      <pre className={`language-${language || 'text'}`} tabIndex={0}>
+      <pre ref={preRef} className={`language-${language || 'text'}`} tabIndex={0} style={{ whiteSpace: isWrapped ? 'pre-wrap' : 'pre' }}>
         <code ref={codeRef} className={`language-${language || 'text'}`}>
           {children}
         </code>

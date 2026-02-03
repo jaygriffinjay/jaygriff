@@ -20,8 +20,8 @@ const AccidentalNotionClonePost = () => {
       <Heading level={2}>How It Happened</Heading>
 
       <Paragraph>
-        I looked at my site today and realized: this is literally a Notion page. The layout, 
-        the spacing, the metadata header, the inline code styling. It's identical.
+        I looked at my site today and realized: this is literally a Notion page. The typography, the layout, 
+        the spacing, the metadata header. It's identical.
       </Paragraph>
 
       <Paragraph>

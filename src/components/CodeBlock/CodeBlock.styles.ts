@@ -26,7 +26,6 @@ export const codeBlockTheme = css`
     font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
     direction: ltr;
     text-align: left;
-    white-space: pre;
     word-spacing: normal;
     word-break: normal;
     line-height: 1.5;
