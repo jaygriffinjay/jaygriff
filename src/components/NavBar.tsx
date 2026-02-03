@@ -37,6 +37,9 @@ const navBarStyles = css({
   borderRadius: '999px',
   boxShadow: '0 4px 20px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05)',
   zIndex: 1000,
+  '@media (max-width: 768px)': {
+    bottom: 0,
+  },
   // '@media (max-width: 768px)': {
   //   gap: '0.5rem',
   //   padding: '0.4rem 0.8rem',
