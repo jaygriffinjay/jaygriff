@@ -175,8 +175,6 @@ export default function AboutMePage() {
         I worked in public tax accounting before transitioning to software development. 
         Read the full story in <Link href="/posts/accounting-to-dev">accounting → software development?</Link>
       </Paragraph>
-
-      <Heading level={2}>My Journey</Heading>
       {/* <Timeline /> */}
       </ContentWrapper>
     </Container>
