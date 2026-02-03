@@ -69,7 +69,12 @@ export default async function DebugDates() {
         {sorted.map((item, index) => {
           const dateObj = new Date(item.metadata.date);
           const isInvalid = isNaN(dateObj.getTime());
-          const updatedObj = item.metadata.updated ? new Date(item.metadata.updated) : null;
+          
+          // Handle updated as string or array
+          const updatedDate = item.metadata.updated 
+            ? (Array.isArray(item.metadata.updated) ? item.metadata.updated[0] : item.metadata.updated)
+            : null;
+          const updatedObj = updatedDate ? new Date(updatedDate) : null;
           const updatedInvalid = updatedObj ? isNaN(updatedObj.getTime()) : false;
           
           return (

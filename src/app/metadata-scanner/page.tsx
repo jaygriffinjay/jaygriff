@@ -67,7 +67,7 @@ export default async function MetadataScannerPage() {
                 <Td>{m.feature || '-'}</Td>
                 <Td>{formatArray(m.tags)}</Td>
                 <Td>{new Date(m.date).toLocaleDateString()}</Td>
-                <Td>{m.updated ? new Date(m.updated).toLocaleDateString() : '-'}</Td>
+                <Td>{m.updated ? (Array.isArray(m.updated) ? `${new Date(m.updated[0]).toLocaleDateString()} (+${m.updated.length - 1})` : new Date(m.updated).toLocaleDateString()) : '-'}</Td>
                 <Td>{m.draft ? 'Yes' : '-'}</Td>
                 <Td>{m.image || '-'}</Td>
                 <Td>{m.sourceUrl || '-'}</Td>

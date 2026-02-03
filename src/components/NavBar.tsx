@@ -31,7 +31,7 @@ const navBarStyles = css({
   alignItems: 'center',
   justifyContent: 'center',
   gap: '0.5rem',
-  padding: '0.3rem 0.75rem',
+  padding: '0.15rem 0.75rem',
   backgroundColor: '#1a1a24',
   border: '1px solid rgba(255, 255, 255, 0.1)',
   borderRadius: '999px',
@@ -58,7 +58,7 @@ const titleStyles = css({
   letterSpacing: '-0.02em',
   color: '#fff',
   position: 'relative',
-  padding: '0.375rem 1.5rem',
+  padding: '0.2rem 1.5rem',
   textDecoration: 'none',
   transition: 'color 0.3s ease',
   display: 'inline-block',
@@ -75,7 +75,7 @@ const titleStyles = css({
   },
   '@media (max-width: 768px)': {
     fontSize: 'clamp(1.25rem, 6vw, 2.5rem)',
-    padding: '0.25rem clamp(0.5rem, 3vw, 1.5rem)',
+    padding: '0.15rem clamp(0.5rem, 2vw, 1rem)',
   },
 });
 

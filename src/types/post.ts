@@ -17,7 +17,7 @@ export interface PostMeta {
   tags?: string[];
   draft?: boolean;
   image?: string;
-  updated?: string;
+  updated?: string | string[]; // Single update or array of update dates (most recent first)
   
   relatedPosts?: string[]; // Array of slugs for related posts
 }

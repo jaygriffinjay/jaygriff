@@ -6,6 +6,18 @@ export const codeBlockTheme = css`
   overflow: hidden;
   margin: 1.5rem 0;
 
+  &:hover button {
+    opacity: 1;
+  }
+
+  button[data-copied="true"] {
+    opacity: 1;
+  }
+
+  button[data-copied="false"] {
+    transition: none;
+  }
+
   pre[class*="language-"],
   code[class*="language-"] {
     color: #d4d4d4;
@@ -282,9 +294,9 @@ export const codeBlockTheme = css`
   code[class*="language-shell"],
   pre[class*="language-sh"],
   code[class*="language-sh"] {
-    color: #00cc00;    
+    color: #00aa00;    
     .token {
-      color: #00cc00;
+      color: #00aa00;
     }
   }
 `;
@@ -308,10 +320,11 @@ export const copyButtonStyles = css`
   padding: 4px;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: opacity 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
 
   &:hover {
     color: #d4d4d4;
@@ -330,5 +343,5 @@ export const copyButtonStyles = css`
 
 export const copiedButtonStyles = css`
   ${copyButtonStyles};
-  color: #4ec9b0;
+  opacity: 1 !important;
 `;

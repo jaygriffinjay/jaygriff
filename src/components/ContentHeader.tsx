@@ -1,6 +1,7 @@
 "use client";
 
 import { css } from '@emotion/react';
+import { useRef, useState, useEffect } from 'react';
 import type { PostMeta } from '@/types/post';
 import { formatPostDate } from '@/lib/date';
 
@@ -74,7 +75,111 @@ const badgeStyles = css({
   color: 'rgba(255, 255, 255, 0.7)',
 });
 
+const tooltipContainerStyles = css({
+  position: 'relative',
+  display: 'inline-block',
+  padding: '0.125rem 0.5rem',
+  marginLeft: '-0.5rem',
+  borderRadius: '12px',
+  transition: 'background-color 0.2s ease',
+  '&:hover': {
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+  },
+});
+
+// Tooltip positioning: defaults to appearing above, flips to below if it would overflow viewport top
+const tooltipStyles = css({
+  position: 'absolute',
+  bottom: '100%',
+  left: '50%',
+  transform: 'translateX(-50%)',
+  marginBottom: '0.5rem',
+  padding: '0.5rem 0.75rem',
+  backgroundColor: 'rgba(255, 255, 255, 0.99)',
+  color: '#000',
+  fontSize: '0.75rem',
+  borderRadius: '8px',
+  minWidth: '160px',
+  pointerEvents: 'none',
+  zIndex: 1000,
+  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
+  opacity: 0,
+  visibility: 'hidden',
+  transition: 'opacity 0.15s ease, visibility 0.15s ease',
+  '.tooltip-trigger:hover &': {
+    opacity: 1,
+    visibility: 'visible',
+    transitionDelay: '0.15s',
+  },
+});
+
+// Flipped version: appears below when there's not enough room above
+const tooltipFlippedStyles = css({
+  position: 'absolute',
+  top: '100%',
+  left: '50%',
+  transform: 'translateX(-50%)',
+  marginTop: '0.5rem',
+  padding: '0.5rem 0.75rem',
+  backgroundColor: 'rgba(255, 255, 255, 0.99)',
+  color: '#000',
+  fontSize: '0.75rem',
+  borderRadius: '8px',
+  minWidth: '160px',
+  pointerEvents: 'none',
+  zIndex: 1000,
+  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
+  opacity: 0,
+  visibility: 'hidden',
+  transition: 'opacity 0.15s ease, visibility 0.15s ease',
+  '.tooltip-trigger:hover &': {
+    opacity: 1,
+    visibility: 'visible',
+    transitionDelay: '0.15s',
+  },
+});
+
 export function ContentHeader({ metadata }: ContentHeaderProps) {
+  // Refs for tooltip DOM elements to measure their position
+  const authorTooltipRef = useRef<HTMLSpanElement>(null);
+  const updatedTooltipRef = useRef<HTMLSpanElement>(null);
+  
+  // Track whether each tooltip should flip to appear below instead of above
+  const [authorTooltipFlipped, setAuthorTooltipFlipped] = useState(false);
+  const [updatedTooltipFlipped, setUpdatedTooltipFlipped] = useState(false);
+
+  // Check tooltip positioning on mount and when metadata changes
+  useEffect(() => {
+    const checkTooltipPosition = (tooltipRef: React.RefObject<HTMLSpanElement | null>, setFlipped: (flipped: boolean) => void) => {
+      if (!tooltipRef.current) return;
+      
+      // Temporarily show tooltip to measure its position
+      const tooltip = tooltipRef.current;
+      const originalOpacity = tooltip.style.opacity;
+      const originalVisibility = tooltip.style.visibility;
+      tooltip.style.opacity = '1';
+      tooltip.style.visibility = 'visible';
+      
+      // Get tooltip's position relative to viewport
+      const rect = tooltip.getBoundingClientRect();
+      
+      // If tooltip's top edge is above viewport (negative or < 20px margin), flip it
+      const shouldFlip = rect.top < 20;
+      setFlipped(shouldFlip);
+      
+      // Restore original visibility
+      tooltip.style.opacity = originalOpacity;
+      tooltip.style.visibility = originalVisibility;
+    };
+
+    // Check both tooltips if they exist
+    if (metadata.authorshipNote && authorTooltipRef.current) {
+      checkTooltipPosition(authorTooltipRef, setAuthorTooltipFlipped);
+    }
+    if (metadata.updated && updatedTooltipRef.current) {
+      checkTooltipPosition(updatedTooltipRef, setUpdatedTooltipFlipped);
+    }
+  }, [metadata.authorshipNote, metadata.updated]);
   const repoUrl = 'https://github.com/jaygriffinjay/my-website-v3';
   
   // Handle author as string or array
@@ -83,38 +188,6 @@ export function ContentHeader({ metadata }: ContentHeaderProps) {
         ? metadata.author.join(', ')
         : metadata.author)
     : null;
-  
-  const authorStyles = css({
-    position: 'relative',
-    display: 'inline-block',
-    ...(metadata.authorshipNote && {
-      padding: '0.125rem 0.5rem',
-      marginLeft: '-0.5rem',
-      borderRadius: '12px',
-      transition: 'background-color 0.2s ease',
-      '&:hover': {
-        backgroundColor: 'rgba(255, 255, 255, 0.1)',
-      },
-      '&:hover::after': {
-        content: `"${metadata.authorshipNote.replace(/"/g, '\\"')}"`,
-        position: 'absolute',
-        bottom: '100%',
-        left: '50%',
-        transform: 'translateX(-50%)',
-        marginBottom: '0.5rem',
-        padding: '0.5rem 0.75rem',
-        backgroundColor: 'rgba(255, 255, 255, 0.99)',
-        color: '#000',
-        fontSize: '0.75rem',
-        borderRadius: '8px',
-        width: '150px',
-        whiteSpace: 'normal',
-        pointerEvents: 'none',
-        zIndex: 1000,
-        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
-      },
-    }),
-  });
   
   return (
     <header css={headerStyles}>
@@ -145,21 +218,57 @@ export function ContentHeader({ metadata }: ContentHeaderProps) {
       
       <h1 css={titleStyles}>{metadata.title}</h1>
       
-      {/* Author and date metadata with conditional asterisk and spacing */}
+      {/* Author and date metadata with tooltips */}
       <div css={metaTextStyles}>
         {authorText && (
-          <span css={authorStyles}>
-            By {authorText}{metadata.authorshipNote && <span css={{ color: '#fbbf24' }}>*</span>}
-          </span>
+          metadata.authorshipNote ? (
+            <span css={tooltipContainerStyles} className="tooltip-trigger">
+              By {authorText}<span css={{ color: '#fbbf24' }}>*</span>
+              {/* Ref allows position measurement; conditional styling flips tooltip below if it would overflow top */}
+              <span 
+                ref={authorTooltipRef}
+                css={authorTooltipFlipped ? tooltipFlippedStyles : tooltipStyles}
+              >
+                {metadata.authorshipNote}
+              </span>
+            </span>
+          ) : (
+            <span>By {authorText}</span>
+          )
         )}
-        {/* Conditional spacing: no asterisk needs extra space before dot */}
+        {/* Conditional spacing: asterisk adds visual weight, needs less extra space */}
         {metadata.authorshipNote ? (
-          <span>·&nbsp; {formatPostDate(metadata.date)}</span>
+          <span>·&nbsp; </span>
         ) : (
-          <span>&nbsp;&nbsp;·&nbsp; {formatPostDate(metadata.date)}</span>
+          <span>&nbsp;&nbsp;·&nbsp; </span>
         )}
-        {metadata.updated && (
-          <div>Last updated: {formatPostDate(metadata.updated)}</div>
+        {metadata.updated ? (
+          <span css={tooltipContainerStyles} className="tooltip-trigger">
+            {formatPostDate(metadata.date)}<span css={{ color: '#fbbf24' }}>*</span>
+            {/* Ref allows position measurement; conditional styling flips tooltip below if it would overflow top */}
+            <span 
+              ref={updatedTooltipRef}
+              css={updatedTooltipFlipped ? tooltipFlippedStyles : tooltipStyles}
+            >
+              {Array.isArray(metadata.updated) ? (
+                <>
+                  Updated {metadata.updated.length} time{metadata.updated.length > 1 ? 's' : ''}:
+                  <ol css={{ margin: '0.25rem 0 0 0', paddingLeft: '1.25rem' }}>
+                    {[...metadata.updated].reverse().map((date) => (
+                      <li key={date}>{formatPostDate(date)}</li>
+                    ))}
+                  </ol>
+                </>
+              ) : (
+                <>
+                  Updated:<br/>
+                  {formatPostDate(metadata.updated)}
+                </>
+              )}
+            </span>
+          </span>
+        ) : (
+          <span>{formatPostDate(metadata.date)}</span>
         )}
       </div>
       {/* End of cursed formatting logic */}
