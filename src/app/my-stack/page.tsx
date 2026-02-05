@@ -7,7 +7,7 @@ import type { PostMeta } from '@/types/post';
 import styled from '@emotion/styled';
 
 const ColoredHeading = styled.h2`
-  background: linear-gradient(180deg, hsl(210, 100%, 60%), hsl(210, 100%, 40%));
+  background: linear-gradient(135deg, #00d4ff 0%, #1e3a8a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -28,14 +28,14 @@ const gridContainerStyle: React.CSSProperties = {
 };
 
 export const routeMetadata: PostMeta = {
-  title: 'My Tools Test',
-  slug: 'my-tools-test',
+  title: 'My Stack',
+  slug: 'my-stack',
   date: '2026-02-03T00:00:00Z',
   author: ['Jay Griffin'],
-  description: 'Testing logo layout for tools page',
-  tags: ['test'],
+  description: 'Tools and technologies I use',
+  tags: ['tools', 'stack'],
   type: 'doc',
-  path: '/my-tools/test',
+  path: '/my-stack',
 };
 
 export default function MyToolsTestPage() {
@@ -249,7 +249,7 @@ export default function MyToolsTestPage() {
 
           <div style={gridContainerStyle}>
             <ToolCard logo="/tool-logos/hammerspoon.svg" title="Hammerspoon" description="MacOS automation" />
-            <ToolCard logo="/tool-logos/autohotkey.png" title="AutoHotKey" description="Windows automation" />
+            <ToolCard logo="/tool-logos/autohotkey.svg" title="AutoHotKey" description="Windows automation" />
           </div>
 
           <Divider />

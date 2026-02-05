@@ -122,7 +122,7 @@ export function NavMenu() {
           </DropdownMenu.Item>
           
           <DropdownMenu.Item css={itemStyles} asChild>
-            <Link href="/my-tools">My Tools</Link>
+            <Link href="/my-stack">My Stack</Link>
           </DropdownMenu.Item>
           
           <DropdownMenu.Item css={itemStyles} asChild>
