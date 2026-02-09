@@ -48,7 +48,7 @@ export default function MyToolsTestPage() {
 
           <div style={{ margin: '3rem 0' }}>
             <Paragraph>
-              These are the tools I'm actively watching in the AI coding space. Cursor is very cool and I've used it, but I haven't made the jump from VS Code yet. Claude Code looks absolutely epic for customizing agents. The GitHub Copilot SDK sounds promising for building custom agents too. Claude Cowork could make AI coding accessible to normies. Codex—OpenAI is scrambling to catch up in a space they practically invented. Exo is a newer project for clustering devices together to run AI models distributed—interesting concept but still pretty experimental.
+              These are the tools I'm actively watching in the AI coding space. The ones that made me realize AI isn't just a better search engine—it's an action engine that can do fine-grained work in the real world.
             </Paragraph>
           </div>
 
@@ -82,7 +82,7 @@ export default function MyToolsTestPage() {
 
           <div style={{ margin: '3rem 0' }}>
             <Paragraph>
-              I want to build out a proper homelab setup. Ollama and Open WebUI would let me run language models locally instead of relying on cloud APIs. Proxmox for virtualization to run multiple services on dedicated hardware. For storage, I'm considering TrueNAS for ZFS-based enterprise features, Unraid for its flexibility, or OpenMediaVault for a lightweight Debian-based solution. Prometheus and Grafana would handle monitoring and metrics visualization. Home Assistant would tie everything together with home automation. Hetzner's affordable VPS would work well as a cloud component that integrates with local homelab infrastructure.
+              I haven't run much personal infrastructure yet, but I study it extensively. I've realized that infra-aware software matters more to me than running infrastructure for its own sake. My own apps aren't at the level where they require or benefit from tons of personal infra—there are a LOT of ways to achieve things with hosted services these days. The main use cases where homelab makes sense: GPU compute (because cloud GPU is expensive) and large storage for videos and images. My current plan for this site is to start implementing image and gif composition support throughout all my articles—I'll save the files locally, then host optimized versions in object storage. So a NAS is in my future. 
             </Paragraph>
           </div>
 

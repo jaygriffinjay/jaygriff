@@ -10,11 +10,11 @@ import Image from 'next/image';
 // import Timeline from '@/components/Timeline';
 
 export const routeMetadata: PostMeta = {
-  title: 'About Me',
+  title: 'Jay Griffin - Full Stack Developer | React, Next.js, TypeScript',
   slug: 'about-me',
   date: '2026-01-21T00:00:00Z',
   author: ['Jay Griffin'],
-  description: '',
+  description: 'I build modern web applications with React, Next.js, and TypeScript. Currently seeking full-time software development opportunities. Former accountant turned developer.',
   tags: ['about'],
   path: '/about-me',
 };

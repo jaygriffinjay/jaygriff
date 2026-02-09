@@ -11,21 +11,31 @@ const sekuya = Sekuya({ subsets: ['latin'], weight: ['400'], adjustFontFallback:
 export const metadata = {
   // Site title (shows in browser tab and search results)
   title: "Jay Griffin",
-  
+
   // Meta description (shows in search results under title)
-  description: "Software development by Jay Griffin",
-  
-  // Keywords for SEO
-  keywords: ["blog", "programming", "web development", "design"],
-  
+  description: "Full stack developer building modern web applications with React, Next.js, and TypeScript. Available for software development opportunities.",
+
+  // Keywords for SEO (less important but still used by some search engines)
+  keywords: [
+    "Jay Griffin",
+    "full stack developer",
+    "React developer",
+    "Next.js developer",
+    "TypeScript developer",
+    "software engineer",
+    "web development",
+    "frontend developer",
+    "JavaScript developer"
+  ],
+
   // Author info
   authors: [{ name: "Jay Griffin" }],
-  
+
   // Favicon
   icons: {
     icon: '/favicon.svg',
   },
-  
+
   // Tell search engines to index this site
   robots: "index, follow",
 };
