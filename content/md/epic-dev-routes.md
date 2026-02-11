@@ -15,7 +15,7 @@
 ## The Core Idea
 Stop building separate tools. Your Next.js app IS the tool. Add `/dev/*` routes for every internal workflow and unlock your entire app as your personal productivity layer.
 
-## Why This Is Genius
+## Why This Is Awesome
 - ✅ Use your existing design system
 - ✅ Hot reload during development
 - ✅ Full TypeScript safety
@@ -365,5 +365,3 @@ It's the approve/regenerate/edit loop applied to every internal workflow.
 5. Your app becomes your entire tooling layer
 
 ---
-
-**The web is the greatest general-purpose UI creation device in the universe. Use it for everything.**

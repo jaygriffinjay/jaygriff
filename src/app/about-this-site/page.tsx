@@ -6,6 +6,7 @@ export const routeMetadata: PostMeta = {
   title: 'About This Site',
   slug: 'about-this-site',
   date: '2026-01-21T00:00:00Z',
+  updated: '2026-02-09T00:00:00Z',
   author: ['Claude Sonnet 4.5', 'Jay Griffin'],
   type: 'doc',
   projectId: 'jaygriff',
@@ -35,15 +36,23 @@ export default function AboutThisSite() {
       </Paragraph>
 
       <Paragraph>
-        When I build a new app I can rebuild it 
-        within <Link href="https://github.com/jaygriffinjay/jaygriff">this repo</Link>, leverage the existing tooling and component system, and host it directly on 
+        When I build a new app I can do so <Link href="https://github.com/jaygriffinjay/jaygriff">within this repo</Link>, leverage the existing tooling and component system, and host it directly on 
         the site. The framework makes each new project faster and better than building standalone.
+      </Paragraph>
+
+      <Heading level={2}>What You'll Find Here</Heading>
+      <Paragraph>
+        Most content is software work artifacts—why I chose this tool over that, debugging sessions, architectural decisions. These are thinking out loud, not traditional articles.
+      </Paragraph>
+
+      <Paragraph>
+        But since this platform is also great for personal publishing, I use it for traditional blogging about things that interest me such as fitness, finances, and other parts of life. Same infrastructure, different purposes. The software artifacts are process documentation; the life posts are actually written for readers.
       </Paragraph>
 
       <Heading level={2}>Tech Stack</Heading>
 
       <Paragraph>
-        The stack is the result of years of experimentation on this project. I've rebuilt it 
+        This stack is the result of years of experimentation on this project. I've rebuilt it 
         multiple times, trying different approaches until I landed on what actually works for me.
       </Paragraph>
 
@@ -77,9 +86,9 @@ export default function AboutThisSite() {
         <strong>Infrastructure:</strong>
       </Paragraph>
       <List>
-        <ListItem><strong>Vercel</strong> - Deployment and hosting and analytics</ListItem>
-        <ListItem><strong>Cloudflare</strong> - DNS management and email forwarding</ListItem>
-        <ListItem><strong>GitHub</strong> - Source code hosting</ListItem>
+        <ListItem><strong>Vercel</strong> - Deployment, hosting, analytics</ListItem>
+        <ListItem><strong>Cloudflare</strong> - Registrar, DNS management, email forwarding</ListItem>
+        <ListItem><strong>GitHub</strong> - Source code hosting & collaboration</ListItem>
       </List>
 
       <Paragraph>
@@ -98,7 +107,7 @@ export default function AboutThisSite() {
         handles everything beautifully.
       </Paragraph>  
 
-      <Heading level={2}>Why build this?</Heading>
+      <Heading level={2}>Why Build This?</Heading>
       <Paragraph>
         I've wanted my own corner of the internet since I was a teenager. Not a profile on someone else's platform, 
         but an actual space that's mine. This is that space.
@@ -109,26 +118,26 @@ export default function AboutThisSite() {
         flexibility to evolve as needs change. I needed a powerful, customized tool that makes my work better.
       </Paragraph>
 
-      <Heading level={2}>How it helps me develop better software</Heading>
+      <Heading level={2}>How It Helps Me Develop Better Software</Heading>
       <Paragraph>
         This website is primarily meant to help me develop better software. It's my testbed for new features, 
         new ideas, and anything I find interesting and worth working on.
       </Paragraph>
 
       <Paragraph>
-        The first and most obvious way is that this is a full-stack web app that I maintain in production. 
-        The fact that the site functions at all means that I put significant work into making it do so, which 
-        means I have learned a lot of things about software to get to that point.
+        It's also my development environment. I can build GUI tools directly into the browser such as component galleries, theme editors, debugging visualizations—whatever I need to develop better software. Instead of relying on scattered CLI tools or external apps, I build custom interfaces that integrate perfectly with my workflow.
       </Paragraph>
 
       <Paragraph>
-        The next thing it does is it gives me endless things to work on. There is always a new feature for 
-        the site. The site is never done. As the site gets bigger with more features and content, novel technical problems naturally arise that need solving. And even if the site doesn't need active work done on it, 
-        it serves as the container for all my other development work, which means even when I'm not working 
-        on the site directly, I'm working inside of it and using it.
+        The site also functions as a knowledge base for learning. Software development requires constantly learning new systems and navigating and debugging them. It also requires making decisions that will affect the rest of my work down the line because I chose to do something a certain way. By capturing my thinking as it happens—why I chose this tool over that one, this method over that one, how a system works, what I learned debugging a particular issue—I build a searchable record of my own problem-solving patterns. It's learning that compounds.
       </Paragraph>
 
-      <Heading level={2}>Debugging with visualization</Heading>
+      <Paragraph>
+        It also gives me endless things to work on. The site is never done. As the site gets bigger with more features and content, novel technical problems naturally arise that need solving. And even if the site doesn't need active work done on it, 
+        it serves as the container for all my other development work, which means even when I'm not working on the site directly, I'm working inside of it and using it.
+      </Paragraph>
+
+      <Heading level={2}>Debugging With Visualization</Heading>
       <Paragraph>
         One thing I love doing is debugging things with it. I don't add random print statements to the console 
         to debug things. I post a comprehensive, styled, organized, interesting illustration of 
@@ -141,35 +150,21 @@ export default function AboutThisSite() {
         I'm using to do so.
       </Paragraph>
 
-      <Heading level={2}>Note-taking and knowledge accumulation</Heading>
+      <Heading level={2}>Documenting My Thoughts</Heading>
       <Paragraph>
-        Instead of using a note taking app and writing down stuff I did, stuff to remember, stuff I think 
-        is interesting, or stuff I think is important, I constantly generate detailed documents of this stuff 
-        and make them available as content on the site.
+        I'm not a traditional writer. My software articles aren't crafted for an audience—they're artifacts of my thought process, captured in real-time with AI collaboration.
       </Paragraph>
 
       <Paragraph>
-        Not necessarily for other people to see, although I would find that somewhat amusing. But moreso 
-        because I believe if I can continue to have a record of what I've done and a way to access that 
-        record that I will be able to improve my work and learning.
+        Most writers try to write <em>for</em> readers. I'm just externalizing my thinking, and AI helps structure it into something coherent enough to be followable. The process is the point. You're reading my working memory, not polished essays.
       </Paragraph>
 
       <Paragraph>
-        A LOT of the design of this site can be attributed to me trying to maximize the UX of notes themselves 
-        because for years I have felt like I don't have the right tools for notes.
-      </Paragraph>
-
-      <Heading level={2}>Rapid content generation</Heading>
-      <Paragraph>
-        Some other things have started to appear on this site that I think are really exciting and weren't 
-        exactly intended but are very welcome. By having a robust component system, content design, and 
-        AI assistance, I can actually make quality web pages really, really fast and that's honestly just 
-        a lot of fun.
+        This gives me incredible freedom. Instead of agonizing over how to present ideas, I just think through them with text. AI helps clean up the rough edges while preserving my voice and process. The result is a constant stream of documented thinking—decisions made, problems solved, patterns noticed.
       </Paragraph>
 
       <Paragraph>
-        I can see how I can make it even faster and better in a lot of ways (see <Link href="/roadmap">roadmap</Link> for component 
-        generator spec and metadata editor spec).
+        By having a robust component system, content design, and AI assistance, this site helps me turn thoughts into quality web pages really, really fast, which is actually a lot of fun!
       </Paragraph>
       </ContentWrapper>
     </Container>

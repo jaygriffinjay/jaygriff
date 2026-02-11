@@ -19,6 +19,8 @@ interface HeadingProps {
   level: 1 | 2 | 3 | 4 | 5 | 6;
   children: ReactNode;
   id?: string;  // For anchor links
+  style?: React.CSSProperties;
+  className?: string;
 }
 
 const headingStyles = () => `
@@ -55,9 +57,9 @@ const H4 = styled.h4`
 const H5 = styled.h5`${headingStyles()} font-size: ${props => props.theme.fontSizes.base};`;
 const H6 = styled.h6`${headingStyles()} font-size: ${props => props.theme.fontSizes.sm};`;
 
-export function Heading({ level, children, id }: HeadingProps) {
+export function Heading({ level, children, id, style, className }: HeadingProps) {
   const Component = [H1, H2, H3, H4, H5, H6][level - 1];
-  return <Component id={id}>{children}</Component>;
+  return <Component id={id} style={style} className={className}>{children}</Component>;
 }
 
 // ============================================================================
@@ -150,12 +152,14 @@ export const ListItem = styled.li`
 
 const linkStyles = (props: any) => `
   color: ${props.theme.colors.primary};
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: text-decoration-style 0.2s;
   
   &:hover {
-    border-bottom-color: ${props.theme.colors.primary};
+    text-decoration-style: dashed;
   }
   
   &:visited {

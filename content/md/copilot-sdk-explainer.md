@@ -1,6 +1,6 @@
 ---json
 {
-  "title": "Copilot SDK Explainer",
+  "title": "Github Copilot SDK Explainer",
   "slug": "copilot-sdk-explainer",
   "date": "2026-02-09T00:00:00Z",
   "author": ["Jay Griffin", "Claude Sonnet 4.5"],
