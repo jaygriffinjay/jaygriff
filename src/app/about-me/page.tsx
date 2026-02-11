@@ -511,7 +511,7 @@ export default function AboutMePage() {
           <AccordionContent>
             <AccordionContentInner>
               <Paragraph>
-                A lot. Some stuff I would like to know but havent't actually had time to properly work with: mobile dev with React Native, desktop apps with Electron, containers and container orchestration, modern devops and infrastructure as code to name a few.
+                A lot. Some stuff I would like to know but haven't actually had time to properly work with: mobile dev with React Native, desktop apps with Electron, containers and container orchestration, modern devops and infrastructure as code to name a few.
               </Paragraph>
             </AccordionContentInner>
           </AccordionContent>
