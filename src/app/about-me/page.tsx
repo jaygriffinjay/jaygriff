@@ -192,6 +192,8 @@ const AccordionContentInner = styled.div`
 const ChevronIcon = styled(IoChevronDown)`
   transition: transform 200ms ease;
   color: ${props => props.theme.colors.text};
+  font-size: 1.5rem;
+  flex-shrink: 0;
 `;
 
 const ExpandButton = styled.button`
@@ -357,7 +359,7 @@ export default function AboutMePage() {
           <AccordionContent>
             <AccordionContentInner>
               <Paragraph>
-                I side with Pixar on this one: my work is never finished; only released.
+                I side with Pixar on this one: my work is never finished, only released.
               </Paragraph>
             </AccordionContentInner>
           </AccordionContent>
