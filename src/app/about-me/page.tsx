@@ -305,12 +305,6 @@ export default function AboutMePage() {
 
       <StyledHeading>Everything Else</StyledHeading>
 
-      <div style={{ textAlign: 'center', marginTop: '0rem', marginBottom: '3rem' }}>
-        <Text>
-          Anything you might want to know about me, in question format.
-        </Text>
-      </div>
-
       <div style={{ textAlign: 'center' }}>
         <ExpandButton onClick={toggleAll}>
           {openItems.length > 0 ? 'Collapse All' : 'Expand All'}
