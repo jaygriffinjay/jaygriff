@@ -209,14 +209,13 @@ const ExpandButton = styled.button`
 `;
 
 export default function AboutMePage() {
-  const allItems = Array.from({ length: 20 }, (_, i) => `item-${i + 1}`);
   const [openItems, setOpenItems] = useState<string[]>([]);
   
   const toggleAll = () => {
-    if (openItems.length === allItems.length) {
+    if (openItems.length > 0) {
       setOpenItems([]);
     } else {
-      setOpenItems(allItems);
+      setOpenItems(['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13']);
     }
   };
 
@@ -264,7 +263,7 @@ export default function AboutMePage() {
         <StyledHeading>Hi, I'm Jay!</StyledHeading>
 
       <Paragraph>
-        Welcome to my website where I do my work and publish it too! Most of the work I do and most of my writing is about software. I also have a strong interest in AI and how it's currently transforming software (and the world!). This site is where I document my work, share my thoughts, and post some personal stuff too.
+        I'm a software developer and this is my website where I do my work and publish it too! On here I document my work, share my thoughts, and maybe even post some personal stuff.
       </Paragraph>
 
 
@@ -274,33 +273,35 @@ export default function AboutMePage() {
       </Paragraph>
 
       <Paragraph>
-        I'm very interested in the internet and the web. I work with modern web infrastructure and managed cloud services every day. I have a keen interest in computer infrastructure and distributed systems and this informs how I design my apps to be infrastructure-aware. This has led me to primarily build with Next.js on Vercel because I value a quick development cycle as well as making software that is powerful and capable of scaling up. 
+        I'm very interested in the internet and the web. I work with modern web infrastructure and managed cloud services day to day. I have a keen interest in computer infrastructure and distributed systems and this informs how I design my apps to be infrastructure-aware. This has led me to primarily build with Next.js on Vercel because I value quick development as well as making software that is powerful and capable of scaling up. 
       </Paragraph>
 
       <Paragraph>
-        I'm also working with AI every day. AI is a new primitive in software development that's created a massive backlog of work getting modern software up to speed with AI-native patterns. I'm excited to build AI-native apps as well as integrate AI into all kinds of legacy workflows that haven't caught up yet.
+        I'm also working with AI constantly. AI is a new primitive in software development that has created a massive gap between old software and software leveraging AI patterns. I'm excited to build AI-native apps as well as integrate AI into all kinds of legacy workflows that haven't caught up yet.
       </Paragraph>
 
       <Paragraph>
-        My main project is <Link href="https://github.com/jaygriffinjay/jaygriff" target="_blank" rel="noopener noreferrer">this site</Link> - a custom-built web app that serves as 
-        both my workspace and my publishing platform. It is the container for a lot of my other apps because I can create them within this repo and then host and 
-        demo them on this site.  While on the frontend this just looks like a website, on the backend this is a testbed 
+        My main project is <Link href="/about-this-site">this site</Link> - a custom-built web app that serves as 
+        both my workspace and publishing platform. It is the container for a lot of my other apps because I can create them <Link href="https://github.com/jaygriffinjay/jaygriff" target="_blank" rel="noopener noreferrer">within this repo</Link> and then host and 
+        demo them on this site.
+      </Paragraph>
+
+      <Paragraph>
+        While on the frontend this just looks like a website, on the backend this is a testbed 
         for my full-featured application framework I use to make all my apps. The site is just an excuse to improve the framework and 
-        factor out my best work into a reusable system I endearingly call my <Link href="https://github.com/jaygriffinjay/bootstrap-fullstack-webapp" target="_blank" rel="noopener noreferrer">Bootstrap Repo</Link>, otherwise known as a "boilerplate". Learn more <Link href="/about-this-site">about this site</Link>, explore the <Link href="/features">completed features</Link>, or check out 
+        factor out my best work into a reusable system I endearingly call my <Link href="https://github.com/jaygriffinjay/bootstrap-fullstack-webapp" target="_blank" rel="noopener noreferrer">Bootstrap Repo</Link>, otherwise known as a "boilerplate".
+      </Paragraph>
+
+      <Paragraph>
+        Learn more <Link href="/about-this-site">about this site</Link>, explore the <Link href="/features">completed features</Link>, or check out 
         the <Link href="/roadmap">future roadmap</Link>.
       </Paragraph>
 
       <StyledHeading>What I Write About</StyledHeading>
       <Paragraph>
-        My work. Stuff I wish I had time to work on. Lots of AI. Data analysis and visualization. Money and financial modelling. Fitness tracking and analysis. Puzzles and games. Entrepreneurship and turning software into a business. And whatever I'm thinking about.
+        Software. AI. Data analysis and visualization. Money and financial modelling. Fitness tracking and analysis. Business, entrepreneurship, and turning software into a business. And whatever I'm thinking about.
       </Paragraph>
 
-      <StyledHeading>Background</StyledHeading>
-      <Paragraph>
-        I worked in public tax accounting before transitioning to software development. 
-        Read the full story in <Link href="/posts/accounting-to-dev">accounting → software development?</Link>
-      </Paragraph>
-      {/* <Timeline /> */}
 
       <StyledHeading>Everything Else</StyledHeading>
 
@@ -312,144 +313,12 @@ export default function AboutMePage() {
 
       <div style={{ textAlign: 'center' }}>
         <ExpandButton onClick={toggleAll}>
-          {openItems.length === allItems.length ? 'Collapse All' : 'Expand All'}
+          {openItems.length > 0 ? 'Collapse All' : 'Expand All'}
         </ExpandButton>
       </div>
 
       <AccordionRoot type="multiple" value={openItems} onValueChange={setOpenItems}>
-        <AccordionItem value="item-1">
-          <AccordionTrigger>
-            What's the most satisfying part of building software?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-                When I use my own apps or create an app that beats every other existing tool. A close second is just writing code and seeing it instantly do something cool.
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-2">
-          <AccordionTrigger>
-            Why do you publish your work publicly?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-                Publishing creates a positive feedback loop. It keeps you accountable even if nobody is watching because someone COULD be watching. It keeps your work honest and reasoned out because someone COULD disagree with you or challenge you. It makes you want to do work that matters because someone COULD say that you're just wasting your time.
-              </Paragraph>
-              <Paragraph>
-                Beyond the peer pressure, it makes it possible for people who care about your work to find your work. While in my own network I don't know too many people who can relate to my very specific work, there are a lot of people out there who might, and publishing is the best avenue to finding and connecting with those people.
-              </Paragraph>
-              <Paragraph>
-                I also love the idea of evergreen content. Maybe something I publish helps someone out down the line. And the modern attention economy dictates that publishing your work can be potentially lucrative which sounds pretty cool too.
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-3">
-          <AccordionTrigger>
-            Do you ever "finish" things?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-                I side with Pixar on this one: my work is never finished, only released.
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-4">
-          <AccordionTrigger>
-            What are you focused on right now?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-                Currently I am spending significant time on this website, building new features, improving the framework, and writing content. Because all of this work is meant to accelerate my software development cycle so that one day I can just focus on building quickly while leveraging my own platform.
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-5">
-          <AccordionTrigger>
-            What makes you different from other developers?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-                Being a former accountant helps me immensely with the business side of things. I have always been interested in money, business, and entrepreneurship and so I approach a lot of my software development work not just as making a product but as supporting that product with an actual business behind it.
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-6">
-          <AccordionTrigger>
-            What's the end game?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-                I have enough complementary nerd interests that I don't think my work will ever be done. It will only change form. The end goal is to have the freedom to work deeply on something that ends up being truly satisfying to myself and useful to others. Kind of a fluffy answer but it's true!
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-7">
-          <AccordionTrigger>
-            Are you good at this?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-                I like to think I'm pretty good at this. I now have a lot of experience building software and I'm constantly learning and improving. I'm also not afraid to admit when I don't know something or when I make a mistake. I'm always striving to get better and to create something better. I don't claim to know everything, but I do claim to be pretty good at learning, troubleshooting and figuring things out, using tools, creating tools, searching for answers, and being proactive when something doesn't make sense to me.
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-8">
-          <AccordionTrigger>
-            Why should anyone care?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-                You're welcome to not care ¯\_(ツ)_/¯
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-9">
-          <AccordionTrigger>
-            Will AI replace you?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-                I don't think AI will replace me. I do think it has replaced some types of work though. I work with AI every single day. It's a powerful tool that helps me work faster, solve problems, and generate ideas. I see it as an extension of my own capabilities, not a replacement. The real question is how well I can leverage AI to amplify my work and create things that wouldn't be possible without it.
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-10">
+        <AccordionItem value="1">
           <AccordionTrigger>
             What's your background?
             <ChevronIcon aria-hidden />
@@ -457,13 +326,27 @@ export default function AboutMePage() {
           <AccordionContent>
             <AccordionContentInner>
               <Paragraph>
-                I have a bachelors degree in economics, a master's degree in accounting, and I worked in public tax accounting before transitioning to software development. I've also worked as a professional mover!
+                I have a bachelor's degree in economics, a master's degree in accounting, and I worked in public tax accounting <Link href="/posts/accounting-to-dev">before transitioning to software development</Link>. I've also worked as a professional mover!
               </Paragraph>
             </AccordionContentInner>
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-11">
+        <AccordionItem value="2">
+          <AccordionTrigger>
+            What are you focused on right now?
+            <ChevronIcon aria-hidden />
+          </AccordionTrigger>
+          <AccordionContent>
+            <AccordionContentInner>
+              <Paragraph>
+                Currently I am spending significant time on this website, building new features, improving the framework, and writing content. I am also actively working to make AI-native dev tools and workflows, AI-native apps, and data analysis apps.
+              </Paragraph>
+            </AccordionContentInner>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="3">
           <AccordionTrigger>
             Do you freelance?
             <ChevronIcon aria-hidden />
@@ -477,7 +360,49 @@ export default function AboutMePage() {
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-12">
+        <AccordionItem value="4">
+          <AccordionTrigger>
+            What's your end goal?
+            <ChevronIcon aria-hidden />
+          </AccordionTrigger>
+          <AccordionContent>
+            <AccordionContentInner>
+              <Paragraph>
+                I want to create my own software businesses to support my work indefinitely. I would also love to work with talented developers and learn from them.
+              </Paragraph>
+            </AccordionContentInner>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="5">
+          <AccordionTrigger>
+            Why should anyone care?
+            <ChevronIcon aria-hidden />
+          </AccordionTrigger>
+          <AccordionContent>
+            <AccordionContentInner>
+              <Paragraph>
+                ¯\_(ツ)_/¯
+              </Paragraph>
+            </AccordionContentInner>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="6">
+          <AccordionTrigger>
+            Will AI replace you?
+            <ChevronIcon aria-hidden />
+          </AccordionTrigger>
+          <AccordionContent>
+            <AccordionContentInner>
+              <Paragraph>
+                I don't think AI will replace me. I think it has replaced some types of work though. It is just like any other innovation: it has changed how we do things, it has made some things obsolete, and it has created new opportunities.
+              </Paragraph>
+            </AccordionContentInner>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="7">
           <AccordionTrigger>
             How much does this website cost to run?
             <ChevronIcon aria-hidden />
@@ -485,111 +410,13 @@ export default function AboutMePage() {
           <AccordionContent>
             <AccordionContentInner>
               <Paragraph>
-                $12/year for the domain. Hosting is free on Vercel. Email forwarding is free through Cloudflare. Total: $1/month.
+                Currently $1/month
               </Paragraph>
             </AccordionContentInner>
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-13">
-          <AccordionTrigger>
-            What are you bad at?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-                Low-level programming. I can attempt it, but it's not where I shine. I'm also not that great of an artist. 
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-14">
-          <AccordionTrigger>
-            What don't you know?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-                A lot. Some stuff I would like to know but haven't actually had time to properly work with: mobile dev with React Native, desktop apps with Electron, containers and container orchestration, modern devops and infrastructure as code to name a few.
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-15">
-          <AccordionTrigger>
-            What's overrated in tech?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-              I'm not a big fan of tech demos that promise the moon and back. It's really easy to say things that sound groundbreaking in the moment but then the implementation doesn't even come close.
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-16">
-          <AccordionTrigger>
-            What's underrated in tech?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-              AI, if we can all just be super normal about it with no hype or hate, really is a super useful tool for doing better work more quickly.
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-17">
-          <AccordionTrigger>
-            What advice would you give beginners?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-                You can ask AI to explain something to you in as much detail as you need. An exhausting amount of detail. Over and over until something clicks. So I would ask it thoughtful questions about whatever topic you're trying to learn and then follow up with more questions until you feel like you understand it. Then test and build something with that knowledge. Rinse and repeat. And just check in every once in a while and see if you actually enjoy this stuff or not. AI can be wrong but it is so good at basic programming knowledge that it is going to be right more often than not so it is a legitimate learning tool for programming.
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-18">
-          <AccordionTrigger>
-            What tech do you hate?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-                The list is long and only getting longer. 
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-19">
-          <AccordionTrigger>
-            Why did you make this an FAQ?
-            <ChevronIcon aria-hidden />
-          </AccordionTrigger>
-          <AccordionContent>
-            <AccordionContentInner>
-              <Paragraph>
-                Because I refuse to compress my personality into three sanitized sentences. This format lets me be expressive, answer every question someone might have, and make it fun.
-              </Paragraph>
-            </AccordionContentInner>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-20">
+        <AccordionItem value="8">
           <AccordionTrigger>
             How long did this take to build?
             <ChevronIcon aria-hidden />
@@ -597,11 +424,82 @@ export default function AboutMePage() {
           <AccordionContent>
             <AccordionContentInner>
               <Paragraph>
-                This site? You can <Link href="https://github.com/jaygriffinjay/jaygriff/commit/d5983cf638445d0fa0e1284f192c4de56bcc6d68#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5" target="_blank" rel="noopener noreferrer">check the commit history</Link>. The framework underneath? Years of iteration. This FAQ? One afternoon with AI helping structure my brain dump.
+                This site? You can <Link href="https://github.com/jaygriffinjay/jaygriff/commit/d5983cf638445d0fa0e1284f192c4de56bcc6d68#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5" target="_blank" rel="noopener noreferrer">check the commit history</Link>. The framework underneath? Years of iteration. This FAQ? One afternoon followed by some follow-up edits.
               </Paragraph>
             </AccordionContentInner>
           </AccordionContent>
         </AccordionItem>
+
+        <AccordionItem value="9">
+          <AccordionTrigger>
+            How did you learn to code?
+            <ChevronIcon aria-hidden />
+          </AccordionTrigger>
+          <AccordionContent>
+            <AccordionContentInner>
+              <Paragraph>
+                I go into detail about it <Link href="/posts/accounting-to-dev">in this post</Link>!
+              </Paragraph>
+            </AccordionContentInner>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="10">
+          <AccordionTrigger>
+            What would you build with unlimited time?
+            <ChevronIcon aria-hidden />
+          </AccordionTrigger>
+          <AccordionContent>
+            <AccordionContentInner>
+              <Paragraph>
+                With unlimited time I think I would get bored of regular work and create and use tools for science. Either biology or space. So trying to get to the bottom of life or the universe haha!
+              </Paragraph>
+            </AccordionContentInner>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="11">
+          <AccordionTrigger>
+            What are you excited to build next?
+            <ChevronIcon aria-hidden />
+          </AccordionTrigger>
+          <AccordionContent>
+            <AccordionContentInner>
+              <Paragraph>
+                I'm most excited to build AI-native apps. These apps can solve problems in ways we couldn't achieve even just a few years ago. This is keeping me busy because it takes plenty of real work to build them. 
+              </Paragraph>
+            </AccordionContentInner>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="12">
+          <AccordionTrigger>
+            How do you use AI in your work?
+            <ChevronIcon aria-hidden />
+          </AccordionTrigger>
+          <AccordionContent>
+            <AccordionContentInner>
+              <Paragraph>
+                Constantly. I use chatbots for a laundry list of tasks and I use coding assistants every time I write or code. But AI is also changing how I even work on software. It seems like every day there is a new discovery about what you can accomplish by using coding assistants in different ways. I want to explore all of that and figure out what actually works for me and what doesn't. 
+              </Paragraph>
+            </AccordionContentInner>
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="13">
+          <AccordionTrigger>
+            What's currently broken in your codebase?
+            <ChevronIcon aria-hidden />
+          </AccordionTrigger>
+          <AccordionContent>
+            <AccordionContentInner>
+              <Paragraph>
+                My theme editor for this site is janky. Site styling isn't consistently using theme values anymore. The atomic theme values I use have weird increments I don't actually use. The editor can permanently change styling but that's not what I need in practice. I should probably repurpose it for dynamic features instead.
+              </Paragraph>
+            </AccordionContentInner>
+          </AccordionContent>
+        </AccordionItem>
+
       </AccordionRoot>
 
       </ContentWrapper>
