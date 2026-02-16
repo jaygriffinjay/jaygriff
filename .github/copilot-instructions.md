@@ -88,6 +88,9 @@ import { Heading, Paragraph, CodeBlock } from '@/components/Primitives'; // Code
 
 - **Do Not Invent Components**: Avoid creating new components unless explicitly instructed to do so. Focus on reusing and extending existing components wherever possible.
 - **Follow Existing Patterns**: Adhere to the established file structure, naming conventions, and coding styles present in the codebase.
+- **Terminal Intent Phrases (Action Immediately)**: Treat these phrases as explicit permission to use terminal execution for the current task in general (build/run/test/install/git/scripts/etc.), rather than replying with only text suggestions.
+  - Trigger phrases include: "send it", "ship it", "tee me up", "prompt me with the command", "run it"
+  - When these appear in context, proceed with terminal execution behavior for the current task.
 - **Content Voice and Tense**: When generating content (posts, docs, articles), use first-person voice (I/my/me) as if the user is speaking to their audience. Do NOT use second-person (you/your) as if speaking to the user. The content should read as the user's perspective shared with readers, not instructions or advice directed at the user.
   - **Correct**: "I'm building a control system..." "My approach is..." "This is what I learned..."
   - **Incorrect**: "You should build a control system..." "Your approach..." "This is what you'll learn..."
