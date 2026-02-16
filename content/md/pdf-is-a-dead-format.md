@@ -1,152 +1,177 @@
 ---json
 {
-  "title": "PDF the Frankenformat",
+  "title": "PDF The Frankenformat",
   "slug": "pdf-the-frankenformat",
   "date": "2026-02-13T00:00:00Z",
-  "description": "A critical examination of why PDF's positional layout model is fundamentally incompatible with AI-driven workflows, and why semantic web technologies are the future of document authoring.",
+  "updated": "2026-02-16T00:00:00Z",
+  "author": ["Jay Griffin", "GPT-5.3-Codex", "Claude Sonnet 4.5"],
+  "authorshipNote": "This document was developed through iterative discussion, with AI-assisted drafting and revision.",
+  "description": "My thesis: semantic + programmable documents (React/HTML/CSS) with AI optimization loops can match or exceed traditional LaTeX/Adobe precision while staying far more adaptable.",
   "tags": ["dev", "ai", "web", "formats", "philosophy"],
   "type": "post"
 }
 ---
 
-# PDF is a Dead Format: Why Structured Data Beats Binary in the Age of AI
+I think **HTML/CSS/React will become the premier way to author books, papers, and ebooks, and any kind of traditional publishing.**
 
-PDF has dominated document interchange for decades. But in an era where AI increasingly composes, analyzes, and transforms our documents, its fundamental architecture is showing fatal flaws.
+I think PDFs are weird and bad.
 
-This isn't about aesthetics or preferences. It's about **structural compatibility with machine intelligence**.
+I know LaTeX is deeply entrenched in academia, and I respect what it did for high-quality typesetting. But I think semantically structured, programmable, AI-assisted web workflows will eventually outperform LaTeX/PDF source pipelines for most large-scale publishing work.
 
-## The "Frankenformat" Problem
+## Body
 
-PDF is what I call a "Frankenformat"—a messy amalgamation of vector paths, pixel blobs, and unmapped text that prioritizes visual placement over semantic meaning. It's a "digital piece of paper" that answers the question "what should this look like?" while completely ignoring "what does this mean?"
+### 1) Source vs output: where PDF fits
 
-The format's core model is positional: "Draw text X at coordinate Y with font Z." There's no inherent structure defining what a heading is, what a list is, or how sections relate to each other. Any semantic structure is either lost during PDF creation or has to be reverse-engineered through heuristics.
+PDF still does what it was built to do: distribute and preserve final layout.
 
-This made sense in 1993 when Adobe created it. The goal was faithful reproduction across systems. Mission accomplished.
+But as an authoring layer, it's weak. It's a snapshot, not a living system.
 
-But that design decision has aged catastrophically.
+I want source-of-truth documents to be editable, composable, and programmable—then exported to PDF at the end.
 
-## Semantic Trees vs Positional Layout
+### 2) Paint instructions vs document programs
 
-Compare these two ways of representing a resume section:
+Traditional page formats are mostly paint instructions:
 
-**PDF's model (simplified):**
 ```
-DrawText(72, 100, "Experience", font=Helvetica-Bold, size=14)
-DrawText(72, 120, "Senior Developer", font=Helvetica, size=11)
-DrawText(72, 135, "Built features for...", font=Helvetica, size=10)
-```
-
-**HTML's model:**
-```html
-<section class="experience">
-  <h2>Experience</h2>
-  <article>
-    <h3>Senior Developer</h3>
-    <p>Built features for...</p>
-  </article>
-</section>
+put glyph here
+draw line there
+move to coordinate x,y
 ```
 
-The HTML version is a **semantic tree**. It explicitly declares what each piece of data represents. The PDF version is just drawing instructions. The structure exists only implicitly in the spatial arrangement.
+Modern web documents are document programs:
 
-An AI parsing the HTML immediately understands the hierarchy: this is a section, with a heading, containing an article with its own heading and content. The PDF requires complex heuristics: "This text is bold and larger, so it's probably a heading. These items are indented and start with bullets, so they're probably a list."
-
-## What About SVG?
-
-You might point out that AI models are notoriously bad at generating clean SVG, even though it's XML-based and structured. **Both SVG and PDF are fundamentally drawing instructions**—paths, positioning, coordinates. If structure was the magic solution, why does AI struggle with SVG too?
-
-Fair point. The answer reveals something important: **not all structure is created equal.**
-
-SVG has *geometric* structure but no *semantic* structure. Look at this:
-
-```xml
-<circle cx="100" cy="50" r="5" />
-<text x="120" y="55">Project Lead</text>
+```tsx
+<Section title="Experience">
+  <Role company="..." dates="..." />
+</Section>
 ```
 
-Is that circle a bullet point? A decorative element? Part of a diagram? The SVG doesn't say. It just says "draw a circle here." The **meaning** is implicit in the spatial arrangement, just like PDF.
+That distinction is everything.
 
-Compare to HTML:
-```html
-<ul>
-  <li>Project Lead</li>
-</ul>
-```
+Document programs can be transformed, tested, constrained, regenerated, and versioned. Paint instructions can be precise, but they're harder to evolve and automate.
 
-The browser knows this is a list item and renders an appropriate bullet. You don't specify coordinates. The semantic structure maps directly to presentation logic.
+### 3) Semantics are necessary, but not paramount
 
-**This is why AI struggles with both SVG and PDF for document composition.** Both require you to think spatially and geometrically. You have to figure out where things go, calculate spacing, manage alignment. HTML/CSS lets you think in terms of document concepts—headings, paragraphs, lists—and the layout engine does the geometry.
+This is the central clarification:
 
-The real hierarchy isn't "structured vs. binary." It's:
+- Semantics are **necessary input**.
+- Pixel-perfect typesetting is the **actual target**.
 
-1. **Semantic structure** (HTML): "This is a heading" → browser handles geometry
-2. **Geometric structure** (SVG): "Draw this shape here" → you handle semantics
-3. **Executed operations** (PDF): "Execute these operations" → structure discarded
+If a system understands headings and sections but cannot consistently produce publication-grade layout, it only solves half the problem.
 
-SVG and PDF both live in the spatial/geometric realm. HTML lives in the semantic realm. That's why AI can compose HTML documents naturally but struggles with both SVG graphics and PDF layouts.
+### 4) Why AI + React/Web is a larger lever
 
-## Why This Matters Now
+When documents are composable React/HTML/CSS systems, AI can operate across the entire pipeline:
 
-We're entering an era where documents aren't just read—they're **composed, analyzed, and transformed by AI**. The difference between semantic and positional formats becomes critical:
+1. Generate and refactor structured components
+2. Preserve constraints while rewriting content
+3. Tune spacing, typography, and hierarchy systematically
+4. Explore many variants quickly
+5. Converge toward visual quality targets
 
-### AI Composition
+This isn't just convenience. It's leverage.
 
-When I asked Claude to generate a resume, it produced clean React/CSS in one shot. The semantic structure made it trivial for the AI to understand requirements like "section heading" or "skill list" and implement them correctly.
+Legacy tools are often precise but manual. AI-native document systems make precision iterative: generate, evaluate, refine, repeat.
 
-Asking an AI to generate a PDF directly would require it to calculate coordinates, manage font metrics, handle line breaking, and deal with page boundaries—all while maintaining visual consistency. That's why PDF generation tools exist as separate complex software, not as natural AI outputs.
+### 5) Can this match or beat LaTeX/Adobe?
 
-### AI Analysis
+I think yes—at least in many real workflows, and increasingly over time.
 
-Modern recruitment increasingly uses AI to parse resumes. A well-structured HTML resume can be parsed with near-perfect accuracy. A PDF resume requires OCR or text extraction heuristics that often fail on multi-column layouts, creative formatting, or non-standard fonts.
+LaTeX is still dominant in a lot of science and academia for a reason: it's stable, precise, and trusted in institutional pipelines.
 
-The companies building AI recruiting tools are essentially having to reverse-engineer the semantic structure that was thrown away when the document was saved as PDF.
+My argument is that dominance doesn't imply long-term superiority. For high-volume, iterative, multi-format publishing, LaTeX/PDF-first workflows are increasingly less adaptable than AI-composable React/HTML/CSS systems.
 
-### Dynamic Adaptation
+Why:
 
-**Responsive vs Fixed**: PDFs are fixed cages. They assume one viewing context: a letter-sized page. CSS allows the same semantic structure to render perfectly on a phone, a desktop, or in print.
+- **Programmable constraints**: encode layout and typographic rules directly
+- **Automated sweeps**: test broad variant spaces quickly
+- **Unified source model**: drive web + print from one structure
+- **Refactorability**: structural edits without hand-repositioning everything
+- **Agentic iteration**: AI can execute large numbers of micro-adjustments fast
 
-**Data-Driven Design**: With structured markup, your resume is data that gets styled, not a drawing you maintain. Want to try a different color scheme? Update three CSS variables. Want to reorder sections? Move some components. In PDF, you're manually repositioning text boxes and praying nothing breaks.
+This is not "old tools bad, new tools good."
 
-### Version Control & Collaboration
+It's a ceiling argument: once precision and automation are combined in one workflow, the long-term upside is higher.
 
-Try diffing two PDF versions. You get binary garbage. Now try diffing two HTML files. You get exactly what changed, line by line, in human-readable format.
+### 6) Practical architecture
 
-Git works with text. AI works with text. Collaboration tools work with text. PDFs are opaque blobs that resist all of these workflows.
+The model I care about:
 
-## The Future: "Ink" as Export, Not Source
+1. **Semantic source** (React/MD/HTML data model)
+2. **Renderer** (browser + print pipeline)
+3. **AI optimization loop** (fit, rhythm, consistency)
+4. **Export artifacts** (PDF, PNG, web)
 
-Here's my thesis: **The PDF should be relegated to a temporary snapshot—a "print driver" output, not the environment where documents are authored or stored.**
+In this architecture, PDF is step 4—not step 1.
 
-The source of truth should be **structured, semantic data**.
+That one inversion changes everything.
 
-For resumes, that might be React/CSS. For academic papers, maybe Markdown or LaTeX (which at least has semantic structure). For business reports, maybe MDX or Notion-style block editors. The key is that the format encodes meaning, not just appearance.
+### 7) Where PDF still wins (for now)
 
-The PDF becomes what it was always meant to be: a portable rendering for people who need to view or print the document. Not the master file. Not the working copy. Just the final, frozen output.
+I also want to be precise about the exceptions.
 
-## Real-World Implications
+PDF is still the strongest format for a narrow set of entrenched workflows:
 
-This isn't just about resumes. Consider:
+- compliance-heavy archival and signing pipelines
+- prepress and print-vendor handoff standards
+- highly regulated institutional submission flows
+- everyday transactional document exchange (accounting, invoice back-and-forth, approvals)
 
-**Technical Documentation**: Companies like Stripe, Vercel, and GitHub author docs in Markdown/MDX and render to web. The structured source enables search, linking, versioning, and AI-powered features. PDF docs are increasingly rare because they're dead data.
+So I don't think PDF is universally useless. I think it's overused as a source format outside the places where those constraints actually matter.
 
-**Academic Publishing**: LaTeX has always been semantic (it's markup, not WYSIWYG). Journals increasingly accept or prefer structured formats over PDF submissions because they need to extract metadata, citations, and structure.
+### 8) Who actually cares?
 
-**Legal Documents**: The legal industry still clings to PDF, but as AI contract analysis tools proliferate, there's growing pressure for structured formats that encode clauses, terms, and relationships explicitly rather than hiding them in positioned text.
+For many people, this debate doesn't matter day to day.
 
-**Forms & Applications**: Progressive web apps are replacing PDF forms because they can validate in real-time, adapt to user input, integrate with APIs, and store structured data directly. PDF forms are a nightmare of compatibility and extraction issues.
+If I'm passing routine business docs around, PDF is fine. If a company needs an invoice, I can output PDF and move on.
 
-## This Isn't Idealism—It's Pragmatism
+The argument matters when documents are part of a **programmable publishing workflow**:
 
-I'm not saying PDF should disappear tomorrow. It serves a purpose as a read-only distribution format. But treating it as the *authoring* format—the source of truth—is increasingly indefensible.
+- long-form books and papers
+- high-volume content generation
+- iterative editorial pipelines
+- multi-format publishing from one source
 
-The web won. HTML, CSS, and JavaScript are the most successful cross-platform rendering stack ever created. They're semantic, accessible, programmable, and AI-readable. Print CSS works. Progressive enhancement works.
+That is the context where source format becomes a strategic decision.
 
-**The tools are here. The ecosystem is mature. The only barrier is habit.**
+### 9) What about publishing books?
 
-I've spent years thinking about typesetting—LaTeX, PDF, SVG, print design. Building my resume in React wasn't an impulsive experiment. It was a deliberate test of a thesis I've held for a while:
+For books, the answer depends on which publishing lane I'm in:
 
-**In the age of AI, structured data isn't just better—it's essential.**
+- **Print production lane**: PDF remains important for final handoff, especially where print shops require strict prepress conventions.
+- **Digital/reflow lane**: semantic source formats are better, because content needs to adapt across devices and form factors.
 
-The machines that increasingly augment our work need to understand what our documents *mean*, not just what they *look like*. PDF was built for the latter. Web technologies were built for the former.
+My view is that modern publishing should still be source-first and semantic:
 
-The future belongs to semantic trees, not Frankenformats.
+1. Author in React/HTML/CSS (or another semantic model)
+2. Run layout and quality checks
+3. Export final print artifacts (including PDF) at the edge
+
+So even in books, PDF is best treated as the delivery container, not the authoring foundation.
+
+## Conclusion
+
+I don't want documents that are merely machine-readable.
+
+I want documents that are machine-composable, machine-optimizable, and still human-beautiful in final form.
+
+So my conclusion is:
+
+- Keep PDF as a delivery format.
+- Move source-of-truth authoring to programmable semantic systems.
+- Use AI not only to parse meaning, but to drive publication-quality typesetting loops.
+
+And to be explicit: I'm not saying "PDF is bad for everyone."
+
+I'm saying that for large, programmatic, iterative document systems, PDF/paint-first workflows will eventually lose to semantic + programmable + AI-optimized workflows.
+
+That's why I think HTML/CSS/React will ultimately stomp PDF-as-source and even challenge LaTeX in many publishing pipelines.
+
+## What do I plan to actually do about this?
+
+- Continue refining `@media print` and `@page` CSS rules for predictable, high-quality output.
+- Keep React/HTML/CSS as the source document format for paper-oriented docs.
+- Treat PDF as export-only: generate it from the web source after layout is dialed in.
+- Build reusable layout primitives so each new document starts from a strong baseline.
+- Use AI to iterate faster on spacing, line breaks, and typographic consistency.
+

@@ -3,6 +3,7 @@
   "title": "Building My Resume with React and CSS",
   "slug": "building-resume-with-react",
   "date": "2026-02-13T10:00:00Z",
+  "author": ["Jay Griffin", "Claude Sonnet 4.5"],
   "description": "How I ditched traditional design tools and built a print-perfect resume using React, Emotion, and CSS print media queries.",
   "tags": ["dev", "react", "css", "workflow"],
   "type": "post"
