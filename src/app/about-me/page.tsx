@@ -6,6 +6,7 @@ import type { PostMeta } from '@/types/post';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/react';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
+import { IoDocumentTextOutline } from 'react-icons/io5';
 import Image from 'next/image';
 import * as Accordion from '@radix-ui/react-accordion';
 import { IoChevronDown } from 'react-icons/io5';
@@ -64,6 +65,17 @@ const HiringText = styled.div`
   margin-bottom: ${props => props.theme.spacing.lg};
 `;
 
+const HiringMediaRow = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: ${props => props.theme.spacing.lg};
+  margin: 0 auto ${props => props.theme.spacing.lg} auto;
+  width: 100%;
+  max-width: 100%;
+`;
+
 const BigEmailLink = styled.a`
   display: inline-block;
   font-size: ${props => props.theme.fontSizes.xxxl};
@@ -95,28 +107,84 @@ const BigEmailLink = styled.a`
 `;
 
 const ProfileLinks = styled.div`
-  position: absolute;
-  top: ${props => props.theme.spacing.md};
-  right: ${props => props.theme.spacing.md};
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   gap: ${props => props.theme.spacing.sm};
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
   
   a {
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: 48px 1fr;
     align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
+    justify-items: stretch;
+    flex: 0 0 auto;
+    width: max-content;
+    max-width: 100%;
+    box-sizing: border-box;
+    gap: ${props => props.theme.spacing.sm};
+    padding: 0.65rem 0.9rem;
     border-radius: ${props => props.theme.radii.medium};
     color: ${props => props.theme.colors.text};
     text-decoration: none;
-    font-size: 1.25rem;
-    transition: background-color 0.15s ease;
+    font-size: ${props => props.theme.fontSizes.lg};
+    font-weight: 600;
+    transition: background-color 0.15s ease, color 0.15s ease;
     line-height: 1;
+    white-space: nowrap;
+    text-align: left;
     
     &:hover {
       background-color: ${props => props.theme.colors.border};
     }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: max-content;
+
+    a {
+      width: 100%;
+    }
+  }
+
+  .linkIconContainer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+  }
+
+  .linkTextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 48px;
+    line-height: 1;
+    transform: translateY(1px);
+  }
+
+  .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    line-height: 0;
+  }
+
+  .icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
   }
 `;
 
@@ -223,33 +291,45 @@ export default function AboutMePage() {
     <Container size="sm">
       <ContentWrapper>
         <HiringCard>
-          <ProfileLinks>
-            <a href="https://github.com/jaygriffinjay" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <SiGithub />
-            </a>
-            <a href="https://linkedin.com/in/jaygriffinjay" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <SiLinkedin />
-            </a>
-          </ProfileLinks>
-          <Image 
-            src="/images/me.jpg" 
-            alt="Jay Griffin" 
-            width={250}
-            height={250}
-            priority
-            style={{ 
-              width: '100%',
-              maxWidth: '250px',
-              height: 'auto',
-              borderRadius: '8px',
-              marginBottom: '1.5rem'
-            }} 
-            css={{
-              '@media (max-width: 768px)': {
-                marginTop: '3rem'
-              }
-            }}
-          />
+          <HiringMediaRow>
+            <Image 
+              src="/images/me.jpg" 
+              alt="Jay Griffin" 
+              width={250}
+              height={250}
+              priority
+              style={{ 
+                width: '250px',
+                maxWidth: '100%',
+                height: 'auto',
+                borderRadius: '8px',
+                display: 'block',
+                marginLeft: '0',
+                marginRight: '0',
+                marginBottom: '0'
+              }}
+            />
+            <ProfileLinks>
+              <a href="/resume" aria-label="Resume">
+                <span className="linkIconContainer" aria-hidden>
+                  <span className="icon"><IoDocumentTextOutline /></span>
+                </span>
+                <span className="linkTextContainer">Resume</span>
+              </a>
+              <a href="https://github.com/jaygriffinjay" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <span className="linkIconContainer" aria-hidden>
+                  <span className="icon"><SiGithub /></span>
+                </span>
+                <span className="linkTextContainer">GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/jaygriffinjay" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <span className="linkIconContainer" aria-hidden>
+                  <span className="icon"><SiLinkedin /></span>
+                </span>
+                <span className="linkTextContainer">LinkedIn</span>
+              </a>
+            </ProfileLinks>
+          </HiringMediaRow>
           <HiringText>
             I'm currently seeking a full-time role building modern web and React-based applications!
           </HiringText>
