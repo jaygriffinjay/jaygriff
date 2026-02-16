@@ -48,7 +48,7 @@ export default function MyToolsTestPage() {
 
           <div style={{ margin: '3rem 0' }}>
             <Paragraph>
-              I'm all-in on TypeScript now. TypeScript gets first-class support for most modern web development tools and my interfaces are great AI food and guardrails. I love Python but don't currently use it since I do 100% TypeScript webdev right now. I don't really write HTML directly anymore but I do throw the occassional HTML element into the React and Markdown pages I make. Shell I use daily for basic plumbing: installing packages, file operations, git operations, CLI tools. 
+              I'm all-in on TypeScript now. TypeScript gets first-class support for most modern web development tools and my interfaces are great AI food and guardrails. I love Python but don't currently use it since I do 100% TypeScript webdev right now. I don't really write HTML directly anymore but I do throw the occassional HTML element into my React and Markdown pages. Shell I use daily for basic plumbing: installing packages, file operations, git operations, CLI tools. 
             </Paragraph>
           </div>
 
@@ -243,16 +243,16 @@ export default function MyToolsTestPage() {
           </div>
 
           <div style={gridContainerStyle}>
-            <ToolCard logo="/tool-logos/ollama.svg" title="Ollama" description="Run llms locally" invert />
-            <ToolCard logo="/tool-logos/openwebui.svg" title="Open WebUI" description="Self hosted chatgpt ui" invert />
+            <ToolCard logo="/tool-logos/ollama.svg" title="Ollama" description="Run LLMs locally" invert />
+            <ToolCard logo="/tool-logos/openwebui.svg" title="Open WebUI" description="Self hosted ChatGPT UI" invert />
             <ToolCard logo="/tool-logos/proxmox.svg" title="Proxmox" description="Homelab virtualization" />
             <ToolCard logo="/tool-logos/grafana.svg" title="Grafana" description="Monitoring dashboards" />
-            <ToolCard logo="/tool-logos/hetzner.svg" title="Hetzner" description="Cheap vps" />
-            <ToolCard logo="/tool-logos/truenas.svg" title="TrueNAS" description="Zfs-based nas solution" />
+            <ToolCard logo="/tool-logos/hetzner.svg" title="Hetzner" description="Cheap VPS" />
+            <ToolCard logo="/tool-logos/truenas.svg" title="TrueNAS" description="ZFS-based NAS solution" />
             <ToolCard logo="/tool-logos/homeassistant.svg" title="Home Assistant" description="Home automation platform" />
-            <ToolCard logo="/tool-logos/prometheus.svg" title="Prometheus" description="Metrics and alerting" />
-            <ToolCard logo="/tool-logos/unraid.svg" title="Unraid" description="Nas and virtualization os" />
-            <ToolCard logo="/tool-logos/openmediavault.svg" title="OpenMediaVault" description="Debian-based nas solution" />
+            <ToolCard logo="/tool-logos/prometheus.svg" title="Prometheus" description="Time-series metrics and alerting" />
+            <ToolCard logo="/tool-logos/unraid.svg" title="Unraid" description="NAS and virtualization OS" />
+            <ToolCard logo="/tool-logos/openmediavault.svg" title="OpenMediaVault" description="Free and open-source NAS OS" />
           </div>
 
           <Divider />

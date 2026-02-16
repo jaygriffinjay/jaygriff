@@ -23,9 +23,24 @@ export default function AboutThisSite() {
         <Heading level={1}>{routeMetadata.title}</Heading>
       
       <Paragraph>
-        This is my personal website, built from scratch as both a publishing platform and a development workspace. 
+        This is my personal website, built from scratch as both a publishing platform and development workspace. 
         It's where I document my work, share my thoughts, and build web applications.
       </Paragraph>
+
+      <Heading level={2}>Site Highlights</Heading>
+
+      <Paragraph>
+        If you want the short version, these two pages are the best overview of what I'm building and where it's going.
+      </Paragraph>
+
+      <List>
+        <ListItem>
+          <Link href="/features">Features</Link> — A living index of the most important parts of the platform.
+        </ListItem>
+        <ListItem>
+          <Link href="/roadmap">Roadmap</Link> — What I'm actively building next and why.
+        </ListItem>
+      </List>
 
       <Heading level={2}>What I Built</Heading>
 
@@ -60,8 +75,8 @@ export default function AboutThisSite() {
         <strong>Core:</strong>
       </Paragraph>
       <List>
-        <ListItem><strong>Next.js and React</strong> - full-stack web application framework</ListItem>
-        <ListItem><strong>TypeScript</strong> - my language of choice</ListItem>
+        <ListItem><strong>Next.js and React</strong> - Full-stack web application framework</ListItem>
+        <ListItem><strong>TypeScript</strong> - My language of choice</ListItem>
         <ListItem><strong>Emotion</strong> - CSS-in-JS - my styling of choice</ListItem>
       </List>
 
@@ -97,7 +112,7 @@ export default function AboutThisSite() {
       <List>
         <ListItem><strong>Domain</strong> - $12/year for jaygriff.com</ListItem>
         <ListItem><strong>Domain Email</strong> - Free (Cloudflare forwarding + Gmail)</ListItem>
-        <ListItem><strong>Hosting</strong> - Free (Vercel's generous free tier)</ListItem>
+        <ListItem><strong>Hosting</strong> - Free (Vercel's generous free tier barring any traffic spikes)</ListItem>
         <ListItem><strong>Total</strong> - $12/year, or $1/month</ListItem>
       </List>
 

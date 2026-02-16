@@ -273,11 +273,11 @@ export default function AboutMePage() {
       </Paragraph>
 
       <Paragraph>
-        I'm very interested in the internet and the web. I work with modern web infrastructure and managed cloud services day to day. I have a keen interest in computer infrastructure and distributed systems and this informs how I design my apps to be infrastructure-aware. This has led me to primarily build with Next.js on Vercel because I value quick development as well as making software that is powerful and capable of scaling up. 
+        I'm very interested in the internet and the web. I work with modern web infrastructure and managed cloud services daily. I have a keen interest in computer infrastructure and distributed systems and this informs how I design my apps to be infrastructure-aware. This has led me to primarily build with Next.js on Vercel because I value quick development as well as making software that is powerful and capable of scaling up. 
       </Paragraph>
 
       <Paragraph>
-        I'm also working with AI constantly. AI is a new primitive in software development that has created a massive gap between old software and software leveraging AI patterns. I'm excited to build AI-native apps as well as integrate AI into all kinds of legacy workflows that haven't caught up yet.
+        I'm also working with AI constantly. AI is a new primitive in software development that has created a massive gap between old software and new software leveraging AI patterns. I'm excited to build AI-native apps as well as integrate AI into all kinds of legacy workflows that haven't caught up yet.
       </Paragraph>
 
       <Paragraph>
@@ -390,7 +390,7 @@ export default function AboutMePage() {
           <AccordionContent>
             <AccordionContentInner>
               <Paragraph>
-                I don't think AI will replace me. I think it has replaced some types of work though. It is just like any other innovation: it has changed how we do things, it has made some things obsolete, and it has created new opportunities.
+                I don't think AI will replace me. I think it has replaced some types of work though. AI is just like any other innovation: it has changed how we do things, made some things obsolete, and created new opportunities.
               </Paragraph>
             </AccordionContentInner>
           </AccordionContent>
@@ -404,7 +404,7 @@ export default function AboutMePage() {
           <AccordionContent>
             <AccordionContentInner>
               <Paragraph>
-                Currently $1/month
+                Currently $1/month (barring traffic spikes).
               </Paragraph>
             </AccordionContentInner>
           </AccordionContent>
@@ -418,7 +418,7 @@ export default function AboutMePage() {
           <AccordionContent>
             <AccordionContentInner>
               <Paragraph>
-                This site? You can <Link href="https://github.com/jaygriffinjay/jaygriff/commit/d5983cf638445d0fa0e1284f192c4de56bcc6d68#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5" target="_blank" rel="noopener noreferrer">check the commit history</Link>. The framework underneath? Years of iteration. This FAQ? One afternoon followed by some follow-up edits.
+                This site? You can <Link href="https://github.com/jaygriffinjay/jaygriff/commit/d5983cf638445d0fa0e1284f192c4de56bcc6d68#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5" target="_blank" rel="noopener noreferrer">check the commit history</Link>. The framework and methods used? Refined over years of iteration. This FAQ? One afternoon and some follow-up edits.
               </Paragraph>
             </AccordionContentInner>
           </AccordionContent>
@@ -446,7 +446,7 @@ export default function AboutMePage() {
           <AccordionContent>
             <AccordionContentInner>
               <Paragraph>
-                With unlimited time I think I would get bored of regular work and create and use tools for science. Either biology or space. So trying to get to the bottom of life or the universe haha!
+                With unlimited time I think I would get bored of regular work and create and use tools for science. Either biology or space. So trying to get to the bottom of life or the universe!
               </Paragraph>
             </AccordionContentInner>
           </AccordionContent>
@@ -474,7 +474,7 @@ export default function AboutMePage() {
           <AccordionContent>
             <AccordionContentInner>
               <Paragraph>
-                Constantly. I use chatbots for a laundry list of tasks and I use coding assistants every time I write or code. But AI is also changing how I even work on software. It seems like every day there is a new discovery about what you can accomplish by using coding assistants in different ways. I want to explore all of that and figure out what actually works for me and what doesn't. 
+                AI has changed how I work and how I make software. I use chatbots for a laundry list of tasks and I use coding assistants every time I write or code. But AI isn't finished changing how I work. It seems like every day there is a new discovery about what you can accomplish by using agents in different ways. I am actively exploring all of that and figuring out what actually works for me and what doesn't. 
               </Paragraph>
             </AccordionContentInner>
           </AccordionContent>
