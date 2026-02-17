@@ -106,6 +106,11 @@ const Header = styled.header`
   margin-bottom: 0.5rem;
   padding-bottom: 0.35rem;
   border-bottom: 2px solid #333;
+
+  @media print {
+    margin-bottom: 0.35rem;
+    padding-bottom: 0.25rem;
+  }
 `;
 
 const Name = styled.h1`
@@ -124,6 +129,10 @@ const ContactInfo = styled.div`
   color: #444;
   width: 100%;
   box-sizing: border-box;
+
+  @media print {
+    font-size: 0.84rem;
+  }
   
   a {
     color: #000;
@@ -141,6 +150,10 @@ const Section = styled.section`
   
   &.resume-section {
     page-break-inside: avoid;
+  }
+
+  @media print {
+    margin-bottom: 0.35rem;
   }
 `;
 
@@ -161,6 +174,10 @@ const SectionHeader = styled.div`
   gap: 1rem;
   flex-wrap: wrap;
   margin-bottom: 0.20rem;
+
+  @media print {
+    margin-bottom: 0.12rem;
+  }
 `;
 
 const SectionLink = styled.a`
@@ -206,6 +223,10 @@ const ProjectEntry = styled.div`
   &.project-entry {
     page-break-inside: avoid;
   }
+
+  @media print {
+    margin-bottom: 0.3rem;
+  }
 `;
 
 const ProjectTitle = styled.h3`
@@ -232,6 +253,13 @@ const BulletList = styled.ul`
     margin-bottom: 0.02rem;
     line-height: 1.25;
   }
+
+  @media print {
+    li {
+      margin-bottom: 0;
+      line-height: 1.2;
+    }
+  }
 `;
 
 const JobEntry = styled.div`
@@ -240,6 +268,10 @@ const JobEntry = styled.div`
   &.job-entry {
     page-break-inside: avoid;
   }
+
+  @media print {
+    margin-bottom: 0.3rem;
+  }
 `;
 
 const JobHeader = styled.div`
@@ -247,6 +279,10 @@ const JobHeader = styled.div`
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 0.15rem;
+
+  @media print {
+    margin-bottom: 0.1rem;
+  }
 `;
 
 const JobTitle = styled.h3`
