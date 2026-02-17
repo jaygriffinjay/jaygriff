@@ -3,7 +3,8 @@
   "title": "Building My Resume with React and CSS",
   "slug": "building-resume-with-react",
   "date": "2026-02-13T10:00:00Z",
-  "author": ["Jay Griffin", "Claude Sonnet 4.5"],
+  "updated": "2026-02-16T20:00:00Z",
+  "author": ["Jay Griffin", "GPT-5.3-Codex", "Claude Sonnet 4.5"],
   "description": "How I ditched traditional design tools and built a print-perfect resume using React, Emotion, and CSS print media queries.",
   "tags": ["dev", "react", "css", "workflow"],
   "type": "post"
@@ -22,7 +23,7 @@ Web technology is criminally underrated for document creation. Here's what I got
 
 - **Version control**: Every change is tracked in git
 - **Programmatic generation**: I can swap content, iterate on layout, or generate variations instantly
-- **Perfect print output**: CSS `@media print` gives me pixel-perfect control over how it prints
+- **High-control print output**: CSS `@media print` gives me strong control over how it prints
 - **AI-assisted editing**: Working in code means I can collaborate with AI to refine wording and layout in real-time
 - **Semantic HTML**: The structure is clean and accessible, not locked in a proprietary format
 
@@ -66,7 +67,7 @@ padding: 0.7in;
 }
 ```
 
-This way, what I see on screen is what prints. No surprises.
+This got screen and print much closer, but it wasn't a perfect one-to-one match in every browser or preview path.
 
 ### Fitting to One Page
 
@@ -80,25 +81,25 @@ Every line matters when you're targeting single-page print.
 
 ## The Workflow Shift
 
+After the CSS mechanics were in place, the real question became workflow speed versus formatting reliability.
+
 The biggest revelation was speed. With AI assistance, I could:
 - Rapidly iterate on bullet point wording
 - Adjust spacing and see results instantly
 - Experiment with layout changes in seconds
 - Generate and test print output without leaving the browser
 
-This blew away the InDesign/Affinity workflow. No fumbling with text boxes, no export-preview-adjust cycles. Just code, save, refresh.
+It still felt faster than my old InDesign/Affinity loop, but it definitely wasn't frictionless. I still had plenty of export-preview-adjust cycles while dialing in print behavior.
 
-## Takeaways
+## Reality Check (Important Disclaimer)
 
-This was a revelation. HTML and CSS are legitimately more powerful than PDF for documents you actually need to work with:
-- Version-controllable (Git works perfectly)
-- Programmatically manipulable (it's just code)
-- Semantic and accessible (screen readers, search engines)
-- Print-capable with `@media print` (no compromises)
+I want to be explicit about this: this was **not** a one-shot, perfectly polished result from a short prompting session.
 
-I'm not going back to traditional design tools for documents. React + CSS + print media queries is my stack now.
+I ran into major formatting issues trying to align browser rendering with print preview and final PDF output. That turned into a bigger debugging effort and a reminder that browser print previews are useful, but not perfect.
 
-If you want to dig deeper into why structured formats like HTML fundamentally beat binary formats like PDF—especially in the age of AI—I wrote a whole piece on it: [PDF is a Dead Format](/posts/pdf-is-a-dead-format).
+At the time of writing, I am **still** debugging details of my one-page resume PDF.
+
+I still believe in this approach, though. Even with rough edges today, HTML/CSS/React is a strong source format for publishing if I keep improving the workflow and tooling around print consistency.
 
 ## Validating the Approach
 
@@ -141,15 +142,16 @@ I took that prompt to a fresh Claude chat. The result? [A mostly complete resume
 
 Not perfect, but good enough to prove the point: **AI can compose print-ready documents in React/CSS with minimal friction.** The semantic structure of HTML/CSS makes it natural for AI to work with, unlike the opaque positional model of PDF.
 
-And the best part? You can [view my actual resume](/resume) right here on the site. Same component, same code, same print output.
-> - Professional contact information layout
->
-> **The goal is a production-ready resume template that looks polished on screen and prints perfectly without adjustment.**
+## Takeaways
 
-Interestingly, Claude's trace showed it pulled from a "how to do good frontend design skill" knowledge base. The prompt was precise and covered all the constraints that matter for print documents.
+The experience was mixed but convincing. HTML and CSS are still more powerful than PDF for documents I need to iterate on:
+- Version-controllable (Git works perfectly)
+- Programmatically manipulable (it's just code)
+- Semantic and accessible (screen readers, search engines)
+- Print-capable with `@media print` (with real-world tradeoffs and debugging)
 
-I took that refined prompt, opened a fresh chat, and fed it in. The result? A surprisingly solid resume in one shot. Not perfect, but good enough to validate the approach.
+So my conclusion is not “this is effortless.” My conclusion is “this is worth investing in.”
 
-And here's the kicker: Claude generates these as artifacts that you can publish and share directly. [Here's that initial resume](https://claude.ai/public/artifacts/1f9aef7c-6489-401d-8f36-cd071e9b6eaa), live and interactive. No build step, no deployment—just instant publishing.
+I'm not going back to traditional design tools for this kind of document work. React + CSS + print media queries is still my stack, and the print tooling just needs to keep maturing.
 
-This confirmed what I'd experienced building my own: **AI can compose print-ready documents in React/CSS with minimal friction.** The semantic structure makes it trivial for AI to understand and modify, unlike the opaque format of a PDF.
+If I want to go deeper on why structured formats like HTML fundamentally beat binary formats like PDF—especially in the age of AI—I already wrote that argument here: [PDF is a Dead Format](/posts/pdf-the-frankenformat).
