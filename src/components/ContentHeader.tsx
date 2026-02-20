@@ -180,7 +180,7 @@ export function ContentHeader({ metadata }: ContentHeaderProps) {
       checkTooltipPosition(updatedTooltipRef, setUpdatedTooltipFlipped);
     }
   }, [metadata.authorshipNote, metadata.updated]);
-  const repoUrl = 'https://github.com/jaygriffinjay/my-website-v3';
+  const repoUrl = 'https://github.com/jaygriffinjay/jaygriff';
   
   // Handle author as string or array
   const authorText = metadata.author 

@@ -447,7 +447,7 @@ export default function ResumePage() {
             </SectionLink>
           </SectionHeader>
           <SkillsGrid>
-            <SkillItem className="full-width"><strong>Languages:</strong> TypeScript, JavaScript, HTML, CSS, Shell</SkillItem>
+            <SkillItem className="full-width"><strong>Languages:</strong> TypeScript, JavaScript, Python, Shell, HTML, CSS</SkillItem>
             <SkillItem><strong>Frameworks:</strong> Next.js, React</SkillItem>
             <SkillItem><strong>APIs:</strong> OpenAI, Stripe, Strava</SkillItem>
             <SkillItem><strong>Styling:</strong> Tailwind CSS, CSS-in-JS</SkillItem>

@@ -1,12 +1,12 @@
 ---json
 {
-  "title": "I Like Publishing",
+  "title": "PDF the Frankenformat",
   "slug": "pdf-the-frankenformat",
   "date": "2026-02-13T00:00:00Z",
-  "updated": ["2026-02-18T00:00:00Z", "2026-02-17T00:00:00Z", "2026-02-16T00:00:00Z"],
+  "updated": ["2026-02-20T00:00:00Z", "2026-02-18T00:00:00Z", "2026-02-17T00:00:00Z", "2026-02-16T00:00:00Z"],
   "author": ["Jay Griffin", "GPT-5.3-Codex", "Claude Sonnet 4.5"],
   "authorshipNote": "This document was developed through iterative discussion, with AI-assisted drafting and revision.",
-  "description": "My working log for trying to publish all kinds of things (not just websites) in HTML/CSS/React",
+  "description": "Me trying to publish all kinds of things (not just websites) in HTML/CSS/React",
   "tags": ["dev", "ai", "web", "formats", "publishing", "workflow"],
   "type": "post"
 }
@@ -14,15 +14,21 @@
 
 ## What this is
 
-This is my web-first publishing log.
+I think PDF is weird and bad.
 
-I'm trying to become excellent at authoring serious documents with the tools I already use daily: HTML, CSS, and React. That includes books/ebooks, print-ready docs, professional HTML email, business documents, and automated transactional messages.
+I'm also trying to become excellent at authoring serious documents with the tools I already use daily: HTML, CSS, and React. That includes books/ebooks, print-ready docs, professional HTML email, business documents, and automated transactional messages.
 
-Also, I’m not anti-PDF because I’ve never used it. I’m kind of obsessed with PDF. I’ve worked with advanced PDF tools, used PDF scripting, used Python libraries for PDF manipulation, and seen firsthand in office environments how valuable highly specific PDF tooling can be. I would absolutely pay for better PDF tooling if it existed in the way I want.
+Also, I’m not anti-PDF because I’ve never used it. I’m kind of obsessed with PDF. I’ve worked with advanced PDF tools, used PDF scripting, used Python libraries for PDF manipulation, and seen firsthand in office environments how valuable highly specific PDF tooling can be.
 
 Part of this whole project came from that fascination. I tried to solve problems by manipulating PDFs programmatically. But now, with AI in the loop, I’m revisiting the architecture: instead of pushing deeper into PDF manipulation libraries as the source layer, I want to build my own publishing workflows in HTML/CSS/React and export to PDF at the end.
 
-This is not a universal declaration. It's my working model, tested in public.
+## Why I call PDF a frankenformat
+
+PDF is supposed to be the static, final artifact. But in practice it's also dynamic, scriptable, editable, form-driven, image-heavy, app-like, tiny, huge, and full of edge-case behavior depending on the viewer.
+
+That's the weird part: it tries to be everything at once. The only reason it works at global scale is universal agreement and institutional momentum, not because the model is internally clean.
+
+For me, the web already is the programmable "everything" layer. So I treat HTML/CSS/React as source, then export PDF when I need to. 
 
 ## My current thesis (in one paragraph)
 
@@ -30,7 +36,7 @@ I think React/HTML/CSS should be the source-of-truth authoring format, and PDF s
 
 ## The workflow I'm actually building
 
-1. Author in semantic, composable source (React/HTML/CSS)
+1. Author in React/HTML/CSS
 2. Tune layout quality (print CSS, spacing, hierarchy, pagination behavior)
 3. Use AI to speed up iterative refinement
 4. Export final artifacts per channel (PDF, web, images, etc.)
@@ -39,7 +45,7 @@ This keeps one source model while still supporting multiple outputs.
 
 ## Why I still prefer this over PDF-first authoring
 
-PDF is great at preserving final layout. I still use it for that.
+PDF is great at preserving final layout. I still use it for that. That's the only thing it really has going for it.
 
 But as source, PDF is mostly a snapshot. I want document systems that are easy to refactor, test, version, and automate. Web-native source gives me that.
 
@@ -100,7 +106,7 @@ This approach matters most when documents are part of a programmable system:
 
 ## Bottom line
 
-This is not "PDF is dead" absolutism.
+This is not "PDF is dead" absolutism. 
 
-This is me building a practical web-first authoring system where PDF remains a strong delivery format, but not the core authoring substrate.
+This is me wanting to build a practical web-first authoring system so that I can point and laugh at PDF later.
 
