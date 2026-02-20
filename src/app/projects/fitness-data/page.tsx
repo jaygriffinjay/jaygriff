@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function FitnessDataPlatformPage() {
   return (
-    <Container>
+    <Container size="sm">
       <ContentWrapper>
         <Heading level={1}>Fitness Data Platform</Heading>
         <Paragraph>

@@ -154,4 +154,4 @@ So my conclusion is not “this is effortless.” My conclusion is “this is wo
 
 I'm not going back to traditional design tools for this kind of document work. React + CSS + print media queries is still my stack, and the print tooling just needs to keep maturing.
 
-If I want to go deeper on why structured formats like HTML fundamentally beat binary formats like PDF—especially in the age of AI—I already wrote that argument here: [PDF is a Dead Format](/posts/pdf-the-frankenformat).
+To go deeper on why structured formats like HTML fundamentally beat binary formats like PDF—especially in the age of AI—I already wrote that argument here: [PDF the Frankenformat](/posts/pdf-the-frankenformat).

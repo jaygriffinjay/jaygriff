@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function ByTheHourPage() {
   return (
-    <Container>
+    <Container size="sm">
       <ContentWrapper>
         <Heading level={1}>ByTheHour</Heading>
         <Paragraph>

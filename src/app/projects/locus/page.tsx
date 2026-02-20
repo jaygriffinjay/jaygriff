@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function LocusPage() {
   return (
-    <Container>
+    <Container size="sm">
       <ContentWrapper>
         <Heading level={1}>Locus</Heading>
         <Paragraph>

@@ -278,6 +278,84 @@ const ExpandButton = styled.button`
   cursor: pointer;
 `;
 
+const faqEntries = [
+  {
+    question: "What's your background?",
+    answer:
+      "I have a bachelor's degree in agricultural economics, a master's degree in accounting, and I worked in public tax accounting before transitioning to software development. I've also worked as a professional mover!",
+  },
+  {
+    question: 'What are you focused on right now?',
+    answer:
+      'Currently I am spending significant time on this website, building new features, improving the framework, and writing content. I am also actively working to make AI-native dev tools and workflows, AI-native apps, and data analysis apps.',
+  },
+  {
+    question: 'Do you freelance?',
+    answer:
+      "Currently no! I am looking for a full-time role and I am also interested in selling my own software products. I want to focus on those things right now but maybe in the future I'll be open to freelance work.",
+  },
+  {
+    question: "What's your end goal?",
+    answer:
+      'I want to create my own software businesses to support my work indefinitely. I would also love to work with talented developers and learn from them.',
+  },
+  {
+    question: 'Why should anyone care?',
+    answer: '¯\\_(ツ)_/¯',
+  },
+  {
+    question: 'Will AI replace you?',
+    answer:
+      "I don't think AI will replace me. I think it has replaced some types of work though. AI is just like any other innovation: it has changed how we do things, made some things obsolete, and created new opportunities.",
+  },
+  {
+    question: 'How much does this website cost to run?',
+    answer: 'Currently $1/month (barring traffic spikes).',
+  },
+  {
+    question: 'How long did this take to build?',
+    answer:
+      'This site? You can check the commit history. The framework and methods used? Refined over years of iteration. This FAQ? One afternoon and some follow-up edits.',
+  },
+  {
+    question: 'How did you learn to code?',
+    answer: 'I go into detail about it in my accounting-to-dev post.',
+  },
+  {
+    question: 'What would you build with unlimited time?',
+    answer:
+      'With unlimited time I think I would get bored of regular work and create and use tools for science. Either biology or space. So trying to get to the bottom of life or the universe!',
+  },
+  {
+    question: 'What are you excited to build next?',
+    answer:
+      "I'm most excited to build AI-native apps. These apps can solve problems in ways we couldn't achieve even just a few years ago. This is keeping me busy because it takes plenty of real work to build them.",
+  },
+  {
+    question: 'How do you use AI in your work?',
+    answer:
+      "AI has changed how I work and how I make software. I use chatbots for a laundry list of tasks and I use coding assistants every time I write or code. But AI isn't finished changing how I work. It seems like every day there is a new discovery about what you can accomplish by using agents in different ways. I am actively exploring all of that and figuring out what actually works for me and what doesn't.",
+  },
+  {
+    question: "What's currently broken in your codebase?",
+    answer:
+      "My theme editor for this site is janky. Site styling isn't consistently using theme values anymore. The atomic theme values I use have weird increments I don't actually use. The editor can permanently change styling but that's not what I need in practice. I should probably repurpose it for dynamic features instead.",
+  },
+] as const;
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqEntries.map(entry => ({
+    '@type': 'Question',
+    name: entry.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: entry.answer,
+    },
+  })),
+};
+
 export default function AboutMePage() {
   const [openItems, setOpenItems] = useState<string[]>([]);
   
@@ -292,6 +370,11 @@ export default function AboutMePage() {
   return (
     <Container size="sm">
       <ContentWrapper>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+
         <HiringCard>
           <HiringMediaRow>
             <Image 

@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function OperationFinishStuffPage() {
   return (
-    <Container>
+    <Container size="sm">
       <ContentWrapper>
         <Heading level={1}>Operation Finish Stuff</Heading>
         <Paragraph>

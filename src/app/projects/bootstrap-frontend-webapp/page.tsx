@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function BootstrapFrontendPage() {
   return (
-    <Container>
+    <Container size="sm">
       <ContentWrapper>
         <Heading level={1}>Bootstrap Frontend Webapp</Heading>
         <Paragraph>

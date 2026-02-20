@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function BootstrapFullStackPage() {
   return (
-    <Container>
+    <Container size="sm">
       <ContentWrapper>
         <Heading level={1}>Bootstrap Full-Stack Webapp</Heading>
         <Paragraph>

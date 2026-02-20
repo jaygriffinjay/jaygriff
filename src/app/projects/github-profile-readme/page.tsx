@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function SvgAnimationStudioPage() {
   return (
-    <Container>
+    <Container size="sm">
       <ContentWrapper>
         <Heading level={1}>SVG Animation Studio</Heading>
         <Paragraph>

@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function StravaAnalyzerPage() {
   return (
-    <Container>
+    <Container size="sm">
       <ContentWrapper>
         <Heading level={1}>Strava Analyzer</Heading>
         <Paragraph>
