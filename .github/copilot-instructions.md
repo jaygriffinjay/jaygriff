@@ -99,6 +99,8 @@ import { Heading, Paragraph, CodeBlock } from '@/components/Primitives'; // Code
   - Add relevant `tags` array (e.g., `['dev', 'components']`, `['design', 'ux']`, `['git', 'workflow']`)
   - Write clear `description` strings that explain the content's purpose
   - Include proper `date` in ISO 8601 format (e.g., '2026-01-21T10:30:00Z')
-  - Ensure `slug` is kebab-case and matches the filename
+  - Ensure `slug` is kebab-case and is catchy and relevant to the content
+  - If adding an AI co-author, use the model name (e.g., `GPT-5.3-Codex`) in `author`, not `GitHub Copilot`
+  - When using `authorshipNote`, include both model and coding assistant in this format: `GPT-5.3-Codex via GitHub Copilot` (or `Claude Sonnet 4.6 via Cursor`)
   - Add any other optional fields from `src/types/post.ts` that are relevant
   - This metadata will eventually drive the site's organization and routing system, so be intentional about it

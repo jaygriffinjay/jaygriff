@@ -19,6 +19,7 @@ export function GlobalStyles() {
         // Root styles
         html: {
           background: '#1a1a24',
+          overflowY: 'scroll', // Always show scrollbar to prevent layout shift on modal open
         },
         body: {
           fontFamily: theme.fonts.body,

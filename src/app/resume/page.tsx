@@ -3,6 +3,7 @@
 import styled from '@emotion/styled';
 import { Global, css } from '@emotion/react';
 import { Sekuya } from 'next/font/google';
+import { IoDownloadOutline } from 'react-icons/io5';
 
 const sekuya = Sekuya({ subsets: ['latin'], weight: ['400'], adjustFontFallback: false });
 
@@ -64,10 +65,57 @@ const PageWrapper = styled.div`
   }
 `;
 
+const ResumeActions = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 0.75rem);
+  transform: translateX(-50%);
+  width: auto;
+  min-width: 0;
+  margin: 0;
+`;
+
+const ActionButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease, background-color 120ms ease;
+
+  &:hover {
+    background: #fafafa;
+    border-color: #adadad;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  svg {
+    font-size: 1rem;
+  }
+`;
+
 const ResumeContainer = styled.div`
   width: 8.5in; /* Fixed width - never responsive */
   min-width: 8.5in; /* Prevent Safari from squishing */
   margin: 0 auto;
+  position: relative;
+  overflow: visible;
   padding: 0.7in;
   background: white;
   color: #000;
@@ -337,12 +385,12 @@ export default function ResumePage() {
           </ProjectEntry>
           <ProjectEntry className="project-entry">
             <ProjectTitle>
-              Locus
-              {' '}— Chrome Extension
+              ByTheHour
+              {' '}— AI-Native Time Blocking App
             </ProjectTitle>
             <BulletList>
-              <li>Fast bookmark launcher with fuzzy search and keyboard navigation for large bookmark libraries</li>
-              <li>Uses hotkeys to launch apps in the browser like Spotlight Search</li>
+              <li>Time blocking app with natural language scheduling using LLM structured outputs</li>
+              <li>Creates, edits, and deletes multiple time block event details with a simple chat interface</li>
             </BulletList>
           </ProjectEntry>
 
@@ -359,12 +407,12 @@ export default function ResumePage() {
 
           <ProjectEntry className="project-entry">
             <ProjectTitle>
-              ByTheHour
-              {' '}— AI-Native Time Blocking App
+              Locus
+              {' '}— Chrome Extension
             </ProjectTitle>
             <BulletList>
-              <li>Time blocking app with natural language scheduling using LLM structured outputs</li>
-              <li>Creates, edits, and deletes multiple time block event details with a simple chat interface</li>
+              <li>Fast bookmark launcher with fuzzy search and keyboard navigation for large bookmark libraries</li>
+              <li>Uses hotkeys to launch apps in the browser like Spotlight Search</li>
             </BulletList>
           </ProjectEntry>
 
@@ -465,6 +513,16 @@ export default function ResumePage() {
             </JobHeader>
           </JobEntry>
         </Section>
+          <ResumeActions className="no-print" aria-label="Resume actions">
+            <ActionButton
+              href="/Resume%20for%20Jay%20Griffin.pdf"
+              download
+              aria-label="Download resume PDF"
+            >
+              <IoDownloadOutline aria-hidden="true" />
+              Download PDF
+            </ActionButton>
+          </ResumeActions>
         </ResumeContainer>
       </PageWrapper>
     </>

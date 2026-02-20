@@ -223,11 +223,13 @@ const AccordionContent = styled(Accordion.Content)`
   overflow: hidden;
   
   &[data-state='open'] {
-    animation: slideDown 200ms ease-out;
+    height: var(--radix-accordion-content-height);
+    animation: slideDown 250ms ease-out;
   }
   
   &[data-state='closed'] {
-    animation: slideUp 200ms ease-out;
+    height: 0;
+    animation: slideUp 250ms ease-out;
   }
   
   @keyframes slideDown {
@@ -397,10 +399,10 @@ export default function AboutMePage() {
             What's your background?
             <ChevronIcon aria-hidden />
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
-                I have a bachelor's degree in economics, a master's degree in accounting, and I worked in public tax accounting <Link href="/posts/accounting-to-dev">before transitioning to software development</Link>. I've also worked as a professional mover!
+                I have a bachelor's degree in agricultural economics, a master's degree in accounting, and I worked in public tax accounting <Link href="/posts/accounting-to-dev">before transitioning to software development</Link>. I've also worked as a professional mover!
               </Paragraph>
             </AccordionContentInner>
           </AccordionContent>
@@ -411,7 +413,7 @@ export default function AboutMePage() {
             What are you focused on right now?
             <ChevronIcon aria-hidden />
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
                 Currently I am spending significant time on this website, building new features, improving the framework, and writing content. I am also actively working to make AI-native dev tools and workflows, AI-native apps, and data analysis apps.
@@ -425,7 +427,7 @@ export default function AboutMePage() {
             Do you freelance?
             <ChevronIcon aria-hidden />
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
                 Currently no! I am looking for a full-time role and I am also interested in selling my own software products. I want to focus on those things right now but maybe in the future I'll be open to freelance work.
@@ -439,7 +441,7 @@ export default function AboutMePage() {
             What's your end goal?
             <ChevronIcon aria-hidden />
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
                 I want to create my own software businesses to support my work indefinitely. I would also love to work with talented developers and learn from them.
@@ -453,7 +455,7 @@ export default function AboutMePage() {
             Why should anyone care?
             <ChevronIcon aria-hidden />
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
                 ¯\_(ツ)_/¯
@@ -467,7 +469,7 @@ export default function AboutMePage() {
             Will AI replace you?
             <ChevronIcon aria-hidden />
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
                 I don't think AI will replace me. I think it has replaced some types of work though. AI is just like any other innovation: it has changed how we do things, made some things obsolete, and created new opportunities.
@@ -481,7 +483,7 @@ export default function AboutMePage() {
             How much does this website cost to run?
             <ChevronIcon aria-hidden />
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
                 Currently $1/month (barring traffic spikes).
@@ -495,7 +497,7 @@ export default function AboutMePage() {
             How long did this take to build?
             <ChevronIcon aria-hidden />
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
                 This site? You can <Link href="https://github.com/jaygriffinjay/jaygriff/commit/d5983cf638445d0fa0e1284f192c4de56bcc6d68#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5" target="_blank" rel="noopener noreferrer">check the commit history</Link>. The framework and methods used? Refined over years of iteration. This FAQ? One afternoon and some follow-up edits.
@@ -509,7 +511,7 @@ export default function AboutMePage() {
             How did you learn to code?
             <ChevronIcon aria-hidden />
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
                 I go into detail about it <Link href="/posts/accounting-to-dev">in this post</Link>!
@@ -523,7 +525,7 @@ export default function AboutMePage() {
             What would you build with unlimited time?
             <ChevronIcon aria-hidden />
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
                 With unlimited time I think I would get bored of regular work and create and use tools for science. Either biology or space. So trying to get to the bottom of life or the universe!
@@ -537,7 +539,7 @@ export default function AboutMePage() {
             What are you excited to build next?
             <ChevronIcon aria-hidden />
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
                 I'm most excited to build AI-native apps. These apps can solve problems in ways we couldn't achieve even just a few years ago. This is keeping me busy because it takes plenty of real work to build them. 
@@ -551,7 +553,7 @@ export default function AboutMePage() {
             How do you use AI in your work?
             <ChevronIcon aria-hidden />
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
                 AI has changed how I work and how I make software. I use chatbots for a laundry list of tasks and I use coding assistants every time I write or code. But AI isn't finished changing how I work. It seems like every day there is a new discovery about what you can accomplish by using agents in different ways. I am actively exploring all of that and figuring out what actually works for me and what doesn't. 
@@ -565,7 +567,7 @@ export default function AboutMePage() {
             What's currently broken in your codebase?
             <ChevronIcon aria-hidden />
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
                 My theme editor for this site is janky. Site styling isn't consistently using theme values anymore. The atomic theme values I use have weird increments I don't actually use. The editor can permanently change styling but that's not what I need in practice. I should probably repurpose it for dynamic features instead.

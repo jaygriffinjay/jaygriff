@@ -1,6 +1,6 @@
 'use client';
 
-import { Heading, Paragraph, Container, Divider } from '@/components/Primitives';
+import { Heading, Paragraph, Container, Divider, Link } from '@/components/Primitives';
 import { ContentWrapper } from '@/components/ContentWrapper';
 import { ToolCard } from '@/components/ToolCard';
 import type { PostMeta } from '@/types/post';
@@ -75,7 +75,6 @@ export default function MyToolsTestPage() {
             <ToolCard logo="/tool-logos/react.svg" title="React" description="Components <3" />
             <ToolCard logo="/tool-logos/nextjs.svg" title="Next.js" description="React cloud wizardry" />
             <ToolCard logo="/tool-logos/vite.svg" title="Vite" description="Build tool" />
-            <ToolCard logo="/tool-logos/emotion.png" title="Emotion" description="CSS-in-JS" />
             <ToolCard logo="/tool-logos/vercel.svg" title="Vercel" description="A very good triangle" />
             <ToolCard logo="/tool-logos/cloudflare.svg" title="Cloudflare" description="A very good cloud" />
             <ToolCard logo="/tool-logos/git.svg" title="Git" description="Version control" />
@@ -84,6 +83,32 @@ export default function MyToolsTestPage() {
             <ToolCard logo="/tool-logos/vscode.svg" title="VS Code" description="My IDE" />
             <ToolCard logo="/tool-logos/chromedevtools.svg" title="Chrome DevTools" description="My CSS broke again" />
             <ToolCard logo="/tool-logos/favicon.svg" title="jaygriff.com" description="Pretty good imo" />
+          </div>
+
+          <Divider />
+
+          <StyledHeading>Styling Tools & UI Libraries</StyledHeading>
+
+          <div style={{ margin: '3rem 0' }}>
+            <Paragraph>
+              Currently all my styling is done using CSS-in-JS. Although I've <Link href="/posts/tailwind-rant-blog">ranted</Link> about Tailwind in the <Link href="/posts/why-no-tailwind">past</Link>, the reality is that my theme system is heavily based on Tailwind principles and I do use Tailwind directly in AI app builders whenever that's the default stack.
+            </Paragraph>
+
+            <Paragraph>
+               Radix UI is my main UI library now because it can make highly useful and functional custom UI quickly. I've also experimented with DaisyUI and Material UI.
+            </Paragraph>
+
+            <Paragraph>
+              I'm very curious about shadcn though. Tailwind + Radix is a powerful combination for AI workflows, and if I could have a clean setup with CSS-in-JS, Tailwind, Radix, and Shadcn all working together, that would be great. 
+            </Paragraph>
+          </div>
+
+          <div style={gridContainerStyle}>
+            <ToolCard logo="/tool-logos/emotion.png" title="Emotion" description="CSS-in-JS" />
+            <ToolCard logo="/tool-logos/tailwind.svg" title="Tailwind" description="UTILITY FIRST!" />
+            <ToolCard logo="/tool-logos/radix.svg" title="Radix UI" description="My primary UI primitives" invert />
+            <ToolCard logo="/tool-logos/mui.svg" title="Material UI" description="Solid components and docs" />
+            <ToolCard logo="/tool-logos/daisyui.svg" title="DaisyUI" description="Used during Tailwind-heavy experiments" />
           </div>
 
           <Divider />
@@ -235,7 +260,7 @@ export default function MyToolsTestPage() {
 
           <div style={{ margin: '3rem 0' }}>
             <Paragraph>
-              I don't much personal infrastructure, but I study it extensively. I've realized that infra-aware software matters more to me than running infrastructure for its own sake. My own apps aren't at the level where they require or benefit from tons of personal infra—there are a LOT of ways to achieve things with hosted services these days. The main use cases where homelab makes sense: GPU compute, performant mass storage, privacy, security, and learning.
+              I don't run much personal infrastructure, but I study it extensively. I've realized that infra-aware software matters more to me than running infrastructure for its own sake. My own apps aren't at the level where they require or benefit from tons of personal infra—there are a LOT of ways to achieve things with hosted services these days. The main use-cases where homelab makes sense for me: GPU compute, performant mass storage, privacy, security, and learning.
             </Paragraph>
             <Paragraph>
               My current plan for this site is to start implementing image and gif composition support throughout all my articles—I'll save the files locally, then host optimized versions in object storage. So a NAS is in my future. Another project I may need personal infra for (if a service doesn't meet the need) is sandboxed YOLO mode for AI coding assistants.
@@ -253,21 +278,6 @@ export default function MyToolsTestPage() {
             <ToolCard logo="/tool-logos/prometheus.svg" title="Prometheus" description="Time-series metrics and alerting" />
             <ToolCard logo="/tool-logos/unraid.svg" title="Unraid" description="NAS and virtualization OS" />
             <ToolCard logo="/tool-logos/openmediavault.svg" title="OpenMediaVault" description="Free and open-source NAS OS" />
-          </div>
-
-          <Divider />
-
-          <StyledHeading>CSS Frameworks (Superseded)</StyledHeading>
-
-          <div style={{ margin: '3rem 0' }}>
-            <Paragraph>
-              I'm enjoying CSS-in-JS now and haven't been using Tailwind unless it's the default for app builders. DaisyUI provided nice components, but I don't use it anymore—I'll usually make a custom component if I need it. More control, cleaner code, better understanding of what's happening under the hood.
-            </Paragraph>
-          </div>
-
-          <div style={gridContainerStyle}>
-            <ToolCard logo="/tool-logos/tailwind.svg" title="Tailwind" description="UTILITY FIRST!" />
-            <ToolCard logo="/tool-logos/daisyui.svg" title="DaisyUI" description="I roll my own components now" />
           </div>
 
           <Divider />

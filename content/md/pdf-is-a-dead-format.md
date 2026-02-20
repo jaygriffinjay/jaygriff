@@ -1,177 +1,106 @@
 ---json
 {
-  "title": "PDF The Frankenformat",
+  "title": "I Like Publishing",
   "slug": "pdf-the-frankenformat",
   "date": "2026-02-13T00:00:00Z",
-  "updated": "2026-02-16T00:00:00Z",
+  "updated": ["2026-02-18T00:00:00Z", "2026-02-17T00:00:00Z", "2026-02-16T00:00:00Z"],
   "author": ["Jay Griffin", "GPT-5.3-Codex", "Claude Sonnet 4.5"],
   "authorshipNote": "This document was developed through iterative discussion, with AI-assisted drafting and revision.",
-  "description": "My thesis: semantic + programmable documents (React/HTML/CSS) with AI optimization loops can match or exceed traditional LaTeX/Adobe precision while staying far more adaptable.",
-  "tags": ["dev", "ai", "web", "formats", "philosophy"],
+  "description": "My working log for trying to publish all kinds of things (not just websites) in HTML/CSS/React",
+  "tags": ["dev", "ai", "web", "formats", "publishing", "workflow"],
   "type": "post"
 }
 ---
 
-I think **HTML/CSS/React will become the premier way to author books, papers, and ebooks, and any kind of traditional publishing.**
+## What this is
 
-I think PDFs are weird and bad.
+This is my web-first publishing log.
 
-I know LaTeX is deeply entrenched in academia, and I respect what it did for high-quality typesetting. But I think semantically structured, programmable, AI-assisted web workflows will eventually outperform LaTeX/PDF source pipelines for most large-scale publishing work.
+I'm trying to become excellent at authoring serious documents with the tools I already use daily: HTML, CSS, and React. That includes books/ebooks, print-ready docs, professional HTML email, business documents, and automated transactional messages.
 
-## Body
+Also, I’m not anti-PDF because I’ve never used it. I’m kind of obsessed with PDF. I’ve worked with advanced PDF tools, used PDF scripting, used Python libraries for PDF manipulation, and seen firsthand in office environments how valuable highly specific PDF tooling can be. I would absolutely pay for better PDF tooling if it existed in the way I want.
 
-### 1) Source vs output: where PDF fits
+Part of this whole project came from that fascination. I tried to solve problems by manipulating PDFs programmatically. But now, with AI in the loop, I’m revisiting the architecture: instead of pushing deeper into PDF manipulation libraries as the source layer, I want to build my own publishing workflows in HTML/CSS/React and export to PDF at the end.
 
-PDF still does what it was built to do: distribute and preserve final layout.
+This is not a universal declaration. It's my working model, tested in public.
 
-But as an authoring layer, it's weak. It's a snapshot, not a living system.
+## My current thesis (in one paragraph)
 
-I want source-of-truth documents to be editable, composable, and programmable—then exported to PDF at the end.
+I think React/HTML/CSS should be the source-of-truth authoring format, and PDF should usually be the delivery format. I want to build high-quality layout in web tech first, then export at the edge (PDF when needed) instead of treating PDF as the authoring surface.
 
-### 2) Paint instructions vs document programs
+## The workflow I'm actually building
 
-Traditional page formats are mostly paint instructions:
+1. Author in semantic, composable source (React/HTML/CSS)
+2. Tune layout quality (print CSS, spacing, hierarchy, pagination behavior)
+3. Use AI to speed up iterative refinement
+4. Export final artifacts per channel (PDF, web, images, etc.)
 
-```
-put glyph here
-draw line there
-move to coordinate x,y
-```
+This keeps one source model while still supporting multiple outputs.
 
-Modern web documents are document programs:
+## Why I still prefer this over PDF-first authoring
 
-```tsx
-<Section title="Experience">
-  <Role company="..." dates="..." />
-</Section>
-```
+PDF is great at preserving final layout. I still use it for that.
 
-That distinction is everything.
+But as source, PDF is mostly a snapshot. I want document systems that are easy to refactor, test, version, and automate. Web-native source gives me that.
 
-Document programs can be transformed, tested, constrained, regenerated, and versioned. Paint instructions can be precise, but they're harder to evolve and automate.
+In short: PDF is often an excellent endpoint, but a poor starting point for iterative authoring.
 
-### 3) Semantics are necessary, but not paramount
+## Reality check: where I'm still hitting walls
 
-This is the central clarification:
+I keep running into real problems:
 
-- Semantics are **necessary input**.
-- Pixel-perfect typesetting is the **actual target**.
+- cross-device print inconsistency (especially iOS)
+- browser-specific print quirks
+- one-breakpoint fixes that regress another breakpoint
+- output quality differences between print preview pipelines
 
-If a system understands headings and sections but cannot consistently produce publication-grade layout, it only solves half the problem.
+So yes, this is still messy. I'm not pretending it's solved.
 
-### 4) Why AI + React/Web is a larger lever
+Another subtle-but-big one I keep hitting: web view and print view can drift apart even when they come from the same source document. I ran into this directly on my resume workflow: somehow a single line spilled over in print view while looking completely fine in web view. Tiny responsive/layout decisions that look fine on-screen can produce weird print behavior, and print-specific fixes can then make web behavior feel off.
 
-When documents are composable React/HTML/CSS systems, AI can operate across the entire pipeline:
+That experience reinforced the same point again: one source model is still the right move, but it needs deliberate print architecture and iterative QA to keep web and print in sync.
 
-1. Generate and refactor structured components
-2. Preserve constraints while rewriting content
-3. Tune spacing, typography, and hierarchy systematically
-4. Explore many variants quickly
-5. Converge toward visual quality targets
+## Update: PDF wins again in some delivery contexts
 
-This isn't just convenience. It's leverage.
+iOS print behavior is inconsistent enough that PDF download is often the better UX in practice.
 
-Legacy tools are often precise but manual. AI-native document systems make precision iterative: generate, evaluate, refine, repeat.
+That doesn't invalidate the thesis. It reinforces it:
 
-### 5) Can this match or beat LaTeX/Adobe?
+- source in web tech
+- export PDF for stable delivery where needed
 
-I think yes—at least in many real workflows, and increasingly over time.
+I still want to spend effort improving source-quality authoring and print primitives rather than endlessly manipulating PDFs upstream.
 
-LaTeX is still dominant in a lot of science and academia for a reason: it's stable, precise, and trusted in institutional pipelines.
+## Where PDF still clearly wins
 
-My argument is that dominance doesn't imply long-term superiority. For high-volume, iterative, multi-format publishing, LaTeX/PDF-first workflows are increasingly less adaptable than AI-composable React/HTML/CSS systems.
+PDF still dominates in some lanes, and I accept that:
 
-Why:
+- prepress and print-vendor handoff
+- compliance/archival/signature workflows
+- regulated institutional submissions
+- routine transactional exchange where format stability matters more than authoring flexibility
 
-- **Programmable constraints**: encode layout and typographic rules directly
-- **Automated sweeps**: test broad variant spaces quickly
-- **Unified source model**: drive web + print from one structure
-- **Refactorability**: structural edits without hand-repositioning everything
-- **Agentic iteration**: AI can execute large numbers of micro-adjustments fast
+## Who this work is for
 
-This is not "old tools bad, new tools good."
+This approach matters most when documents are part of a programmable system:
 
-It's a ceiling argument: once precision and automation are combined in one workflow, the long-term upside is higher.
+- long-form publishing pipelines
+- high-volume content operations
+- reusable templates across many outputs
+- professional HTML email programs
+- business docs + automated transactional communication
 
-### 6) Practical architecture
+## What I’m doing next
 
-The model I care about:
+- Keep refining `@media print` and `@page` output quality
+- Keep React/HTML/CSS as source for paper-oriented docs
+- Export PDF at the end when distribution requires it
+- Build reusable layout primitives for repeatability
+- Use AI iteration loops for spacing, line breaks, and typography consistency
 
-1. **Semantic source** (React/MD/HTML data model)
-2. **Renderer** (browser + print pipeline)
-3. **AI optimization loop** (fit, rhythm, consistency)
-4. **Export artifacts** (PDF, PNG, web)
+## Bottom line
 
-In this architecture, PDF is step 4—not step 1.
+This is not "PDF is dead" absolutism.
 
-That one inversion changes everything.
-
-### 7) Where PDF still wins (for now)
-
-I also want to be precise about the exceptions.
-
-PDF is still the strongest format for a narrow set of entrenched workflows:
-
-- compliance-heavy archival and signing pipelines
-- prepress and print-vendor handoff standards
-- highly regulated institutional submission flows
-- everyday transactional document exchange (accounting, invoice back-and-forth, approvals)
-
-So I don't think PDF is universally useless. I think it's overused as a source format outside the places where those constraints actually matter.
-
-### 8) Who actually cares?
-
-For many people, this debate doesn't matter day to day.
-
-If I'm passing routine business docs around, PDF is fine. If a company needs an invoice, I can output PDF and move on.
-
-The argument matters when documents are part of a **programmable publishing workflow**:
-
-- long-form books and papers
-- high-volume content generation
-- iterative editorial pipelines
-- multi-format publishing from one source
-
-That is the context where source format becomes a strategic decision.
-
-### 9) What about publishing books?
-
-For books, the answer depends on which publishing lane I'm in:
-
-- **Print production lane**: PDF remains important for final handoff, especially where print shops require strict prepress conventions.
-- **Digital/reflow lane**: semantic source formats are better, because content needs to adapt across devices and form factors.
-
-My view is that modern publishing should still be source-first and semantic:
-
-1. Author in React/HTML/CSS (or another semantic model)
-2. Run layout and quality checks
-3. Export final print artifacts (including PDF) at the edge
-
-So even in books, PDF is best treated as the delivery container, not the authoring foundation.
-
-## Conclusion
-
-I don't want documents that are merely machine-readable.
-
-I want documents that are machine-composable, machine-optimizable, and still human-beautiful in final form.
-
-So my conclusion is:
-
-- Keep PDF as a delivery format.
-- Move source-of-truth authoring to programmable semantic systems.
-- Use AI not only to parse meaning, but to drive publication-quality typesetting loops.
-
-And to be explicit: I'm not saying "PDF is bad for everyone."
-
-I'm saying that for large, programmatic, iterative document systems, PDF/paint-first workflows will eventually lose to semantic + programmable + AI-optimized workflows.
-
-That's why I think HTML/CSS/React will ultimately stomp PDF-as-source and even challenge LaTeX in many publishing pipelines.
-
-## What do I plan to actually do about this?
-
-- Continue refining `@media print` and `@page` CSS rules for predictable, high-quality output.
-- Keep React/HTML/CSS as the source document format for paper-oriented docs.
-- Treat PDF as export-only: generate it from the web source after layout is dialed in.
-- Build reusable layout primitives so each new document starts from a strong baseline.
-- Use AI to iterate faster on spacing, line breaks, and typographic consistency.
+This is me building a practical web-first authoring system where PDF remains a strong delivery format, but not the core authoring substrate.
 

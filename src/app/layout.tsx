@@ -13,12 +13,12 @@ export const metadata = {
   title: "Jay Griffin",
 
   // Meta description (shows in search results under title)
-  description: "Full stack developer building modern web applications with React, Next.js, and TypeScript. Available for software development opportunities.",
+  description: "Full-stack developer building modern web applications with React, Next.js, and TypeScript.",
 
   // Keywords for SEO (less important but still used by some search engines)
   keywords: [
     "Jay Griffin",
-    "full stack developer",
+    "full-stack developer",
     "React developer",
     "Next.js developer",
     "TypeScript developer",
@@ -33,7 +33,8 @@ export const metadata = {
 
   // Favicon
   icons: {
-    icon: '/favicon.svg',
+    icon: '/faviconv2.ico?v=2',
+    apple: '/apple-touch-icon-v2.png?v=2',
   },
 
   // Tell search engines to index this site
