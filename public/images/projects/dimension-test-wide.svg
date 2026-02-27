@@ -1,0 +1,132 @@
+<!-- Test SVG for GitHub README dimensions - WIDE VERSION -->
+<svg width="100%" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 400">
+  <!-- Background -->
+  <rect width="3000" height="400" fill="#f6f8fa"/>
+  
+  <!-- Width markers every 100px -->
+  <g font-family="monospace" font-size="10" fill="#24292f">
+    <line x1="0" y1="0" x2="0" y2="400" stroke="#24292f" stroke-width="2"/>
+    <text x="5" y="15" font-weight="bold">0</text>
+    
+    <line x1="100" y1="0" x2="100" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="105" y="15">100</text>
+    <line x1="200" y1="0" x2="200" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="205" y="15">200</text>
+    <line x1="300" y1="0" x2="300" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="305" y="15">300</text>
+    <line x1="400" y1="0" x2="400" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="405" y="15">400</text>
+    <line x1="500" y1="0" x2="500" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="505" y="15">500</text>
+    <line x1="600" y1="0" x2="600" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="605" y="15">600</text>
+    <line x1="700" y1="0" x2="700" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="705" y="15">700</text>
+    <line x1="800" y1="0" x2="800" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="805" y="15">800</text>
+    <line x1="900" y1="0" x2="900" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="905" y="15">900</text>
+    <line x1="1000" y1="0" x2="1000" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="1005" y="15">1000</text>
+    <line x1="1100" y1="0" x2="1100" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="1105" y="15">1100</text>
+    <line x1="1200" y1="0" x2="1200" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="1205" y="15">1200</text>
+    <line x1="1300" y1="0" x2="1300" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="1305" y="15">1300</text>
+    <line x1="1400" y1="0" x2="1400" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="1405" y="15">1400</text>
+    <line x1="1500" y1="0" x2="1500" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="1505" y="15">1500</text>
+    <line x1="1600" y1="0" x2="1600" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="1605" y="15">1600</text>
+    <line x1="1700" y1="0" x2="1700" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="1705" y="15">1700</text>
+    <line x1="1800" y1="0" x2="1800" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="1805" y="15">1800</text>
+    <line x1="1900" y1="0" x2="1900" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="1905" y="15">1900</text>
+    <line x1="2000" y1="0" x2="2000" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="2005" y="15">2000</text>
+    <line x1="2100" y1="0" x2="2100" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="2105" y="15">2100</text>
+    <line x1="2200" y1="0" x2="2200" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="2205" y="15">2200</text>
+    <line x1="2300" y1="0" x2="2300" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="2305" y="15">2300</text>
+    <line x1="2400" y1="0" x2="2400" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="2405" y="15">2400</text>
+    <line x1="2500" y1="0" x2="2500" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="2505" y="15">2500</text>
+    <line x1="2600" y1="0" x2="2600" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="2605" y="15">2600</text>
+    <line x1="2700" y1="0" x2="2700" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="2705" y="15">2700</text>
+    <line x1="2800" y1="0" x2="2800" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="2805" y="15">2800</text>
+    <line x1="2900" y1="0" x2="2900" y2="400" stroke="#d0d7de" stroke-width="1"/>
+    <text x="2905" y="15">2900</text>
+    <line x1="3000" y1="0" x2="3000" y2="400" stroke="#24292f" stroke-width="2"/>
+    <text x="2970" y="15" font-weight="bold">3000</text>
+  </g>
+  
+  <!-- Height markers -->
+  <g font-family="monospace" font-size="10" fill="#24292f">
+    <line x1="0" y1="0" x2="3000" y2="0" stroke="#24292f" stroke-width="2"/>
+    <text x="10" y="15" font-weight="bold">0</text>
+    <line x1="0" y1="100" x2="3000" y2="100" stroke="#d0d7de" stroke-width="1"/>
+    <text x="10" y="115">100</text>
+    <line x1="0" y1="200" x2="3000" y2="200" stroke="#d0d7de" stroke-width="1"/>
+    <text x="10" y="215">200</text>
+    <line x1="0" y1="300" x2="3000" y2="300" stroke="#d0d7de" stroke-width="1"/>
+    <text x="10" y="315">300</text>
+    <line x1="0" y1="400" x2="3000" y2="400" stroke="#24292f" stroke-width="2"/>
+    <text x="10" y="395" font-weight="bold">400</text>
+  </g>
+  
+  <!-- 50px minor lines -->
+  <g stroke="#e1e4e8" stroke-width="0.5" opacity="0.5">
+    <line x1="50" y1="0" x2="50" y2="400"/>
+    <line x1="150" y1="0" x2="150" y2="400"/>
+    <line x1="250" y1="0" x2="250" y2="400"/>
+    <line x1="350" y1="0" x2="350" y2="400"/>
+    <line x1="450" y1="0" x2="450" y2="400"/>
+    <line x1="550" y1="0" x2="550" y2="400"/>
+    <line x1="650" y1="0" x2="650" y2="400"/>
+    <line x1="750" y1="0" x2="750" y2="400"/>
+    <line x1="850" y1="0" x2="850" y2="400"/>
+    <line x1="950" y1="0" x2="950" y2="400"/>
+    <line x1="1050" y1="0" x2="1050" y2="400"/>
+    <line x1="1150" y1="0" x2="1150" y2="400"/>
+    <line x1="1250" y1="0" x2="1250" y2="400"/>
+    <line x1="1350" y1="0" x2="1350" y2="400"/>
+    <line x1="1450" y1="0" x2="1450" y2="400"/>
+    <line x1="1550" y1="0" x2="1550" y2="400"/>
+    <line x1="1650" y1="0" x2="1650" y2="400"/>
+    <line x1="1750" y1="0" x2="1750" y2="400"/>
+    <line x1="1850" y1="0" x2="1850" y2="400"/>
+    <line x1="1950" y1="0" x2="1950" y2="400"/>
+    <line x1="2050" y1="0" x2="2050" y2="400"/>
+    <line x1="2150" y1="0" x2="2150" y2="400"/>
+    <line x1="2250" y1="0" x2="2250" y2="400"/>
+    <line x1="2350" y1="0" x2="2350" y2="400"/>
+    <line x1="2450" y1="0" x2="2450" y2="400"/>
+    <line x1="2550" y1="0" x2="2550" y2="400"/>
+    <line x1="2650" y1="0" x2="2650" y2="400"/>
+    <line x1="2750" y1="0" x2="2750" y2="400"/>
+    <line x1="2850" y1="0" x2="2850" y2="400"/>
+    <line x1="2950" y1="0" x2="2950" y2="400"/>
+    <line x1="0" y1="50" x2="3000" y2="50"/>
+    <line x1="0" y1="150" x2="3000" y2="150"/>
+    <line x1="0" y1="250" x2="3000" y2="250"/>
+    <line x1="0" y1="350" x2="3000" y2="350"/>
+  </g>
+  
+  <!-- Center text -->
+  <text x="1500" y="190" font-family="Arial" font-size="24" fill="#24292f" text-anchor="middle">
+    WIDE Test: 3000px × 400px
+  </text>
+  <text x="1500" y="220" font-family="monospace" font-size="14" fill="#57606a" text-anchor="middle">
+    Testing extreme width rendering
+  </text>
+</svg>

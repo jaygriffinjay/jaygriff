@@ -47,6 +47,7 @@ const ProjectsContainer = styled(Container)`
 
   @media (max-width: 768px) {
     margin-top: 4rem;
+    margin-bottom: 0;
   }
 `;
 
@@ -95,7 +96,10 @@ const projects: ProjectData[] = [
     id: 'bootstrap-fullstack',
     title: 'Bootstrap Full-Stack Webapp',
     description: 'My personal starter template for spinning up new Next.js projects fast. Theme system, component library, dev tools, all the boilerplate. Projects spawned from this template: jaygriff.com, Strava Analyzer, Fitness Data Platform.',
-    placeholderGradient: 'linear-gradient(135deg, #0f2027, #203a43, #2c5364)',
+    imageSrc: '/images/projects/bootstrap-fullstack-webapp.png',
+    imageAlt: 'Bootstrap Full-Stack Webapp gallery app screenshot',
+    imageWidth: 1280,
+    imageHeight: 1333,
     links: [
       { label: 'Read more →', href: '/projects/bootstrap-fullstack-webapp' },
     ],
@@ -122,7 +126,10 @@ const projects: ProjectData[] = [
     id: 'svg-animation-studio',
     title: 'SVG Animation Studio',
     description: 'A coding study exploring hand-coded SVG graphics and CSS animations. Started because I wanted a visually striking GitHub profile banner with animated tessellated triangles, and enjoyed hand-coding SVGs and experimenting with transform properties, keyframes, and animation timing.',
-    placeholderGradient: 'linear-gradient(135deg, #667eea, #764ba2)',
+    imageSrc: '/images/projects/globe.svg',
+    imageAlt: 'Hand-coded SVG globe animation',
+    imageWidth: 1280,
+    imageHeight: 720,
     links: [
       { label: 'Read more →', href: '/projects/github-profile-readme' },
     ],

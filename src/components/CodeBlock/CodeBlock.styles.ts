@@ -21,9 +21,10 @@ export const codeBlockTheme = css`
   pre[class*="language-"],
   code[class*="language-"] {
     color: #d4d4d4;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 500;
     text-shadow: none;
-    font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
+    font-family: var(--font-jetbrains-mono), Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", monospace;
     direction: ltr;
     text-align: left;
     word-spacing: normal;
@@ -306,8 +307,9 @@ export const headerStyles = css`
   align-items: center;
   padding: 8px 16px 8px 8px;
   background: #252530;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 12px;
+  font-weight: 500;
   color: #9cdcfe;
   letter-spacing: 0.5px;
 `;

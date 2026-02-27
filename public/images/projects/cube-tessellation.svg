@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <!-- Parallelogram shape: width=60, height=30, slant=20 -->
+    <!-- All parallelograms are 60x30, slant=20 -->
+      <symbol id="parallelogram" viewBox="0 0 40 20">
+  <polygon points="2.5,0 10,0 7.5,5 0,5" />
+      </symbol>
+  </defs>
+
+  <!-- Background rectangle to show full canvas area -->
+  <rect x="0" y="0" width="1280" height="720" fill="#444444" />
+
+  <g id="tessellation">
+    <g id="cube">
+      <!-- Top face: red -->
+  <!-- All faces share the same center, rotated by 0, 120, and 240 degrees -->
+  <use href="#parallelogram" x="640" y="360" width="120" height="60" fill="#ff0000" transform="rotate(0,640,360)" />
+  <use href="#parallelogram" x="640" y="360" width="120" height="60" fill="#0000ff" transform="rotate(120,640,360)" />
+  <use href="#parallelogram" x="640" y="360" width="120" height="60" fill="#ffff00" transform="rotate(240,640,360)" />
+    </g>
+  </g>
+</svg>

@@ -5,8 +5,17 @@ import NavBar from '../components/NavBar';
 import { getAllRoutes } from '@/lib/routes';
 import { Analytics } from '@vercel/analytics/next';
 import { Sekuya } from 'next/font/google';
+import localFont from 'next/font/local';
 
 const sekuya = Sekuya({ subsets: ['latin'], weight: ['400'], adjustFontFallback: false, variable: '--font-sekuya' });
+const jetbrainsMono = localFont({
+  src: [
+    { path: '../assets/fonts/JetBrainsMono[wght].ttf', style: 'normal', weight: '100 800' },
+    { path: '../assets/fonts/JetBrainsMono-Italic[wght].ttf', style: 'italic', weight: '100 800' },
+  ],
+  display: 'swap',
+  variable: '--font-jetbrains-mono',
+});
 
 export const metadata = {
   // Site title (shows in browser tab and search results)
@@ -49,7 +58,7 @@ export default async function RootLayout({
   const routes = await getAllRoutes();
   
   return (
-    <html lang="en" className={sekuya.variable}>
+    <html lang="en" className={`${sekuya.variable} ${jetbrainsMono.variable}`}>
       <body>
         <ThemeProviders>
           <GlobalStyles />

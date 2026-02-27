@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <!-- Gray background -->
+  <rect x="0" y="0" width="1280" height="720" fill="#444444" />
+  <defs>
+    <!-- Carat symbol: a thin chevron (^) -->
+    <symbol id="carat" viewBox="0 0 40 40">
+  <polyline points="5,35 20,5 35,35" stroke="currentColor" stroke-width="8" fill="none" />
+    </symbol>
+  </defs>
+  <g id="carat-cube">
+    <!-- Center of canvas is (640,360) -->
+  <use href="#carat" x="620" y="320" width="40" height="40" style="color:#ff0000" />
+  <use href="#carat" x="620" y="320" width="40" height="40" style="color:#0000ff" transform="rotate(120,640,340)" />
+  <use href="#carat" x="620" y="320" width="40" height="40" style="color:#ffff00" transform="rotate(240,640,340)" />
+  </g>
+</svg>

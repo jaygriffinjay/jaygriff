@@ -6,6 +6,7 @@ export const metadata: PostMeta = {
   title: 'Container & Margin Behavior Map',
   slug: 'container-margin-map',
   date: '2026-02-19T20:30:00Z',
+  updated: ['2026-02-23T00:00:00Z'],
   description:
     'A detailed map of how my global body spacing, Container primitive margins, and page-level overrides combine across the site.',
   tags: ['layout', 'css', 'spacing', 'primitives', 'docs'],
@@ -68,8 +69,12 @@ export default function ContainerMarginMap() {
   margin-left: auto;
   margin-right: auto;
   margin-top: 4rem;
-  margin-bottom: 24rem;
+  margin-bottom: 20rem;
   padding: 0 ...;
+
+  @media (max-width: 768px) {
+    margin-bottom: 12rem;
+  }
 `}
       </CodeBlock>
 
@@ -79,7 +84,7 @@ export default function ContainerMarginMap() {
 
       <List>
         <ListItem><Code>+4rem</Code> top margin from <Code>Container</Code></ListItem>
-        <ListItem><Code>+24rem</Code> bottom margin from <Code>Container</Code></ListItem>
+        <ListItem><Code>+20rem</Code> bottom margin from <Code>Container</Code> on desktop, <Code>+12rem</Code> on mobile</ListItem>
         <ListItem>plus body top padding from global styles</ListItem>
       </List>
 
@@ -96,6 +101,7 @@ export default function ContainerMarginMap() {
 
   @media (max-width: 768px) {
     margin-top: 4rem;
+    margin-bottom: 0;
   }
 ;
 
@@ -117,7 +123,7 @@ export default function ContainerMarginMap() {
 {`Most pages (using plain Container):
 - Desktop: body padding-top 4rem + container margin-top 4rem = 8rem top spacing
 - Mobile:  body padding-top 1rem + container margin-top 4rem = 5rem top spacing
-- Bottom:  container margin-bottom 24rem
+- Bottom:  container margin-bottom 20rem (desktop), 12rem (mobile)
 
 /projects page (using ProjectsContainer override):
 - Desktop: body padding-top 4rem + container margin-top 0 = 4rem top spacing
@@ -130,7 +136,7 @@ export default function ContainerMarginMap() {
       <List>
         <ListItem>I had spacing at both the global <Code>body</Code> layer and the <Code>Container</Code> layer.</ListItem>
         <ListItem>I then added a page-level override on top of both.</ListItem>
-        <ListItem>My mobile behavior differs globally and locally, so it looked inconsistent until mapped out.</ListItem>
+        <ListItem>When I added a mobile <Code>Container</Code> bottom margin globally, I also had to explicitly keep <Code>/projects</Code> at <Code>margin-bottom: 0</Code> on mobile.</ListItem>
       </List>
 
       <Heading level={2}>Rules I follow now</Heading>

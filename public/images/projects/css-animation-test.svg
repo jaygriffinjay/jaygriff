@@ -1,0 +1,13 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .moving {
+      animation: move 2s linear infinite alternate;
+    }
+    @keyframes move {
+      from { transform: translateX(0); }
+      to { transform: translateX(100px); }
+    }
+  </style>
+  <rect x="10" y="80" width="40" height="40" fill="#4ECDC4" class="moving" />
+  <text x="10" y="150" font-size="16" fill="#333">CSS Animation Test</text>
+</svg>

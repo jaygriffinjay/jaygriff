@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Heading, Paragraph, List, ListItem, Code, Divider, Blockquote, Link, Table, Thead, Tbody, Tr, Th, Td } from '@/components/Primitives';
 import { CodeBlock } from '@/components/CodeBlock/CodeBlock';
+import NextImage from 'next/image';
 
 interface MarkdownRendererProps {
   content: string;
@@ -25,6 +26,23 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
         ol: ({ children }) => <List ordered>{children}</List>,
         li: ({ children }) => <ListItem>{children}</ListItem>,
         a: ({ href, children }) => <Link href={href || '#'}>{children}</Link>,
+        img: ({ src, alt }) => typeof src !== 'string' ? null : (
+          <span style={{ display: 'block', margin: '1.5rem 0' }}>
+            <NextImage
+              src={src || ''}
+              alt={alt || ''}
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: '100%', height: 'auto', borderRadius: '6px' }}
+            />
+            {alt && (
+              <span style={{ display: 'block', marginTop: '0.5rem', fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', fontStyle: 'italic' }}>
+                {alt}
+              </span>
+            )}
+          </span>
+        ),
         // Block code: pre wraps code blocks, extract content and render CodeBlock
         pre: ({ children }: any) => {
           const codeProps = children?.props;

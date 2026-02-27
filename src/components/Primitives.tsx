@@ -200,8 +200,8 @@ export function Link({ href, children, ...props }: LinkProps) {
 // ============================================================================
 
 export const Code = styled.code`
-  font-family: ${props => props.theme.fonts.mono};
-  font-size: 0.9em;
+  font-family: var(--font-jetbrains-mono), ${props => props.theme.fonts.mono};
+  font-size: .9em;
   background: ${props => props.theme.colors.hover};
   border-left: 2px solid ${props => props.theme.colors.primary}33;
   border-radius: ${props => props.theme.radii.small};
@@ -386,8 +386,12 @@ export const Container = styled.div<{ size?: 'sm' | 'md' | 'lg' | 'xl' | 'full' 
   margin-left: auto;
   margin-right: auto;
   margin-top: 4rem;
-  margin-bottom: 24rem;
+  margin-bottom: 20rem;
   padding: 0 ${props => props.theme.spacing.lg};
+
+  @media (max-width: 768px) {
+    margin-bottom: 12rem;
+  }
 `;
 
 // ============================================================================

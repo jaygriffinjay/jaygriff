@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="720" viewBox="0 0 1280 720">
+  <style>
+    .dash-animate {
+      animation: dash-move 6s linear infinite;
+      stroke-dashoffset: 60;
+    }
+    @keyframes dash-move {
+      from { stroke-dashoffset: 60; }
+      to { stroke-dashoffset: 0; }
+    }
+    .fade-animate {
+      animation: fade-in-out 4s ease-in-out infinite;
+      opacity: 0;
+    }
+    @keyframes fade-in-out {
+      0%   { opacity: 0; stroke: blue; }
+      20%  { opacity: 0.5; stroke: cyan; }
+      40%  { opacity: 1; stroke: #0ff; }
+      60%  { opacity: 1; stroke: magenta; }
+      80%  { opacity: 0.5; stroke: yellow; }
+      100% { opacity: 0; stroke: blue; }
+    }
+  </style>
+  <defs>
+    <!-- Latitude ellipse symbol -->
+    <symbol id="lat-ellipse" viewBox="0 0 1280 720">
+      <ellipse cx="640" cy="360" rx="300" ry="150" fill="none" stroke="#fff" stroke-width="2" />
+    </symbol>
+    <!-- Longitude ellipse symbol -->
+    <symbol id="lon-ellipse" viewBox="0 0 1280 720">
+      <ellipse cx="640" cy="360" rx="300" ry="150" fill="none" stroke="#0ff" stroke-width="2" />
+    </symbol>
+  </defs>
+  <!-- Draw 20 latitude ellipses by scaling ry -->
+  <g id="latitudes">
+    
+  </g>
+  <!-- Draw 20 longitude ellipses by rotating the base ellipse -->
+  <defs>
+    <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0ff" stop-opacity="1" />
+      <stop offset="70%" stop-color="#0ff" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#0ff" stop-opacity="0" />
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#0ff" flood-opacity="0.8" />
+    </filter>
+  </defs>
+  <g id="longitudes">
+  <!-- 20 longitude paths, each rotated around the globe center -->
+  <!-- 40 longitude paths, each rotated around the globe center -->
+  <path id="longPath0" class="dash-animate fade-animate" style="animation-delay: 0s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(0,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath1" class="dash-animate fade-animate" style="animation-delay: 0.1s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(9,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath2" class="dash-animate fade-animate" style="animation-delay: 0.2s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(18,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath3" class="dash-animate fade-animate" style="animation-delay: 0.3s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(27,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath4" class="dash-animate fade-animate" style="animation-delay: 0.4s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(36,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath5" class="dash-animate fade-animate" style="animation-delay: 0.5s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(45,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath6" class="dash-animate fade-animate" style="animation-delay: 0.6s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(54,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath7" class="dash-animate fade-animate" style="animation-delay: 0.7s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(63,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath8" class="dash-animate fade-animate" style="animation-delay: 0.8s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(72,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath9" class="dash-animate fade-animate" style="animation-delay: 0.9s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(81,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath10" class="dash-animate fade-animate" style="animation-delay: 1.0s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(90,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath11" class="dash-animate fade-animate" style="animation-delay: 1.1s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(99,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath12" class="dash-animate fade-animate" style="animation-delay: 1.2s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(108,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath13" class="dash-animate fade-animate" style="animation-delay: 1.3s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(117,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath14" class="dash-animate fade-animate" style="animation-delay: 1.4s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(126,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath15" class="dash-animate fade-animate" style="animation-delay: 1.5s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(135,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath16" class="dash-animate fade-animate" style="animation-delay: 1.6s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(144,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath17" class="dash-animate fade-animate" style="animation-delay: 1.7s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(153,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath18" class="dash-animate fade-animate" style="animation-delay: 1.8s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(162,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath19" class="dash-animate fade-animate" style="animation-delay: 1.9s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(171,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath20" class="dash-animate fade-animate" style="animation-delay: 2.0s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(180,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath21" class="dash-animate fade-animate" style="animation-delay: 2.1s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(189,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath22" class="dash-animate fade-animate" style="animation-delay: 2.2s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(198,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath23" class="dash-animate fade-animate" style="animation-delay: 2.3s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(207,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath24" class="dash-animate fade-animate" style="animation-delay: 2.4s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(216,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath25" class="dash-animate fade-animate" style="animation-delay: 2.5s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(225,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath26" class="dash-animate fade-animate" style="animation-delay: 2.6s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(234,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath27" class="dash-animate fade-animate" style="animation-delay: 2.7s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(243,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath28" class="dash-animate fade-animate" style="animation-delay: 2.8s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(252,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath29" class="dash-animate fade-animate" style="animation-delay: 2.9s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(261,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath30" class="dash-animate fade-animate" style="animation-delay: 3.0s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(270,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath31" class="dash-animate fade-animate" style="animation-delay: 3.1s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(279,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath32" class="dash-animate fade-animate" style="animation-delay: 3.2s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(288,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath33" class="dash-animate fade-animate" style="animation-delay: 3.3s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(297,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath34" class="dash-animate fade-animate" style="animation-delay: 3.4s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(306,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath35" class="dash-animate fade-animate" style="animation-delay: 3.5s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(315,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath36" class="dash-animate fade-animate" style="animation-delay: 3.6s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(324,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath37" class="dash-animate fade-animate" style="animation-delay: 3.7s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(333,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath38" class="dash-animate fade-animate" style="animation-delay: 3.8s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(342,640,360)" stroke-dasharray="40,20" />
+  <path id="longPath39" class="dash-animate fade-animate" style="animation-delay: 3.9s;" d="M940,360 A300,150 0 1,0 340,360 A300,150 0 1,0 940,360" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(351,640,360)" stroke-dasharray="40,20" />
+  </g>
+</svg>

@@ -11,6 +11,7 @@ export const metadata: PostMeta = {
   type: 'post',
   author: ['Jay Griffin'],
   updated: [
+    '2026-02-23T00:00:00Z',
     '2026-02-04T00:00:00Z',
     '2026-02-03T00:00:00Z',
     '2026-02-02T00:00:00Z',
@@ -203,6 +204,39 @@ module.exports = { formatDate };`}
 </body>
 </html>`}
       </CodeBlock>
+
+  <Heading level={2}>File Tree Debug (Text Rendering)</Heading>
+  <CodeBlock language="text" filename="layout-spacing-file-tree.txt">
+    {`src/
+  ├─ app/
+  │  ├─ layout.tsx
+  │  ├─ page.tsx
+  │  ├─ projects/
+  │  │  ├─ page.tsx
+  │  │  ├─ bythehour/
+  │  │  │  └─ page.tsx
+  │  │  └─ strava-analyzer/
+  │  │     └─ page.tsx
+  │  └─ docs/
+  │     └─ [slug]/
+  │        └─ page.tsx
+  ├─ components/
+  │  ├─ CodeBlock/
+  │  │  ├─ CodeBlock.tsx
+  │  │  └─ CodeBlock.styles.ts
+  │  ├─ Primitives.tsx
+  │  └─ ProjectVisualCard/
+  │     ├─ ProjectVisualCard.tsx
+  │     └─ ProjectVisualCard.styles.ts
+  ├─ styles/
+  │  └─ GlobalStyles.tsx
+  ├─ theme/
+  │  ├─ theme.tsx
+  │  └─ themeData.ts
+  └─ lib/
+    ├─ posts.ts
+    └─ routes.ts`}
+  </CodeBlock>
 
       <Heading level={2}>Markdown Files</Heading>
       <CodeBlock language="markdown" filename="README.md">

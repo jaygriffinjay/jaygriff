@@ -1,0 +1,787 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Square background -->
+  <rect width="400" height="400" fill="none" stroke="black" stroke-width="2"/>
+  
+  <!-- Equilateral triangle tessellation - side length = 40px, height = 34.64px -->
+  <g id="triangle-grid">
+    <!-- Row 0 -->
+    <polygon points="0,0 -20,34.64 60,34.64" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="0,0 40,0 20,34.64" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="40,0 20,34.64 60,34.64" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="40,0 80,0 60,34.64" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="80,0 60,34.64 100,34.64" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="80,0 120,0 100,34.64" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="120,0 100,34.64 140,34.64" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="120,0 160,0 140,34.64" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="160,0 140,34.64 180,34.64" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="160,0 200,0 180,34.64" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="200,0 180,34.64 220,34.64" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="200,0 240,0 220,34.64" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="240,0 220,34.64 260,34.64" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="240,0 280,0 260,34.64" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="280,0 260,34.64 300,34.64" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="280,0 320,0 300,34.64" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="320,0 300,34.64 340,34.64" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="320,0 360,0 340,34.64" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="360,0 340,34.64 380,34.64" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="360,0 400,0 380,34.64" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="400,0 380,34.64 400,34.64" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Row 1 -->
+    <polygon points="0,34.64 20,34.64 0,69.28" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="20,34.64 0,69.28 40,69.28" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="20,34.64 60,34.64 40,69.28" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="60,34.64 40,69.28 80,69.28" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="60,34.64 100,34.64 80,69.28" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="100,34.64 80,69.28 120,69.28" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="100,34.64 140,34.64 120,69.28" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="140,34.64 120,69.28 160,69.28" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="140,34.64 180,34.64 160,69.28" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="180,34.64 160,69.28 200,69.28" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="180,34.64 220,34.64 200,69.28" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="220,34.64 200,69.28 240,69.28" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="220,34.64 260,34.64 240,69.28" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="260,34.64 240,69.28 280,69.28" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="260,34.64 300,34.64 280,69.28" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="300,34.64 280,69.28 320,69.28" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="300,34.64 340,34.64 320,69.28" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="340,34.64 320,69.28 360,69.28" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="340,34.64 380,34.64 360,69.28" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="380,34.64 360,69.28 400,69.28" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="380,34.64 400,34.64 400,69.28" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Row 2 -->
+    <polygon points="0,69.28 -20,103.92 60,103.92" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="0,69.28 40,69.28 20,103.92" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="40,69.28 20,103.92 60,103.92" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="40,69.28 80,69.28 60,103.92" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="80,69.28 60,103.92 100,103.92" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="80,69.28 120,69.28 100,103.92" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="120,69.28 100,103.92 140,103.92" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="120,69.28 160,69.28 140,103.92" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="160,69.28 140,103.92 180,103.92" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="160,69.28 200,69.28 180,103.92" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="200,69.28 180,103.92 220,103.92" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="200,69.28 240,69.28 220,103.92" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="240,69.28 220,103.92 260,103.92" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="240,69.28 280,69.28 260,103.92" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="280,69.28 260,103.92 300,103.92" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="280,69.28 320,69.28 300,103.92" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="320,69.28 300,103.92 340,103.92" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="320,69.28 360,69.28 340,103.92" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="360,69.28 340,103.92 380,103.92" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="360,69.28 400,69.28 380,103.92" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="400,69.28 380,103.92 400,103.92" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Row 3 -->
+    <polygon points="0,103.92 20,103.92 0,138.56" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="20,103.92 0,138.56 40,138.56" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="20,103.92 60,103.92 40,138.56" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="60,103.92 40,138.56 80,138.56" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="60,103.92 100,103.92 80,138.56" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="100,103.92 80,138.56 120,138.56" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="100,103.92 140,103.92 120,138.56" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="140,103.92 120,138.56 160,138.56" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="140,103.92 180,103.92 160,138.56" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="180,103.92 160,138.56 200,138.56" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="180,103.92 220,103.92 200,138.56" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="220,103.92 200,138.56 240,138.56" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="220,103.92 260,103.92 240,138.56" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="260,103.92 240,138.56 280,138.56" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="260,103.92 300,103.92 280,138.56" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="300,103.92 280,138.56 320,138.56" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="300,103.92 340,103.92 320,138.56" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="340,103.92 320,138.56 360,138.56" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="340,103.92 380,103.92 360,138.56" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="380,103.92 360,138.56 400,138.56" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="380,103.92 400,103.92 400,138.56" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Row 4 -->
+    <polygon points="0,138.56 -20,173.2 60,173.2" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="0,138.56 40,138.56 20,173.2" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="40,138.56 20,173.2 60,173.2" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="40,138.56 80,138.56 60,173.2" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="80,138.56 60,173.2 100,173.2" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="80,138.56 120,138.56 100,173.2" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="120,138.56 100,173.2 140,173.2" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="120,138.56 160,138.56 140,173.2" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="160,138.56 140,173.2 180,173.2" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="160,138.56 200,138.56 180,173.2" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="200,138.56 180,173.2 220,173.2" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="200,138.56 240,138.56 220,173.2" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="240,138.56 220,173.2 260,173.2" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="240,138.56 280,138.56 260,173.2" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="280,138.56 260,173.2 300,173.2" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="280,138.56 320,138.56 300,173.2" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="320,138.56 300,173.2 340,173.2" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="320,138.56 360,138.56 340,173.2" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="360,138.56 340,173.2 380,173.2" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="360,138.56 400,138.56 380,173.2" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="400,138.56 380,173.2 400,173.2" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Row 5 -->
+    <polygon points="0,173.2 20,173.2 0,207.84" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="20,173.2 0,207.84 40,207.84" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="20,173.2 60,173.2 40,207.84" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="60,173.2 40,207.84 80,207.84" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="60,173.2 100,173.2 80,207.84" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="100,173.2 80,207.84 120,207.84" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="100,173.2 140,173.2 120,207.84" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="140,173.2 120,207.84 160,207.84" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="140,173.2 180,173.2 160,207.84" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="180,173.2 160,207.84 200,207.84" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="180,173.2 220,173.2 200,207.84" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="220,173.2 200,207.84 240,207.84" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="220,173.2 260,173.2 240,207.84" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="260,173.2 240,207.84 280,207.84" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="260,173.2 300,173.2 280,207.84" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="300,173.2 280,207.84 320,207.84" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="300,173.2 340,173.2 320,207.84" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="340,173.2 320,207.84 360,207.84" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="340,173.2 380,173.2 360,207.84" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="380,173.2 360,207.84 400,207.84" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="380,173.2 400,173.2 400,207.84" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Row 6 -->
+    <polygon points="0,207.84 -20,242.48 60,242.48" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="0,207.84 40,207.84 20,242.48" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="40,207.84 20,242.48 60,242.48" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="40,207.84 80,207.84 60,242.48" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="80,207.84 60,242.48 100,242.48" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="80,207.84 120,207.84 100,242.48" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="120,207.84 100,242.48 140,242.48" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="120,207.84 160,207.84 140,242.48" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="160,207.84 140,242.48 180,242.48" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="160,207.84 200,207.84 180,242.48" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="200,207.84 180,242.48 220,242.48" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="200,207.84 240,207.84 220,242.48" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="240,207.84 220,242.48 260,242.48" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="240,207.84 280,207.84 260,242.48" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="280,207.84 260,242.48 300,242.48" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="280,207.84 320,207.84 300,242.48" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="320,207.84 300,242.48 340,242.48" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="320,207.84 360,207.84 340,242.48" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="360,207.84 340,242.48 380,242.48" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="360,207.84 400,207.84 380,242.48" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="400,207.84 380,242.48 400,242.48" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Row 7 -->
+    <polygon points="0,242.48 20,242.48 0,277.12" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="20,242.48 0,277.12 40,277.12" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="20,242.48 60,242.48 40,277.12" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="60,242.48 40,277.12 80,277.12" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="60,242.48 100,242.48 80,277.12" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="100,242.48 80,277.12 120,277.12" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="100,242.48 140,242.48 120,277.12" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="140,242.48 120,277.12 160,277.12" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="140,242.48 180,242.48 160,277.12" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="180,242.48 160,277.12 200,277.12" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="180,242.48 220,242.48 200,277.12" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="220,242.48 200,277.12 240,277.12" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="220,242.48 260,242.48 240,277.12" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="260,242.48 240,277.12 280,277.12" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="260,242.48 300,242.48 280,277.12" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="300,242.48 280,277.12 320,277.12" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="300,242.48 340,242.48 320,277.12" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="340,242.48 320,277.12 360,277.12" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="340,242.48 380,242.48 360,277.12" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="380,242.48 360,277.12 400,277.12" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="380,242.48 400,242.48 400,277.12" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Row 8 -->
+    <polygon points="0,277.12 -20,311.76 60,311.76" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="0,277.12 40,277.12 20,311.76" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="40,277.12 20,311.76 60,311.76" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="40,277.12 80,277.12 60,311.76" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="80,277.12 60,311.76 100,311.76" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="80,277.12 120,277.12 100,311.76" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="120,277.12 100,311.76 140,311.76" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="120,277.12 160,277.12 140,311.76" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="160,277.12 140,311.76 180,311.76" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="160,277.12 200,277.12 180,311.76" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="200,277.12 180,311.76 220,311.76" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="200,277.12 240,277.12 220,311.76" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="240,277.12 220,311.76 260,311.76" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="240,277.12 280,277.12 260,311.76" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="280,277.12 260,311.76 300,311.76" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="280,277.12 320,277.12 300,311.76" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="320,277.12 300,311.76 340,311.76" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="320,277.12 360,277.12 340,311.76" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="360,277.12 340,311.76 380,311.76" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="360,277.12 400,277.12 380,311.76" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="400,277.12 380,311.76 400,311.76" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Row 9 -->
+    <polygon points="0,311.76 20,311.76 0,346.4" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="20,311.76 0,346.4 40,346.4" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="20,311.76 60,311.76 40,346.4" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="60,311.76 40,346.4 80,346.4" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="60,311.76 100,311.76 80,346.4" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="100,311.76 80,346.4 120,346.4" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="100,311.76 140,311.76 120,346.4" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="140,311.76 120,346.4 160,346.4" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="140,311.76 180,311.76 160,346.4" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="180,311.76 160,346.4 200,346.4" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="180,311.76 220,311.76 200,346.4" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="220,311.76 200,346.4 240,346.4" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="220,311.76 260,311.76 240,346.4" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="260,311.76 240,346.4 280,346.4" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="260,311.76 300,311.76 280,346.4" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="300,311.76 280,346.4 320,346.4" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="300,311.76 340,311.76 320,346.4" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="340,311.76 320,346.4 360,346.4" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="340,311.76 380,311.76 360,346.4" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="380,311.76 360,346.4 400,346.4" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="380,311.76 400,311.76 400,346.4" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Row 10 -->
+    <polygon points="0,346.4 -20,381.04 60,381.04" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="0,346.4 40,346.4 20,381.04" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="40,346.4 20,381.04 60,381.04" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="40,346.4 80,346.4 60,381.04" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="80,346.4 60,381.04 100,381.04" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="80,346.4 120,346.4 100,381.04" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="120,346.4 100,381.04 140,381.04" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="120,346.4 160,346.4 140,381.04" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="160,346.4 140,381.04 180,381.04" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="160,346.4 200,346.4 180,381.04" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="200,346.4 180,381.04 220,381.04" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="200,346.4 240,346.4 220,381.04" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="240,346.4 220,381.04 260,381.04" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="240,346.4 280,346.4 260,381.04" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="280,346.4 260,381.04 300,381.04" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="280,346.4 320,346.4 300,381.04" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="320,346.4 300,381.04 340,381.04" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="320,346.4 360,346.4 340,381.04" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="360,346.4 340,381.04 380,381.04" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="360,346.4 400,346.4 380,381.04" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="400,346.4 380,381.04 400,381.04" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Row 11 (partial to fill to 400) -->
+    <polygon points="0,381.04 20,381.04 0,400" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="20,381.04 0,400 40,400" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="20,381.04 60,381.04 40,400" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="60,381.04 40,400 80,400" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="60,381.04 100,381.04 80,400" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="100,381.04 80,400 120,400" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="100,381.04 140,381.04 120,400" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="140,381.04 120,400 160,400" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="140,381.04 180,381.04 160,400" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="180,381.04 160,400 200,400" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="180,381.04 220,381.04 200,400" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="220,381.04 200,400 240,400" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="220,381.04 260,381.04 240,400" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="260,381.04 240,400 280,400" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="260,381.04 300,381.04 280,400" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="300,381.04 280,400 320,400" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="300,381.04 340,381.04 320,400" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="340,381.04 320,400 360,400" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="340,381.04 380,381.04 360,400" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="380,381.04 360,400 400,400" fill="#FF6B6B" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="380,381.04 400,381.04 400,400" fill="#4ECDC4" stroke="white" stroke-width="0.5">
+      <animate attributeName="stroke-width" values="0.5;6;0.5" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+</svg>

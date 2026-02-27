@@ -1,0 +1,76 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="1920" height="1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<defs>
+	<linearGradient id="jayGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+		<stop offset="0%" stop-color="#FF6B6B" />
+		<stop offset="50%" stop-color="#FFD93D" />
+		<stop offset="100%" stop-color="#4ECDC4" />
+	</linearGradient>
+<path id="double" d="M 214.5 0 H 356.7 V 142.2 L 224.2 224.2 142.2 356.7 H 0 V 214.5 L 132.5 132.5 Z">
+						<animateTransform attributeName="transform" type="rotate" values="0 224.2 224.2;36 224.2 224.2;72 224.2 224.2;108 224.2 224.2;144 224.2 224.2;180 224.2 224.2;216 224.2 224.2;252 224.2 224.2;288 224.2 224.2;324 224.2 224.2;360 224.2 224.2" dur="10s" repeatCount="indefinite" calcMode="linear" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1" />
+						<animateTransform attributeName="transform" type="rotate" values="0 224.2 224.2;90 224.2 224.2;180 224.2 224.2;270 224.2 224.2;360 224.2 224.2" dur="12s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.8 0 0.2 1;0.5 0 0.5 1;0.5 0 0.5 1;0.8 0 0.2 1" />
+</path>
+<path id="single" d="M 356.7 142.2 224.2 224.2 270.8 356.7 H 442.6 L 489.2 224.2 Z">
+						<animateTransform attributeName="transform" type="rotate" values="0 356.7 224.2;36 356.7 224.2;72 356.7 224.2;108 356.7 224.2;144 356.7 224.2;180 356.7 224.2;216 356.7 224.2;252 356.7 224.2;288 356.7 224.2;324 356.7 224.2;360 356.7 224.2" dur="10s" repeatCount="indefinite" calcMode="linear" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1" />
+						<animateTransform attributeName="transform" type="rotate" values="0 356.7 224.2;90 356.7 224.2;180 356.7 224.2;270 356.7 224.2;360 356.7 224.2" dur="12s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.8 0 0.2 1;0.5 0 0.5 1;0.5 0 0.5 1;0.8 0 0.2 1" />
+</path>
+<path id="quad" d="M 224.2 224.2 270.8 356.7 224.2 489.2 142.2 356.7 Z">
+						<animateTransform attributeName="transform" type="rotate" values="0 224.2 356.7;36 224.2 356.7;72 224.2 356.7;108 224.2 356.7;144 224.2 356.7;180 224.2 356.7;216 224.2 356.7;252 224.2 356.7;288 224.2 356.7;324 224.2 356.7;360 224.2 356.7" dur="10s" repeatCount="indefinite" calcMode="linear" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1" />
+						<animateTransform attributeName="transform" type="rotate" values="0 224.2 356.7;90 224.2 356.7;180 224.2 356.7;270 224.2 356.7;360 224.2 356.7" dur="12s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.25;0.5;0.75;1" keySplines="0.8 0 0.2 1;0.5 0 0.5 1;0.5 0 0.5 1;0.8 0 0.2 1" />
+</path>
+<g id="cell" stroke="none">
+<use xlink:href="#double" fill="#2b2b2b"></use>
+<use xlink:href="#double" fill="#aaaaaa" transform="translate(0,713.4) rotate(-90)"></use>
+<use xlink:href="#double" fill="#808080" transform="translate(713.4,0) rotate(90)"></use>
+<use xlink:href="#double" fill="#ffffff" transform="translate(713.4,713.4) rotate(180)"></use>
+<use xlink:href="#single" fill="#d5d5d5"></use>
+<use xlink:href="#single" fill="#d5d5d5" transform="translate(356.7,356.7) rotate(180)"></use>
+<use xlink:href="#single" fill="#555555" transform="translate(713.4,713.4) rotate(180)"></use>
+<use xlink:href="#single" fill="#555555" transform="translate(-356.7,356.7)"></use>
+<use xlink:href="#quad" fill="#000000"></use>
+<use xlink:href="#quad" fill="#000000" transform="translate(713.4,713.4) rotate(180)"></use>
+<use xlink:href="#quad" fill="#000000" transform="translate(356.7,356.7) rotate(180)"></use>
+<use xlink:href="#quad" fill="#000000" transform="translate(356.7,-356.7)"></use>
+</g>
+</defs>
+<g transform="scale(0.5)">
+	<g transform="translate(98.6,98.6)">
+	<use xlink:href="#cell" transform="translate(3566.0,0)"></use>
+	<use xlink:href="#cell" transform="translate(4279.4,0)"></use>
+	<use xlink:href="#cell" transform="translate(3566.0,713.4)"></use>
+	<use xlink:href="#cell" transform="translate(4279.4,713.4)"></use>
+	<use xlink:href="#cell" transform="translate(3566.0,-713.4)"></use>
+	<use xlink:href="#cell" transform="translate(4279.4,-713.4)"></use>
+	<use xlink:href="#cell" transform="translate(3566.0,1426.8)"></use>
+	<use xlink:href="#cell" transform="translate(4279.4,1426.8)"></use>
+		<use xlink:href="#cell"></use>
+		<use xlink:href="#cell" transform="translate(713.4,0)"></use>
+		<use xlink:href="#cell" transform="translate(1426.8,0)"></use>
+		<use xlink:href="#cell" transform="translate(2139.2,0)"></use>
+		<use xlink:href="#cell" transform="translate(2852.6,0)"></use>
+		<use xlink:href="#cell" transform="translate(0,713.4)"></use>
+		<use xlink:href="#cell" transform="translate(713.4,713.4)"></use>
+		<use xlink:href="#cell" transform="translate(1426.8,713.4)"></use>
+		<use xlink:href="#cell" transform="translate(2139.2,713.4)"></use>
+		<use xlink:href="#cell" transform="translate(2852.6,713.4)"></use>
+		<use xlink:href="#cell" transform="translate(-713.4,0)"></use>
+		<use xlink:href="#cell" transform="translate(-713.4,713.4)"></use>
+		<use xlink:href="#cell" transform="translate(0,-713.4)"></use>
+		<use xlink:href="#cell" transform="translate(713.4,-713.4)"></use>
+		<use xlink:href="#cell" transform="translate(1426.8,-713.4)"></use>
+		<use xlink:href="#cell" transform="translate(2139.2,-713.4)"></use>
+		<use xlink:href="#cell" transform="translate(2852.6,-713.4)"></use>
+		<use xlink:href="#cell" transform="translate(0,1426.8)"></use>
+		<use xlink:href="#cell" transform="translate(713.4,1426.8)"></use>
+		<use xlink:href="#cell" transform="translate(1426.8,1426.8)"></use>
+		<use xlink:href="#cell" transform="translate(2139.2,1426.8)"></use>
+		<use xlink:href="#cell" transform="translate(2852.6,1426.8)"></use>
+		<use xlink:href="#cell" transform="translate(-713.4,1426.8)"></use>
+		<use xlink:href="#cell" transform="translate(1426.8,-713.4)"></use>
+	</g>
+</g>
+</svg>
+
