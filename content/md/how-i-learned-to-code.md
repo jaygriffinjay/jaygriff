@@ -27,7 +27,7 @@ That's the context that made everything click faster once I started.
 
 I became weirdly obsessed with doing things faster. I love hotkeys and searchboxes. I hate hunting around for something. I love to just search and find what I'm looking for instantly.
 
-That interest led me to **[AutoHotkey](https://www.autohotkey.com)**, a tool for automating Windows with hotkeys. My first goal was quite simple: open my most-used websites (pretty boring ones too - my email, calendar, and bank account and credit cards) with a hotkey instead of clicking on my bookmarks every time. Why open the same five bookmarks every day when I can click one button each morning? 
+That interest led me to [AutoHotkey](https://www.autohotkey.com), a tool for automating Windows with hotkeys. My first goal was quite simple: open my most-used websites (pretty boring ones too - my email, calendar, and bank account and credit cards) with a hotkey instead of clicking on my bookmarks every time. Why open the same five bookmarks every day when I can click one button each morning? 
 
 So here is how I implemented this in AutoHotKey 👇
 

@@ -27,27 +27,12 @@ export default function AboutThisSite() {
         It's where I document my work, share my thoughts, and build web applications.
       </Paragraph>
 
-      <Heading level={2}>Site Highlights</Heading>
-
-      <Paragraph>
-        If you want the short version, these two pages are the best overview of what I'm building and where it's going.
-      </Paragraph>
-
-      <List>
-        <ListItem>
-          <Link href="/features">Features</Link> — A living index of the most important parts of the platform.
-        </ListItem>
-        <ListItem>
-          <Link href="/roadmap">Roadmap</Link> — What I'm actively building next and why.
-        </ListItem>
-      </List>
-
       <Heading level={2}>What I Built</Heading>
 
       <Paragraph>
         On the surface, this looks like a standard personal website. Under the hood, it's a full-stack 
         framework for rapidly building and shipping web applications. The site itself is the primary 
-        application, but it also serves as a container for other projects.
+        application, but it also serves as a container for other projects. You can browse the <Link href="/features">site features</Link> or check the <Link href="/roadmap">roadmap</Link> to see what's been built and what's coming.
       </Paragraph>
 
       <Paragraph>

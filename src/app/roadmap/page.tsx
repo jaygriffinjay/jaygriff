@@ -81,6 +81,51 @@ export default function RoadmapDoc() {
         </ListItem>
       </List>
 
+      <Heading level={3}>Database: SQLite Migration</Heading>
+      <List>
+        <ListItem>
+          <strong>Migrate content index to SQLite</strong> - Replace file-system scanning with a persistent local database. Faster queries, no cold-start overhead, foundation for everything below.
+        </ListItem>
+        <ListItem>
+          <strong>Full-text search</strong> - Search post body content, not just metadata. SQLite FTS5 makes this straightforward once the content is in the DB.
+        </ListItem>
+        <ListItem>
+          <strong>Content analytics</strong> - Store read counts, time-on-page, popular topics. Persistent across deploys.
+        </ListItem>
+        <ListItem>
+          <strong>Activity feed</strong> - Query by date range, project, type — all trivial with SQL. No more re-scanning the filesystem.
+        </ListItem>
+        <ListItem>
+          <strong>Related content</strong> - Tag similarity and co-occurrence queries. Actually fast with an index.
+        </ListItem>
+        <ListItem>
+          <strong>Draft / private content</strong> - Filter by metadata flags without loading every file.
+        </ListItem>
+      </List>
+
+      <Heading level={3}>Stack Migration: Tailwind + shadcn</Heading>
+      <List>
+        <ListItem>
+          <strong>Migrate from Emotion to Tailwind v4</strong> - Align the site's styling with the meta stack that AI tooling is trained on. Better AI-assisted output, faster iteration, consistent design tokens.
+        </ListItem>
+        <ListItem>
+          <strong>Adopt shadcn/ui</strong> - Components live in the repo, AI can read and extend them. Constrained composition beats unconstrained generation.
+        </ListItem>
+        <ListItem>
+          <strong>Component registry + Cline skill</strong> - AI reads the registry before writing anything. "Build me a landing page" assembles from known components, not generic output.
+        </ListItem>
+      </List>
+
+      <Heading level={3}>API Layer: Zod + tRPC</Heading>
+      <List>
+        <ListItem>
+          <strong>Zod schemas for content types</strong> - Runtime validation for PostMeta, project data, API responses. Catch bad data at the boundary, not deep in the render.
+        </ListItem>
+        <ListItem>
+          <strong>tRPC for internal APIs</strong> - End-to-end type safety from server to client without REST boilerplate. Once the SQLite migration lands, tRPC procedures replace the current data fetching patterns.
+        </ListItem>
+      </List>
+
       <Heading level={2}>💭 Ideas</Heading>
       
       <Heading level={3}>Multi-Project Features</Heading>

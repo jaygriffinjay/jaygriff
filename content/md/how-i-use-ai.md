@@ -89,7 +89,7 @@ And multi-file operations. I can generate a post, add metadata, update navigatio
 
 When AI handles the synthesis work, you can go from idea to published in minutes. That changes what feels worth doing. Documenting a debugging session, writing up a feature as I build it — stuff that used to feel like overhead now has low enough activation energy that it just happens.
 
-And this functionality is actively being rolled out to all office work, not just for programming in IDEs.
+And this functionality is actively being rolled out to all office work, not just for programming.
 
 ---
 
