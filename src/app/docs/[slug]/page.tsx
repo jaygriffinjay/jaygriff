@@ -10,6 +10,16 @@ export async function generateStaticParams() {
   return await getAllDocSlugs();
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const content = await loadContentBySlug(slug, 'doc');
+  if (!content) return {};
+  return {
+    title: content.metadata.title,
+    description: content.metadata.description,
+  };
+}
+
 export default async function Page({
   params,
 }: {

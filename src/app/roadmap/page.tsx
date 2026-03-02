@@ -16,6 +16,8 @@ export const routeMetadata: PostMeta = {
   path: '/roadmap',
 };
 
+export const metadata = { title: routeMetadata.title, description: routeMetadata.description };
+
 export default function RoadmapDoc() {
   return (
     <Container size="sm">

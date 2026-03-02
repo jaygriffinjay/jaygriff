@@ -13,6 +13,8 @@ export const routeMetadata: PostMeta = {
   path: '/privacy-policy',
 };
 
+export const metadata = { title: routeMetadata.title, description: routeMetadata.description };
+
 export default function PrivacyPolicyPage() {
   return (
     <Container size="sm">

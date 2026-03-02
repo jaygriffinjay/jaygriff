@@ -19,7 +19,10 @@ const jetbrainsMono = localFont({
 
 export const metadata = {
   // Site title (shows in browser tab and search results)
-  title: "Jay Griffin",
+  title: {
+    default: 'Jay Griffin',
+    template: '%s | Jay Griffin',
+  },
 
   // Meta description (shows in search results under title)
   description: "Full-stack developer building modern web applications with React, Next.js, and TypeScript.",

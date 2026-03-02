@@ -14,6 +14,8 @@ export const routeMetadata: PostMeta = {
   projectId: 'dev',
 };
 
+export const metadata = { title: routeMetadata.title, description: routeMetadata.description };
+
 export default function TestParserPage() {
   const filePath = join(process.cwd(), 'content/md/tailwind-rant-blog.md');
   const content = readFileSync(filePath, 'utf-8');

@@ -13,6 +13,8 @@ export const routeMetadata: PostMeta = {
   path: '/readers-guide',
 };
 
+export const metadata = { title: routeMetadata.title, description: routeMetadata.description };
+
 export default function ContentGuidePage() {
   return (
     <Container size="sm">

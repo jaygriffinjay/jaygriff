@@ -12,6 +12,8 @@ export const routeMetadata: PostMeta = {
   author: 'Jay Griffin',
 };
 
+export const metadata = { title: routeMetadata.title, description: routeMetadata.description };
+
 export default function DevPage() {
   return (
     <Container size="sm">

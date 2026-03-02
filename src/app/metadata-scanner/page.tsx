@@ -13,6 +13,8 @@ export const routeMetadata: PostMeta = {
   authorshipNote: '🤖 AI-Generated (100%)',
 };
 
+export const metadata = { title: routeMetadata.title, description: routeMetadata.description };
+
 export default async function MetadataScannerPage() {
   const [posts, docs] = await Promise.all([getAllPosts(), getAllDocs()]);
   const allContent = [...docs, ...posts].sort((a, b) => 

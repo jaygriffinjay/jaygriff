@@ -16,6 +16,8 @@ export const routeMetadata: PostMeta = {
   path: '/about-this-site',
 };
 
+export const metadata = { title: routeMetadata.title, description: routeMetadata.description };
+
 export default function AboutThisSite() {
   return (
     <Container size="sm">

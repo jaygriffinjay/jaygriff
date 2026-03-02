@@ -14,6 +14,8 @@ export const routeMetadata: PostMeta = {
   path: '/features',
 };
 
+export const metadata = { title: routeMetadata.title, description: routeMetadata.description };
+
 export default function FeaturesDoc() {
   return (
     <Container size="sm">
