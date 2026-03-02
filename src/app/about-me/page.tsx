@@ -319,7 +319,7 @@ const faqEntries = [
   },
   {
     question: 'How did you learn to code?',
-    answer: 'I go into detail about it in my accounting-to-dev post.',
+    answer: 'I go into detail about it in my how-i-learned-to-code post.',
   },
   {
     question: 'What would you build with unlimited time?',
@@ -333,8 +333,7 @@ const faqEntries = [
   },
   {
     question: 'How do you use AI in your work?',
-    answer:
-      "AI has changed how I work and how I make software. I use chatbots for a laundry list of tasks and I use coding assistants every time I write or code. But AI isn't finished changing how I work. It seems like every day there is a new discovery about what you can accomplish by using agents in different ways. I am actively exploring all of that and figuring out what actually works for me and what doesn't.",
+    answer: 'I wrote a whole post about it: How I Use AI.',
   },
   {
     question: "What's currently broken in your codebase?",
@@ -432,17 +431,20 @@ export default function AboutMePage() {
       </Paragraph>
 
 
+
       <StyledHeading>What I Do</StyledHeading>
+
+        <Paragraph>
+        I build cool stuff on the internet. Mostly web applications and websites, but also other internet stuff like browser extensions and web development tools.
+      </Paragraph>
       <Paragraph>
         I primarily work in the browser with TypeScript, React, and Next.js. But see <Link href="/my-stack">my stack</Link> for a full list!
       </Paragraph>
 
-      <Paragraph>
-        I'm very interested in the internet and the web. I work with modern web infrastructure and managed cloud services daily. I have a keen interest in computer infrastructure and distributed systems and this informs how I design my apps to be infrastructure-aware. This has led me to primarily build with Next.js on Vercel because I value quick development as well as making software that is powerful and capable of scaling up. 
-      </Paragraph>
+
 
       <Paragraph>
-        I'm also working with AI constantly. AI is a new primitive in software development that has created a massive gap between old software and new software leveraging AI patterns. I'm excited to build AI-native apps as well as integrate AI into all kinds of legacy workflows that haven't caught up yet.
+        I'm also deep into AI, both as a developer tool and as a core feature of the software I build. On the workflow side I am using many AI tools daily now. On the product side, I'm building apps where AI is doing real work: natural language interfaces, embeddings, multi-model architectures, agents. I've written more about how I think about all of it here: <Link href="/posts/how-i-use-ai">How I Use AI</Link>.
       </Paragraph>
 
       <Paragraph>
@@ -527,7 +529,7 @@ export default function AboutMePage() {
           <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
-                I want to create my own software businesses to support my work indefinitely. I would also love to work with talented developers and learn from them.
+                I want to create my own software businesses to support my life and work indefinitely. I would also love to work with talented developers and learn from them.
               </Paragraph>
             </AccordionContentInner>
           </AccordionContent>
@@ -597,7 +599,7 @@ export default function AboutMePage() {
           <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
-                I go into detail about it <Link href="/posts/accounting-to-dev">in this post</Link>!
+                I go into detail about it <Link href="/posts/how-i-learned-to-code">in this post</Link>!
               </Paragraph>
             </AccordionContentInner>
           </AccordionContent>
@@ -639,7 +641,7 @@ export default function AboutMePage() {
           <AccordionContent forceMount>
             <AccordionContentInner>
               <Paragraph>
-                AI has changed how I work and how I make software. I use chatbots for a laundry list of tasks and I use coding assistants every time I write or code. But AI isn't finished changing how I work. It seems like every day there is a new discovery about what you can accomplish by using agents in different ways. I am actively exploring all of that and figuring out what actually works for me and what doesn't. 
+                It's changed how I work pretty fundamentally. I wrote up the full story here: <Link href="/posts/how-i-use-ai">How I Use AI</Link>.
               </Paragraph>
             </AccordionContentInner>
           </AccordionContent>

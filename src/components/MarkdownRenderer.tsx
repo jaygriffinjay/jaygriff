@@ -46,9 +46,10 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
         // Block code: pre wraps code blocks, extract content and render CodeBlock
         pre: ({ children }: any) => {
           const codeProps = children?.props;
+          const hasLanguage = !!codeProps?.className;
           const language = codeProps?.className?.replace('language-', '') || 'plaintext';
           const code = codeProps?.children || '';
-          return <CodeBlock language={language}>{String(code)}</CodeBlock>;
+          return <CodeBlock language={language} showHeader={hasLanguage}>{String(code)}</CodeBlock>;
         },
         // Inline code: single backticks only
         code: ({ children }) => <Code>{children}</Code>,

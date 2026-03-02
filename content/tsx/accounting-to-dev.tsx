@@ -8,7 +8,7 @@ export const metadata: PostMeta = {
   author: ['Jay Griffin', 'Claude Sonnet 4.5'],
   authorshipNote: 'Jay provided the story and context, Claude structured and wrote the post, Jay edited and refined',
   type: 'post',
-  description: 'From debits and credits to TypeScript: how an accounting degree became the foundation for a career in software development',
+  description: 'From Debits and Credits to TypeScript: My Journey from Accounting to Software Development',
   tags: ['career', 'accounting', 'self-taught', 'journey', 'excel'],
 };
 
@@ -20,15 +20,13 @@ export default function AccountingToDevPost() {
       </Paragraph>
       
       <Paragraph>
-        Nah. I didn't quit. I leveled up.
+        Kind of? The stuff I learned in accounting is what made me a tech nerd in the first place! 
       </Paragraph>
 
       <Heading level={2}>The Real Origin Story: I Refused to Use WordPress</Heading>
 
       <Paragraph>
-        Here's what really started all of this: I've wanted a blog since I was 15. I was 
-        reading personal finance and tax blogs obsessively. Loved the format, loved the 
-        community, wanted my own space on the internet.
+        Here's what really started all of this: I was reading personal finance and tax blogs obsessively since I was a teenager. This made me want my own blog since I was 15. You may be able to see why I chose accounting - I enjoyed business, finance, and taxes since I was young. 
       </Paragraph>
 
       <Paragraph>
@@ -43,7 +41,7 @@ export default function AccountingToDevPost() {
 
       <Paragraph>
         Plus, WordPress was expensive. Every single blog I followed had a "how to start a 
-        blog" article that basically said: buy managed WordPress hosting from these providers 
+        blog" article that basically said: get WordPress from these providers 
         for $10-15/month. And I definitely wasn't considering Shopify at $25/month.
       </Paragraph>
 
@@ -53,7 +51,7 @@ export default function AccountingToDevPost() {
       </Paragraph>
 
       <Paragraph>
-        I'm cheap. I wanted to do it for free. So instead of paying for managed WordPress, 
+        I'm cheap. I wanted to do it for free. So instead of paying for WordPress, 
         I decided to learn to make a blog myself. Which somehow made sense at the time.
       </Paragraph>
 
@@ -66,7 +64,7 @@ export default function AccountingToDevPost() {
       <Heading level={3}>I Actually Tried WordPress (And Hated It)</Heading>
 
       <Paragraph>
-        Full disclosure: I did buy WordPress hosting for a year or two. Gave it a real shot. 
+        I bought WordPress hosting for a year or two. Gave it a real shot. 
         Tried to make a blog the "normal" way.
       </Paragraph>
 
@@ -75,7 +73,7 @@ export default function AccountingToDevPost() {
       </Paragraph>
 
       <Paragraph>
-        Here's what I realized: I didn't enjoy "posting just to post." What I actually wanted 
+        Here's what I realized: I didn't enjoy "posting content." What I actually wanted 
         was the ability to publish random stuff myself out into the world - and own my data 
         and opinions. Not be locked into a platform.
       </Paragraph>
@@ -89,22 +87,6 @@ export default function AccountingToDevPost() {
         I was arriving at the principles of web development without knowing how to code at all. 
         I understood <em>why</em> owning your own platform mattered before I understood <em>how</em> to 
         build one.
-      </Paragraph>
-
-      <Paragraph>
-        It was only after I actually learned to code that I could realize any of this. And 
-        very badly at first.
-      </Paragraph>
-
-      <Paragraph>
-        So instead of settling for WordPress, I spent years learning to code so I could 
-        make my own publishing platform. Which is either admirably stubborn or completely 
-        insane. Probably both.
-      </Paragraph>
-
-      <Paragraph>
-        That stubborn refusal to use inadequate tools? That became my whole programming 
-        journey.
       </Paragraph>
 
       <Divider />
@@ -125,18 +107,18 @@ export default function AccountingToDevPost() {
       </List>
 
       <Paragraph>
-        That's not accounting. That's backend development with a CPA license.
+        That's not accounting. That's backend development with a CPA license. And I was enjoying all of this stuff a bit more than actual financial statements and tax returns.
       </Paragraph>
 
       <Heading level={2}>The Awakening: Excel is a Terrible Database</Heading>
 
       <Paragraph>
-        By the time I graduated in accounting I was an Excel Grand Wizard. Pivot tables, XLOOKUP, array formulas, Power Query, Macros? I was learning features 
-        that would make even senior accountants weep. I could make Excel do things it was never meant to do.
+        By the time I graduated in accounting I was an Excel Grand Wizard with years of advanced Excel experience. Pivot tables, XLOOKUP, array formulas, Power Query, Macros? I was learning features 
+        that would make senior accountants weep. I could make Excel do things it was never meant to do.
       </Paragraph>
 
       <Paragraph>
-        We were doing proto-programming in school without calling it that: using CONCAT 
+        One thing I will always remember is this absolutely awesome assignment we did in Excel. We were doing proto-programming without calling it that: using CONCAT 
         for string manipulation (the first thing you learn in actual programming!), data validation 
         for dropdown menus, navigation elements across sheets. We were building programs in Excel.
       </Paragraph>
@@ -155,180 +137,7 @@ export default function AccountingToDevPost() {
       <Heading level={2}>How I Learned to Code? Tool Upgrades</Heading>
 
       <Paragraph>
-        Once you realize you're fighting your tools, the path forward is obvious: get better tools.
-      </Paragraph>
-
-      <Heading level={3}>Level 1: AutoHotkey</Heading>
-
-      <Paragraph>
-        After graduating with my master's degree in accounting, I was supposed to be studying for the CPA exam. 
-        The CPA exam is particularly grueling - hundreds of hours of study across multiple sections. 
-        My only brief respite from the grind was how satisfying it was to play with the computer 
-        and work on automation. What started as a distraction became an obsession.
-      </Paragraph>
-
-      <Paragraph>
-        I became obsessed with launching applications faster. Windows Key + typing the app name for 
-        instant launching. Then I thought: what if I could do the same thing with my bookmarks? 
-        And what about text expansion to automate how I typed things on the computer? It felt like typing things in fast and precisely in search boxes was the best way to "get what I wanted/needed" from the computer rather than clicking around. (Little did I know, that's exactly what commands are.)
-      </Paragraph>
-
-      <Paragraph>
-        This exploration led me straight to AutoHotkey. And that's where everything started.
-      </Paragraph>
-
-      <Paragraph>
-        I started with a simple goal: open frequent websites with a hotkey instead of typing URLs. 
-        One hotkey, one website. Easy enough.
-      </Paragraph>
-
-      <Paragraph>
-        Then I realized: if I can open one website... I can open five. Or ten. Or a HUNDRED 
-        websites with a single hotkey press.
-      </Paragraph>
-
-      <Paragraph>
-        <strong>That's when it clicked.</strong> That's what it means to execute a program. You 
-        write instructions once, and the computer does them instantly, at scale, perfectly, 
-        every time.
-      </Paragraph>
-
-      <Paragraph>
-        Then I discovered AutoHotkey could create right-click context menus. These are just little UI elements 
-        that pop up and do things kind of like how you might right-click to copy and paste. And I realized: making UI isn't as hard as I thought. You 
-        don't need to understand how to render pixels on the screen all the way down to binary instructions on 
-        bare metal. You just... write some code that says "make a right-click menu." That's it.
-      </Paragraph>
-
-      <Paragraph>
-        First taste of application programming logic. Mind = blown.
-      </Paragraph>
-
-      <Heading level={3}>Level 2: HTML & CSS</Heading>
-      <Paragraph>
-        After discovering that little tidbit about how things get rendered, I immediately made the connection to HTML and CSS. HTML is a language where I tell the screen what to do. It's a rendering 
-        language. It's just instructions that tell the browser what to put on the screen. 
-        CSS just tells it how to make it look prettier.
-      </Paragraph>
-
-      <Paragraph>
-        To a layman, this seems like an inefficient way to make ugly web pages. But I could 
-        see: if you make it pretty, and scale it up and give it lots of instructions, it's more powerful than any Word doc 
-        or PDF could ever be. You can build actual interfaces.
-      </Paragraph>
-
-      <Paragraph>
-        I started playing around with HTML and CSS in earnest, making simple pages and learning how they worked.
-      </Paragraph>
-
-      <Heading level={3}>Level 3: Python</Heading>
-
-      <Paragraph>
-        Once I felt like I truly "got" it, I got very excited. I thought that maybe I really can do this after all. Even though I knew it was a long uphill battle of learning ahead. 
-        But I really was loving it so I moved forward. I <Link href="https://certificates.cs50.io/36ac7977-4aa6-4dd8-bd5c-54398fa0c952.pdf?size=letter" target="_blank" rel="noopener noreferrer">completed</Link> Harvard's <Link href="https://www.edx.org/learn/python/harvard-university-cs50-s-introduction-to-programming-with-python" target="_blank" rel="noopener noreferrer">CS50P</Link> (Introduction to Programming with Python) and became literate in Python. Finally 
-        felt like a "real" programmer.
-      </Paragraph>
-
-      <Heading level={3}>Level 4: The Python Web Problem</Heading>
-
-      <Paragraph>
-        I started working on Harvard's <Link href="https://www.edx.org/learn/web-development/harvard-university-cs50-s-web-programming-with-python-and-javascript" target="_blank" rel="noopener noreferrer">CS50W</Link> (Web Programming with Python and JavaScript). Didn't 
-        finish it, but I did make some functional sites. I learned Django properly, picked up 
-        some JavaScript fundamentals, and started to understand how some programming on the web actually worked.
-      </Paragraph>
-
-      <Paragraph>
-        Here's where things got frustrating. I knew Python. I could build web backends with 
-        Flask or Django. But for any interactivity on the frontend, I needed JavaScript.
-      </Paragraph>
-
-      <Paragraph>
-        But it was not working that well. Two completely different languages. Two different ecosystems. Every feature meant 
-        fighting to connect Python backend logic to JavaScript frontend behavior. It felt 
-        like I was constantly translating between two languages that didn't want to talk 
-        to each other.
-      </Paragraph>
-
-      <Paragraph>
-        That's when I started looking at Node.js. I played around with it and realized: okay, 
-        Node actually works pretty similar to Python, I would just need to learn more JavaScript. This could work. But then Express came 
-        into the picture and Express was hard. So I hardly touched it.
-      </Paragraph>
-
-      <Paragraph>
-        Back to Flask and Django for a while. At least I knew Python.
-      </Paragraph>
-
-      <Heading level={3}>Level 5: React + Vite (The Breakthrough)</Heading>
-      <Paragraph>
-        By this point, I was tired of hearing about React everywhere. "React gets you jobs." 
-        "Everyone's using React." "You need to learn React." Fine. I'll learn React.
-      </Paragraph>
-
-      <Paragraph>
-        I started a Scrimba course on React. Did not finish it. But I did learn the fundamentals 
-        and was kinda liking it.
-      </Paragraph>
-
-      <Paragraph>
-        Then I didn't code for several months. Not sure why. Life happened.
-      </Paragraph>
-
-      <Paragraph>
-        When I came back to it, React clicked even more. And then I fell in love with it. 
-        The component model finally made JavaScript make sense to me: build small pieces, 
-        compose them together, data flows down, events flow up.
-      </Paragraph>
-
-      <Paragraph>
-        Since then? I've written as much React as possible.
-      </Paragraph>
-
-      <Paragraph>
-        And Vite made the development experience actually pleasant. Fast refresh, just write code and see it work.
-      </Paragraph>
-
-      <Paragraph>
-        This was it. I could finally do full JavaScript without fighting Express. Just build 
-        powerful frontends and worry about backends later when I really needed them. 
-      </Paragraph>
-
-      <Heading level={3}>The SSG Detour: Hugo, Jekyll, Eleventy</Heading>
-      <Paragraph>
-        I also tried the static site generator route: Hugo, Jekyll, Eleventy. Hugo especially. I actually put it through its paces, used the conventions, and understood the structure.
-      </Paragraph>
-
-      <Paragraph>
-        But then I hit Hugo's templating language. And I realized: I don't want to code 
-        anything real in such a brittle and stunted language. The skeleton and conventions were great. 
-        The actual programming experience? Terrible.
-      </Paragraph>
-
-      <Paragraph>
-        So I took the good parts - the project structure from Hugo, the patterns I learned from Django - 
-        and brought them into Vite and Next.js. Real programming, real components, same clean 
-        conventions.
-      </Paragraph>
-
-      <Heading level={3}>Level 6: Next.js (Full Stack Realized)</Heading>
-      <Paragraph>
-        Next.js was the final piece. Server-side rendering, API routes, file-based routing, 
-        React Server Components. Now I could be a full-stack developer entirely in JavaScript 
-        (well, TypeScript).
-      </Paragraph>
-
-      <Paragraph>
-        No more Python backend + JavaScript frontend split. No more fighting Express. Just 
-        Next.js handling everything: server logic, client interactivity, routing, rendering.
-      </Paragraph>
-
-      <Paragraph>
-        Now I'm building full-stack applications. The Excel wizard became a software developer.
-      </Paragraph>
-
-      <Paragraph>
-        And I feel genuinely productive. Not fighting tools, not context-switching languages. 
-        Just building.
+        Once you realize you're fighting your tools, the path forward is obvious: get better tools. I wrote a separate post about the actual learning journey — AutoHotkey to HTML to Python to React to Next.js: <Link href="/posts/how-i-learned-to-code">How I Learned to Code</Link>
       </Paragraph>
 
       <Divider />
@@ -352,39 +161,6 @@ export default function AccountingToDevPost() {
 
       <Paragraph>
         That accounting degree? It's my differentiator. I can build the product  <strong>and</strong> the business model. I know how to validate whether something is worth building. I'm not just a dev who can ship features; I'm someone who can turn code into a business and ship products that make financial sense.
-      </Paragraph>
-
-      <Heading level={2}>The Pattern: Solving Tool Limitations</Heading>
-
-      <Paragraph>
-        This is the real lesson: I wasn't learning programming for programming's sake. 
-        I was solving problems at each level:
-      </Paragraph>
-
-      <List>
-        <ListItem>Excel was too limited → learned Python</ListItem>
-        <ListItem>Python scripts were too isolated → learned web development</ListItem>
-        <ListItem>Static pages were too rigid → learned React</ListItem>
-        <ListItem>JavaScript was too loose → learned TypeScript</ListItem>
-        <ListItem>Client-only apps were too constrained → learned Next.js</ListItem>
-      </List>
-
-      <Paragraph>
-        Each step was a tool upgrade. Each upgrade unlocked new capabilities.
-      </Paragraph>
-
-      <Divider />
-
-      <Heading level={2}>Five Years Later</Heading>
-
-      <Paragraph>
-        It's been under 5 years since I wrote my first line of code. I'm self-taught. I have 
-        no CS degree. But I have a master's degree in accounting and a healthy dose of computer nerdiness.
-      </Paragraph>
-
-      <Paragraph>
-        And honestly? Software development feels like the highest use of my skills. I'm building systems, 
-        solving problems,  and creating tools that actually matter, all while enjoying the process. This is what I was meant to do.
       </Paragraph>
     </>
   );

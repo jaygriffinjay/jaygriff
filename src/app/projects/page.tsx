@@ -113,27 +113,6 @@ const projects: ProjectData[] = [
       { label: 'Read more →', href: '/projects/bootstrap-frontend-webapp' },
     ],
   },
-  {
-    id: 'fitness-data',
-    title: 'Fitness Data Platform',
-    description: 'A personal fitness analytics backend that pulls activity data from Strava (and eventually Garmin and Apple Health). Built because Strava\'s native analysis features are limited — great for recording activities, but weak on deep analytics and multi-source integration.',
-    placeholderGradient: 'linear-gradient(135deg, #11998e, #38ef7d)',
-    links: [
-      { label: 'Read more →', href: '/projects/fitness-data-platform' },
-    ],
-  },
-  {
-    id: 'svg-animation-studio',
-    title: 'SVG Animation Studio',
-    description: 'A coding study exploring hand-coded SVG graphics and CSS animations. Started because I wanted a visually striking GitHub profile banner with animated tessellated triangles, and enjoyed hand-coding SVGs and experimenting with transform properties, keyframes, and animation timing.',
-    imageSrc: '/images/projects/globe.svg',
-    imageAlt: 'Hand-coded SVG globe animation',
-    imageWidth: 1280,
-    imageHeight: 720,
-    links: [
-      { label: 'Read more →', href: '/projects/github-profile-readme' },
-    ],
-  },
 ];
 
 export default function MyProjectsPage() {

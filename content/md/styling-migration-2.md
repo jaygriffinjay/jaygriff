@@ -13,9 +13,9 @@
 
 # How I Built My Own AI App Builder
 
-I've been building [jaygriff.com](https://jaygriff.com) for years. It's a Next.js app, TypeScript, React — a solid stack that I've iterated on constantly. I know it well. I can build things in it quickly.
+I've been building the framework behind [jaygriff.com](https://jaygriff.com) for years. Next.js, TypeScript, React — a solid stack that I've iterated on constantly. I know it well. I can build things in it quickly.
 
-So when vibe coding tools started blowing up — Bolt, v0, Lovable — I wasn't that impressed at first. I figured they were just AI with a nice UI wrapper. I could already prompt Copilot or Claude to write components. What was the big deal?
+So when vibe coding tools started blowing up using my exact same stack — Bolt, v0, Lovable — I wasn't that impressed at first. I figured they were just AI with a nice UI wrapper. I could already prompt Copilot or Claude to write components. What was the big deal?
 
 Then I actually looked at the outputs.
 
@@ -25,7 +25,7 @@ Not marginally better. Noticeably, consistently better. Landing pages that looke
 
 Meanwhile my AI-assisted outputs were... fine. Functional. But they had that "AI wrote this" flatness to them. Generic spacing, inconsistent sizing, no real visual rhythm.
 
-I wanted to understand why. And also, I couldn't afford to keep using them.
+I wanted to understand why. And how. 
 
 ## The Cost Reality
 
