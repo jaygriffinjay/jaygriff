@@ -95,7 +95,7 @@ And this functionality is actively being rolled out to all office work, not just
 
 ## Now I think about AI as a fundamental building block in software
 
-The more I used AI the more I started caring about *how* you structure the interaction — not just what you prompt. In software you run into many cases in your workflow where you want specific conventions to be follow and so you need AI to know these things at the right time. And then the same is true for when you integrate AI into software - integrating AI into an app is almost like employing it to do a tiny little job with custom prompts, data, and instructions.
+The more I used AI the more I started caring about *how* you structure the interaction — not just what you prompt. In software you run into many cases in your workflow where you want specific conventions to be followed and so you need AI to know these things at the right time. And then the same is true for when you integrate AI into software - integrating AI into an app is almost like employing it to do a tiny little job with custom prompts, data, and instructions.
 
 I'm also thinking about AI at the workflow level — custom tools and skills for coding assistants that encode my specific codebase patterns. Instead of generic commands, a natural language interface that speaks my project's dialect. "Make sure all my posts have complete metadata" — and it knows exactly what my PostMeta interface requires, checks every file, flags what's missing. Not a linter rule. Encoded expertise.
 
@@ -105,7 +105,7 @@ I'm also thinking about AI at the workflow level — custom tools and skills for
 
 The clearest thing I've taken from all of this: code is free now. If you can describe what you want with enough precision, the code gets written. The constraint has moved.
 
-What matters now is everything above the code. Critical thinking. System design. Architecture. Knowing what to build and why, and having strong enough taste to recognize when the output is wrong. Those skills matter more than ever, not less — because now the bottleneck is you specifying the problem correctly, not you typing the solution.
+What matters now is everything above writing the code. Critical thinking. System design. Architecture. Knowing what to build and why, and having strong enough taste to recognize when the output is wrong. Those skills matter more than ever, not less — because now the bottleneck is you specifying the problem correctly and verifying the solutions, not you typing the solution.
 
 But I want to push back on one thing: code knowledge still matters. Maybe as much as before. The nature of it shifts — when AI writes the code, you stop caring about syntax and start caring about blocks of logic. You're reading at a higher level of abstraction. But reading at that level well, understanding what each chunk actually does, knowing when something is subtly wrong — that requires being genuinely good at your language. Mastery is still highly rewarded, even if the pace of AI development makes it tempting to skip.
 
