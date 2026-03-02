@@ -15,7 +15,7 @@
 
 Claude.ai is quietly getting much more useful. They've added first-party **skills** — pre-built capabilities that Claude can use inside a conversation. One of them is a generative art skill powered by p5.js.
 
-There's also a growing **connectors** ecosystem (their term for extensions/integrations) — things like GitHub, Google Drive, Notion, and more. The short version: **[Claude.ai](https://claude.ai)** is starting to look a lot less like a chatbox and a lot more like an actual platform.
+There's also a growing **connectors** ecosystem (their term for extensions/integrations) — things like GitHub, Google Drive, Notion, and more. The short version: **[Claude.ai](https://claude.ai)** is starting to look a lot less like a chatbot and a lot more like an actual platform.
 
 ## What p5.js + Claude Produced in One Prompt
 
@@ -27,6 +27,8 @@ I used the generative art skill and asked for something cool. Within a minute I 
 - Download PNG
 
 The output was real, working, interactive code. Not a starting point — a mostly finished thing. Try it: **[Plasma Cosmos](/plasma-cosmos)**.
+
+![Plasma Cosmos](/images/plasma-cosmos2.png)
 
 ## The Integration Question
 
