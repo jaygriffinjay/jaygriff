@@ -11,6 +11,7 @@ import 'prismjs/components/prism-css';
 import 'prismjs/components/prism-markup';
 import 'prismjs/components/prism-markdown';
 import 'prismjs/components/prism-bash';
+import 'prismjs/components/prism-sql';
 import {
   codeBlockTheme,
   headerStyles,
@@ -50,6 +51,7 @@ const iconConfigs: Record<string, IconConfig> = {
   'sh': { filename: 'shell' },
   'markdown': { filename: 'markdown' },
   'md': { filename: 'markdown' },
+  'sql': { filename: 'sql' },
   'default': { filename: 'default', filter: 'brightness(0) invert(1)' },
 };
 
@@ -92,6 +94,7 @@ function getDisplayName(filename: string | undefined, language: string | undefin
     'plaintext': '.txt',
     'markdown': '.md',
     'json': '.json',
+    'sql': '.sql',
   };
   
   return language ? languageToExtension[language] : undefined;

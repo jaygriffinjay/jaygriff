@@ -342,6 +342,18 @@ ln -s /opt/app/cli ./app
 chmod +x ./app`}
       </CodeBlock>
 
+      <Heading level={2}>SQL Files</Heading>
+      <CodeBlock language="sql" filename="query.sql">
+        {`SELECT
+  p.slug,
+  p.title,
+  snippet(search_fts, 1, '<mark>', '</mark>', '...', 20) AS excerpt
+FROM search_fts
+JOIN posts p ON p.id = search_fts.rowid
+WHERE search_fts MATCH ?
+ORDER BY rank;`}
+      </CodeBlock>
+
       <Heading level={2}>Without Filename (Language Fallback)</Heading>
       <CodeBlock language="ts">
         {`// No filename prop, should show "typescript"

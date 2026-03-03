@@ -53,10 +53,10 @@
         .slider-container { display: flex; align-items: center; gap: 10px; }
         .slider-container input[type="range"] {
             flex: 1; height: 4px; background: var(--light-gray);
-            border-radius: 2px; outline: none; -webkit-appearance: none; cursor: pointer;
+            border-radius: 2px; outline: none; -webkit-appearance: none; appearance: none; cursor: pointer;
         }
         .slider-container input[type="range"]::-webkit-slider-thumb {
-            -webkit-appearance: none; width: 14px; height: 14px;
+            -webkit-appearance: none; appearance: none; width: 14px; height: 14px;
             background: var(--orange); border-radius: 50%; cursor: pointer;
         }
         .slider-container input[type="range"]::-moz-range-thumb {
