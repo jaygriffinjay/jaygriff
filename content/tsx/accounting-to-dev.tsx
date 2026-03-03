@@ -21,7 +21,7 @@ export default function AccountingToDevPost() {
       </Paragraph>
       
       <Paragraph>
-        Kind of? The stuff I learned in accounting is what made me a tech nerd in the first place! 
+        Kind of? The stuff I learned in accounting is what made me a programmer in the first place! 
       </Paragraph>
 
       <Heading level={2}>The Real Origin Story: I Refused to Use WordPress</Heading>
@@ -108,7 +108,7 @@ export default function AccountingToDevPost() {
       </List>
 
       <Paragraph>
-        That's not accounting. That's backend development with a CPA license. And I was enjoying all of this stuff a bit more than actual financial statements and tax returns.
+        That's not accounting. That's backend development with a CPA license. And I was enjoying all this stuff a bit more than actual financial statements and tax returns.
       </Paragraph>
 
       <Heading level={2}>The Awakening: Excel is a Terrible Database</Heading>
@@ -119,7 +119,7 @@ export default function AccountingToDevPost() {
       </Paragraph>
 
       <Paragraph>
-        One thing I will always remember is this absolutely awesome assignment we did in Excel. We were doing proto-programming without calling it that: using CONCAT 
+        One thing I will always remember is this absolutely awesome assignment I did in Excel. We were doing proto-programming without calling it that: using CONCAT 
         for string manipulation (the first thing you learn in actual programming!), data validation 
         for dropdown menus, navigation elements across sheets. We were building programs in Excel.
       </Paragraph>
@@ -138,7 +138,7 @@ export default function AccountingToDevPost() {
       <Heading level={2}>How I Learned to Code? Tool Upgrades</Heading>
 
       <Paragraph>
-        Once you realize you're fighting your tools, the path forward is obvious: get better tools. I wrote a separate post about the actual learning journey — AutoHotkey to HTML to Python to React to Next.js: <Link href="/posts/how-i-learned-to-code">How I Learned to Code</Link>
+        Once you realize you're fighting your tools, the path forward is obvious: get better tools. I wrote a separate post about the actual learning journey — AutoHotkey to HTML to Python to JavaScript to TypeScript: <Link href="/posts/how-i-learned-to-code">How I Learned to Code</Link>
       </Paragraph>
 
       <Divider />

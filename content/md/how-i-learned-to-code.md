@@ -22,8 +22,6 @@ All of this meant that by the time I ever wrote a line of code, I was already ex
 
 That's the context that made everything click faster once I started.
 
----
-
 ## It started with a problem I wanted to solve
 
 I became weirdly obsessed with doing things faster. I love hotkeys and searchboxes. I hate hunting around for something. I love to just search and find what I'm looking for instantly.
@@ -59,7 +57,7 @@ But then when I finally used AutoHotKey to do this I realized something a little
 
 I realized if I can open one website... I can open five. Or ten. Or a HUNDRED websites with a single hotkey press. I just have to add them to the list of websites in the script I wrote.
 
-That's when it clicked. That's what it means to execute a program. You write instructions once, and the computer does them instantly, at scale, perfectly, every time.
+**That's when it clicked.** That's what it means to execute a program. You write instructions once, and the computer does them instantly, at scale, perfectly, every time.
 
 Then I discovered AutoHotkey could create right-click menus. These are kind of like how you might right-click to copy and paste. This made me realize making UI isn't as hard as I thought. You don't need to understand how to render pixels on the screen all the way down to binary instructions. You just... write some code that says "make a right-click menu." That's it. 👇 
 
@@ -71,8 +69,6 @@ Menu, MyMenu, Add, Cut, DoCut
 
 First taste of application programming logic. Mind = blown.
 
----
-
 ## Level 2: HTML & CSS
 
 After discovering that little tidbit about how things actually get rendered (not as hard as I thought!), I immediately made the connection to HTML and CSS. HTML is a language where I tell the screen what to do. It's a rendering language. It's just instructions that tell the browser what to put on the screen. CSS just tells it how to make it look prettier.
@@ -81,13 +77,9 @@ At first this seems like an inefficient way to make very ugly pages. My first HT
 
 I started playing around with HTML and CSS in earnest, making simple pages and learning how they worked.
 
----
-
 ## Level 3: Python
 
 Once I felt like I truly "got" it, I got very excited. I thought that maybe I really can do this after all. Even though I knew it was a long uphill battle of learning ahead. But I really was loving it so I moved forward. I [completed](https://certificates.cs50.io/36ac7977-4aa6-4dd8-bd5c-54398fa0c952.pdf?size=letter) Harvard's [CS50P](https://www.edx.org/learn/python/harvard-university-cs50-s-introduction-to-programming-with-python) (Introduction to Programming with Python) and became literate in Python. Finally felt like a "real" programmer.
-
----
 
 ## Level 4: The Python Web Problem
 
@@ -100,8 +92,6 @@ But it was not working that well. Two completely different languages. Two differ
 That's when I started looking at Node.js. I played around with it and realized: okay, Node actually works pretty similar to Python, I would just need to learn more JavaScript. This could work. But then Express came into the picture and Express was hard. So I hardly touched it.
 
 Back to Flask and Django for a while. At least I knew Python.
-
----
 
 ## Level 5: React + Vite (The Breakthrough)
 
@@ -119,8 +109,6 @@ And Vite made the development experience actually pleasant. Fast refresh, just w
 
 This was it. I could finally do full JavaScript without fighting Express. Just build powerful frontends and worry about backends later when I really needed them.
 
----
-
 ## The SSG Detour: Hugo, Jekyll, Eleventy
 
 I also tried the static site generator route: Hugo, Jekyll, Eleventy. Hugo especially. I actually put it through its paces, used the conventions, and understood the structure.
@@ -128,8 +116,6 @@ I also tried the static site generator route: Hugo, Jekyll, Eleventy. Hugo espec
 But then I hit Hugo's templating language. And I realized: I don't want to code anything real in such a brittle and stunted language. The skeleton and conventions were great. The actual programming experience? Terrible.
 
 So I took the good parts - the project structure from Hugo, the patterns I learned from Django - and brought them into Vite and Next.js. Real programming, real components, same clean conventions.
-
----
 
 ## Level 6: Next.js (Full Stack Realized)
 
@@ -140,8 +126,6 @@ No more Python backend + JavaScript frontend split. No more fighting Express. Ju
 Now I'm building full-stack applications. The Excel wizard became a software developer.
 
 And I feel genuinely productive. Not fighting tools, not context-switching languages. Just building.
-
----
 
 ## Five Years Later
 

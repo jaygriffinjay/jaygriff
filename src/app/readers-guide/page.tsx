@@ -69,7 +69,7 @@ export default function ContentGuidePage() {
         </Paragraph>
         <List>
           <ListItem>Personal finance blogs that shared exact net worth, income, and spending details</ListItem>
-          <ListItem>Business blogs that revealed exact revenue, sale prices, and decision-making processes</ListItem>
+          <ListItem>Business blogs that revealed exact revenues and profits and decision-making processes</ListItem>
           <ListItem>Dev blogs where all the work happened in public—commits, errors, refactors visible to everyone</ListItem>
         </List>
         <Paragraph>
@@ -86,7 +86,7 @@ export default function ContentGuidePage() {
 
         <Heading level={3}>🤖 100% AI-Generated</Heading>
         <List>
-          <ListItem><strong>Author field:</strong> Model name listed (e.g., "Claude Sonnet 4.5") - stylistic transparency, not authorship credit</ListItem>
+          <ListItem><strong>Author field:</strong> Jay Griffin, Model name listed (e.g., "Claude Sonnet 4.5") - stylistic transparency, not authorship credit</ListItem>
           <ListItem><strong>Process:</strong> AI created this based on my prompt and context. I approved it for publication but didn't edit the content.</ListItem>
           <ListItem><strong>What this means:</strong> Expect smooth AI texture—balanced, diplomatic, but with occasional weird artifacts. I judged it worth sharing as-is.</ListItem>
           <ListItem><strong>Accuracy:</strong> May contain errors. AI-generated content can be confidently wrong about facts, dates, or technical details. Verify before relying on it.</ListItem>
@@ -106,17 +106,20 @@ export default function ContentGuidePage() {
         <List>
           <ListItem><strong>Author field:</strong> Jay Griffin</ListItem>
           <ListItem><strong>Process:</strong> I wrote this without AI assistance beyond basic tools (spell-check, grammar suggestions).</ListItem>
-          <ListItem><strong>What this means:</strong> My natural writing and editing reflecting my own thoughts and ideas.</ListItem>
+          <ListItem><strong>What this means:</strong> My natural writing and editing reflecting my own thoughts and ideas without unconscious steering.</ListItem>
           <ListItem><strong>Accuracy:</strong> Still no guarantee, but reflects my direct understanding without AI intermediary.</ListItem>
           <ListItem><strong>Use case:</strong> Personal reflections, opinions where voice matters, content where AI texture would feel wrong</ListItem>
         </List>
 
-        <Heading level={2}>About AI "Authorship"</Heading>
+        <Heading level={2}>About AI Authorship</Heading>
         <Paragraph>
-          <strong>Important clarification:</strong> When AI generates content 100%, listing the model name (e.g., "Claude Sonnet 4.5") in the author field is for transparency and does not imply authorship. I guide, edit, and approve all content for publication.
+          <strong>I am the author of everything on this site.</strong> Even when AI generates 100% of the output, every generation is a product of my ideas, my context, my prompt, and my decision to publish it. The generation didn't come from nowhere — it came from me, through a tool. The fact that the tool did the rendering doesn't change who was in control of what got rendered and why.
         </Paragraph>
         <Paragraph>
-          I am the curator and editor of everything on this site, regardless of the creation process. The labels are informational signals to help you understand:
+          When a model name appears in the author field (e.g., "Claude Sonnet 4.5"), that's workflow transparency — honest disclosure about process. It is not a surrender of authorship. I shaped the inputs, directed the process, and decided what was worth keeping. That's authorship.
+        </Paragraph>
+        <Paragraph>
+          The labels are informational signals to help you understand:
         </Paragraph>
         <List>
           <ListItem><strong>Texture:</strong> How smooth/human/hybrid the writing will feel</ListItem>
@@ -125,7 +128,7 @@ export default function ContentGuidePage() {
           <ListItem><strong>Reading mode:</strong> Treat as exploratory vs authoritative</ListItem>
         </List>
         <Paragraph>
-          If I publish it, I curated and approved it—whether I wrote every word or guided AI to generate content. This editorial role is what makes AI assistance legitimate when used thoughtfully.
+          Process disclosure is not credit. It's context. See <Link href="/posts/ai-workflow-transparency">AI Workflow Transparency</Link> for the full framework.
         </Paragraph>
 
         <Heading level={2}>What Makes AI Usage Legitimate</Heading>
@@ -137,42 +140,6 @@ export default function ContentGuidePage() {
         </Paragraph>
         <Paragraph>
           <strong>The label doesn't determine quality.</strong> AI-assisted work can be excellent if the judgment and orchestration were good. 100% human work can be mediocre if the thinking was lazy. The label just tells you what process was involved.
-        </Paragraph>
-
-        <Heading level={2}>Context-Specific Standards</Heading>
-        <Paragraph>
-          Different content types have different accuracy expectations:
-        </Paragraph>
-
-        <Heading level={3}>High-Stakes: Verify Everything</Heading>
-        <List>
-          <ListItem><strong>Professional advice</strong> - Legal and financial filings</ListItem>
-          <ListItem><strong>Technical documentation</strong> - Code you'll deploy, configs you'll use</ListItem>
-          <ListItem><strong>Research/journalism</strong> - Factual claims people will rely on</ListItem>
-        </List>
-        <Paragraph>
-          <strong>Standard:</strong> AI or not, you're responsible for verification. The label doesn't absolve you.
-        </Paragraph>
-
-        <Heading level={3}>Exploratory: No Guarantees</Heading>
-        <List>
-          <ListItem><strong>Feature specs</strong> - Brainstorming, not final design</ListItem>
-          <ListItem><strong>Todo pages</strong> - Planning documents, subject to change</ListItem>
-          <ListItem><strong>Opinion/creative</strong> - Ideas, not facts</ListItem>
-          <ListItem><strong>Code examples</strong> - Illustrative, test before using</ListItem>
-        </List>
-        <Paragraph>
-          <strong>Standard:</strong> Published for my own use and thinking-out-loud. Useful to others if you verify and adapt.
-        </Paragraph>
-
-        <Heading level={3}>Personal: Subjective by Nature</Heading>
-        <List>
-          <ListItem><strong>Reflections</strong> - My experiences and interpretations</ListItem>
-          <ListItem><strong>Project summaries</strong> - How I see my own work</ListItem>
-          <ListItem><strong>Workflow notes</strong> - What works for me</ListItem>
-        </List>
-        <Paragraph>
-          <strong>Standard:</strong> Accuracy matters less than authenticity. AI assistance doesn't undermine personal narrative.
         </Paragraph>
 
         <Heading level={2}>Licensing & Usage</Heading>
@@ -205,13 +172,8 @@ export default function ContentGuidePage() {
 
         <Heading level={2}>When to Trust This Content</Heading>
         <Paragraph>
-          <strong>Trust the thinking, not the facts.</strong> This site demonstrates:
+          <strong>Trust the thinking, not the facts.</strong> The value here is in the ideas, perspectives, and process. The specific details may be wrong, but I think the way I document things is interesting and useful even if the content isn't 100% accurate.
         </Paragraph>
-        <List>
-          <ListItem>Systems thinking and architecture decisions</ListItem>
-          <ListItem>Orchestration skills and AI leverage</ListItem>
-          <ListItem>Willingness to experiment, iterate, and publish rough drafts</ListItem>
-        </List>
         <Paragraph>
           <strong>Don't trust blindly:</strong>
         </Paragraph>

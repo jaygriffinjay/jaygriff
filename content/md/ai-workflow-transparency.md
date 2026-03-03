@@ -5,7 +5,7 @@
   "date": "2026-01-23T00:00:00Z",
   "author": ["Jay Griffin"],
   "type": "post",
-  "description": "Why transparency about AI use ultimately respects your audience and yourself",
+  "description": "Why transparency about AI use ultimately respects your audience and yourself.",
   "tags": ["ai", "transparency", "workflow", "ethics"],
   "relatedPosts": ["ai-calculator-moment", "how-i-use-ai"]
 }
@@ -140,9 +140,11 @@ You're the author when:
 
 Even if you only contributed 10% of the words, if you made meaningful editorial decisions about what the artifact is, you're the author. The AI was a tool in your process, not a co-author.
 
-**For 100% AI-generated content you publish:** You're not the author—you're the curator/publisher. The publishing decision itself is a form of judgment (you decided it was worth sharing rather than deleting), but that's different from authorship. List no author, label it "AI-generated," and let the context of your site establish you as the publisher.
+**For 100% AI-generated content you publish:** I think you're still the author. The Supreme Court may disagree about copyrighting AI art, but in reality, every generation is a representation of your ideas, your thoughts, your context, your prompt, and everything that went into producing it — even if the output is 100% from the software. You chose what to generate, you shaped the inputs, you decided it was worth publishing. The generation didn't come from nowhere. It came from you, through a tool. That's authorship. The fact that the tool did the rendering doesn't change who was in control of what got rendered and why.
 
-**What you call your role:** Workflow transparency. Not co-authorship, not credit. Just honest disclosure about process.
+If you want to label it "AI-generated" for transparency, great — that's honest disclosure about process. But don't confuse process disclosure with surrendering authorship. You're not a passive curator. You're the person who made the decisions that produced the thing.
+
+**What you call your role:** Author, but with conspicuous workflow transparency. Not co-authorship, not credit. Just honest disclosure about process.
 
 ## The Practical Disclosure
 
@@ -161,7 +163,7 @@ Rather than re-explaining your framework on every piece, consider creating a ref
 ---
 
 #### 100% AI-Generated
-- **Author:** *None listed*
+- **Author:** Jay Griffin
 - **Label:** "AI-generated"
 - **What this means:** AI created this based on my prompt. I curated and approved it for publication, but didn't edit the content.
 
@@ -291,7 +293,5 @@ If you're publishing AI-assisted code on your personal site with an MIT license,
 - Personal/experimental/clearly-licensed contexts: Disclose and set appropriate expectations
 
 The transparency about AI use doesn't absolve you of accuracy responsibility **when you're claiming authority**. But it does appropriately set expectations when you're sharing experimental work, tools, or ideas.
-
----
 
 *The disclosure is fair to your audience. The quality is proof of your capabilities. Together, they tell the complete story of what you actually made and how.*
