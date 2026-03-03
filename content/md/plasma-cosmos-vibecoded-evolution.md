@@ -14,7 +14,7 @@
 
 ## The Starting Point
 
-I wrote about [the initial creation of Plasma Cosmos](/posts/claude-skills-and-hosting-html) — a Claude skill used the p5.js generative art connector and spit out a fully working particle visualizer in a single prompt. I dropped the HTML into `public/`, hosted it, and called it done.
+I wrote about [the initial creation of Plasma Cosmos](/posts/claude-skills-and-hosting-html) — a Claude skill spit out a fully working particle visualizer in a single prompt. I dropped the HTML into `public/`, hosted it, and called it done.
 
 **[Try the current version →](/plasma-cosmos)**
 
