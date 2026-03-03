@@ -7,7 +7,8 @@
   "authorshipNote": "🤖 AI Generated",
   "type": "doc",
   "description": "Add visual thumbnail support to all content types (posts, projects, pages) for improved visual appeal, social sharing, and user engagement",
-  "tags": ["feature-spec", "images", "thumbnails", "metadata", "social-sharing", "open-graph", "visual-design"]
+  "tags": ["feature-spec", "images", "thumbnails", "metadata", "social-sharing", "open-graph", "visual-design"],
+  "relatedPosts": ["seo-optimization-plan", "project-launchpad-spec"]
 }
 ---
 

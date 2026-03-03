@@ -12,6 +12,7 @@ export const metadata: PostMeta = {
   description:
     'Notion pls no sue',
   tags: ['design', 'notion', 'constraints', 'markdown'],
+  relatedPosts: ['programs-not-documents', 'md-vs-tsx'],
 };
 
 const AccidentalNotionClonePost = () => {

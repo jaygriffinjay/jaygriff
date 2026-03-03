@@ -13,6 +13,7 @@ export const metadata: PostMeta = {
   feature: 'Markdown Support',
   description: 'How we built a markdown rendering system with react-markdown, and all the edge cases that broke along the way',
   tags: ['markdown', 'react', 'debugging', 'implementation', 'react-markdown'],
+  relatedPosts: ['codeblock-backtick-bug', 'md-vs-tsx', 'mdx-does-not-win'],
 };
 
 export default function MarkdownRendererImplementationDoc() {

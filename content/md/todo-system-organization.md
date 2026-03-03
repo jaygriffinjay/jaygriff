@@ -5,7 +5,8 @@
   "date": "2026-01-23T13:00:00Z",
   "author": "Jay Griffin",
   "type": "doc",
-  "tags": ["todo", "meta", "organization", "workflow", "feature-spec"]
+  "tags": ["todo", "meta", "organization", "workflow", "feature-spec"],
+  "relatedPosts": ["metadata-paradox", "backlog-this-trigger-word-workflow"]
 }
 ---
 

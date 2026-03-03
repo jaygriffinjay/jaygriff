@@ -5,7 +5,8 @@
   "date": "2026-01-23T12:30:00Z",
   "author": "Jay Griffin",
   "type": "doc",
-  "tags": ["todo", "metadata", "authorship", "bulk-edit", "transparency"]
+  "tags": ["todo", "metadata", "authorship", "bulk-edit", "transparency"],
+  "relatedPosts": ["ai-workflow-transparency"]
 }
 ---
 

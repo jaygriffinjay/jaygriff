@@ -8,7 +8,8 @@
   "authorshipNote": "This document was developed through iterative discussion, with AI-assisted drafting and revision.",
   "description": "Me trying to publish all kinds of things (not just websites) in HTML/CSS/React",
   "tags": ["dev", "ai", "web", "formats", "publishing", "workflow"],
-  "type": "post"
+  "type": "post",
+  "relatedPosts": ["building-resume-with-react"]
 }
 ---
 

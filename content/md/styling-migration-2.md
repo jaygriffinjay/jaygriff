@@ -7,7 +7,8 @@
   "authorshipNote": "Claude Sonnet 4.6 via Cline",
   "type": "post",
   "description": "I studied vibe coding tools, figured out why they produce better AI outputs than my usual prompting, and rebuilt my stack to match. Now I have my own personal AI app builder.",
-  "tags": ["ai", "vibe-coding", "stack", "cline", "next.js", "tailwind", "shadcn"]
+  "tags": ["ai", "vibe-coding", "stack", "cline", "next.js", "tailwind", "shadcn"],
+  "relatedPosts": ["styling-migration", "vibecoding-plasma-cosmos-evolution"]
 }
 ---
 

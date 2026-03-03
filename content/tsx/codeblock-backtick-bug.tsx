@@ -13,6 +13,7 @@ export const metadata: PostMeta = {
   feature: 'CodeBlock',
   description: 'Why template literals with backticks break Prism.js syntax highlighting in CodeBlock components, and how to fix it',
   tags: ['debugging', 'prism', 'codeblock', 'styled-components', 'gotcha'],
+  relatedPosts: ['codeblock-showcase', 'markdown-renderer-implementation'],
 };
 
 export default function CodeBlockBacktickBugDoc() {

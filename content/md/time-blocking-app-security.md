@@ -6,7 +6,8 @@
   "author": ["Jay Griffin", "Claude Sonnet 4.5"],
   "type": "doc",
   "description": "Security design notes for preventing prompt-injection abuse in a natural-language time-blocking app via AI intent validation.",
-  "tags": ["security", "prompt-injection", "ai", "calendar", "time-blocking"]
+  "tags": ["security", "prompt-injection", "ai", "calendar", "time-blocking"],
+  "relatedPosts": ["structured-outputs", "life-logger"]
 }
 ---
 

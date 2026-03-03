@@ -6,7 +6,8 @@
   "author": ["Jay Griffin"],
   "type": "post",
   "description": "My content is interactive programs, not static markdown. TSX enables publishing executable experiences.",
-  "tags": ["tsx", "markdown", "content-philosophy", "interactive"]
+  "tags": ["tsx", "markdown", "content-philosophy", "interactive"],
+  "relatedPosts": ["md-vs-tsx", "mdx-does-not-win", "why-react-components-rule"]
 }
 ---
 

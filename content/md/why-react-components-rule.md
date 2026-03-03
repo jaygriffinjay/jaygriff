@@ -6,7 +6,8 @@
   "author": ["Jay Griffin"],
   "type": "post",
   "description": "Encapsulation means I can write the most cursed code imaginable and it's totally fine",
-  "tags": ["react", "components", "web-dev", "philosophy"]
+  "tags": ["react", "components", "web-dev", "philosophy"],
+  "relatedPosts": ["programs-not-documents", "building-resume-with-react"]
 }
 ---
 

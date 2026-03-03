@@ -12,6 +12,7 @@ export const metadata: PostMeta = {
   description:
     'How we refactored content loading from client-side API fetches to server-side direct imports, eliminating API routes and improving performance.',
   tags: ['nextjs', 'server-components', 'refactoring', 'performance'],
+  relatedPosts: ['dynamic-routes-nextjs', 'content-system-refactor'],
 };
 
 const ServerComponentsRefactorDoc = () => {

@@ -7,7 +7,8 @@
   "authorshipNote": "🔧 AI-Assisted - Written after back and forth discussion about migration strategy and timing",
   "type": "post",
   "description": "After over 60 articles in one month, my file-based content system is breaking down. Here's why I'm migrating to SQLite, why now, and why I didn't do this sooner.",
-  "tags": ["dev", "database", "content-system", "sqlite"]
+  "tags": ["dev", "database", "content-system", "sqlite"],
+  "relatedPosts": ["content-layer-docs", "search-feature-spec"]
 }
 ---
 

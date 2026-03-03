@@ -6,7 +6,8 @@
   "author": ["Jay Griffin"],
   "type": "doc",
   "description": "Figure out whether to create dedicated /docs page or surface all docs on homepage via Navigator",
-  "tags": ["todo", "routing", "navigation", "ux"]
+  "tags": ["todo", "routing", "navigation", "ux"],
+  "relatedPosts": ["docs-routing", "navigator-feature"]
 }
 ---
 

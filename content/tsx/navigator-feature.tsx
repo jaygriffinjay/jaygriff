@@ -13,6 +13,7 @@ export const metadata: PostMeta = {
   description:
     'A complete walkthrough of the Navigator feature - a popover search tool for quickly finding and navigating to any route in the application.',
   tags: ['search', 'routing', 'architecture', 'react', 'nextjs', 'dev-docs', 'features'],
+  relatedPosts: ['search-feature-spec', 'docs-routing'],
 };
 
 const NavigatorFeatureDocs = () => {

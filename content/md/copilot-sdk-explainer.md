@@ -7,7 +7,8 @@
   "authorshipNote": "Written collaboratively to explain the core technical capabilities that make the GitHub Copilot SDK different from traditional automation frameworks",
   "type": "doc",
   "description": "How context awareness, reasoning between tool calls, and adaptive execution make the Copilot SDK fundamentally different from traditional automation",
-  "tags": ["github-copilot", "ai", "sdk", "automation", "agents", "tool-use", "architecture"]
+  "tags": ["github-copilot", "ai", "sdk", "automation", "agents", "tool-use", "architecture"],
+  "relatedPosts": ["building-custom-copilot-skills", "agent-skills-are-insane"]
 }
 ---
 

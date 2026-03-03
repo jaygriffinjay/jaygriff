@@ -12,6 +12,7 @@ export const metadata: PostMeta = {
   description: 'Spec for my stack page - filterable categories showing what I use, what I\'m watching, what I retired, and why',
   tags: ['feature-spec', 'ux', 'design'],
   authorshipNote: 'Spec emerged organically from building the page',
+  relatedPosts: ['making-my-own-ai-app-builder'],
 };
 
 const MyToolsInteractivePortfolioSpec = () => {

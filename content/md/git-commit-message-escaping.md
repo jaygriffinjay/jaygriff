@@ -7,7 +7,8 @@
   "authorshipNote": "Jay made a quick observation about commit-message escaping in 2026 and asked GPT-5.3-Codex to turn it into a short markdown doc.",
   "type": "post",
   "description": "A quick amusing observation: modern AI workflows are powerful, but shell escaping in git commit messages is still a thing.",
-  "tags": ["git", "shell", "workflow", "ai", "developer-experience"]
+  "tags": ["git", "shell", "workflow", "ai", "developer-experience"],
+  "relatedPosts": ["ai-code-editing"]
 }
 ---
 

@@ -43,16 +43,20 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
             )}
           </span>
         ),
-        // Block code: pre wraps code blocks, extract content and render CodeBlock
+        // Block code: pre wraps code blocks — extract language and code from child <code>
         pre: ({ children }: any) => {
-          const codeProps = children?.props;
-          const hasLanguage = !!codeProps?.className;
-          const language = codeProps?.className?.replace('language-', '') || 'plaintext';
-          const code = codeProps?.children || '';
-          return <CodeBlock language={language} showHeader={hasLanguage}>{String(code)}</CodeBlock>;
+          // children is the <code> React element
+          const codeElement = Array.isArray(children) ? children[0] : children;
+          const props = codeElement?.props;
+          if (!props) return <pre>{children}</pre>;
+          const className = props.className || '';
+          const match = /language-(\w+)/.exec(className);
+          const language = match ? match[1] : undefined;
+          const code = String(props.children || '').replace(/\n$/, '');
+          return <CodeBlock language={language} showHeader={!!language}>{code}</CodeBlock>;
         },
-        // Inline code: single backticks only
-        code: ({ children }) => <Code>{children}</Code>,
+        // Inline code only
+        code: ({ children }: any) => <Code>{children}</Code>,
         // Tables
         table: ({ children }) => <Table>{children}</Table>,
         thead: ({ children }) => <Thead>{children}</Thead>,

@@ -12,6 +12,7 @@ export const metadata: PostMeta = {
   type: 'doc',
   description: 'Feature spec for audio as optional prop on content primitives - attach human commentary to any component',
   tags: ['feature-spec', 'audio', 'ai-content', 'primitives', 'design-systems', 'transparency'],
+  relatedPosts: ['ai-workflow-transparency', 'why-i-write-in-my-ide'],
 };
 
 export default function AudioPrimitive() {

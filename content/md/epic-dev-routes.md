@@ -6,7 +6,8 @@
   "author": ["Jay Griffin"],
   "type": "doc",
   "description": "Stop building separate tools - use Next.js /dev/* routes to turn your entire app into a personal productivity layer with hot reload, TypeScript safety, and zero deployment overhead",
-  "tags": ["next.js", "dev-tools", "workflows", "architecture", "productivity", "dx", "web-dev"]
+  "tags": ["next.js", "dev-tools", "workflows", "architecture", "productivity", "dx", "web-dev"],
+  "relatedPosts": ["why-i-write-in-my-ide", "building-custom-copilot-skills"]
 }
 ---
 

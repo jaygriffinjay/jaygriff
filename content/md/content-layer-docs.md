@@ -9,7 +9,8 @@
   "projectId": "jaygriff",
   "feature": "Content System",
   "description": "Reference doc for the SQLite migration. Captures exactly how the current filesystem-based content system works, where the pain points are, and what each function actually does.",
-  "tags": ["content-system", "sqlite", "architecture", "docs", "posts", "filesystem"]
+  "tags": ["content-system", "sqlite", "architecture", "docs", "posts", "filesystem"],
+  "relatedPosts": ["migrating-to-sqlite", "search-feature-spec"]
 }
 ---
 

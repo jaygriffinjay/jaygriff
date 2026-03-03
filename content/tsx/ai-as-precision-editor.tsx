@@ -10,6 +10,7 @@ export const metadata: PostMeta = {
   type: 'post',
   description: "It's not about AI writing my code. It's about having a precision text manipulation interface that makes programming fundamentally more efficient.",
   tags: ['ai', 'workflow', 'productivity', 'tools'],
+  relatedPosts: ['approve-regenerate-edit-loop', 'why-i-write-in-my-ide', 'how-i-use-ai'],
 };
 
 export default function AICodeEditingPost() {

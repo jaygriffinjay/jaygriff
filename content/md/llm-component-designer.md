@@ -6,7 +6,8 @@
   "author": ["Jay Griffin"],
   "type": "doc",
   "description": "Design document for an AI-powered component composition system using LLM intelligence with deterministic, type-safe output",
-  "tags": ["llm", "ai", "component-design", "harness", "architecture"]
+  "tags": ["llm", "ai", "component-design", "harness", "architecture"],
+  "relatedPosts": ["structured-outputs", "semantic-controls-for-ai"]
 }
 ---
 

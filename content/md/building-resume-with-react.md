@@ -7,7 +7,8 @@
   "author": ["Jay Griffin", "GPT-5.3-Codex", "Claude Sonnet 4.5"],
   "description": "How I ditched traditional design tools and built a print-perfect resume using React, Emotion, and CSS print media queries.",
   "tags": ["dev", "react", "css", "workflow"],
-  "type": "post"
+  "type": "post",
+  "relatedPosts": ["pdf-the-frankenformat", "why-react-components-rule"]
 }
 ---
 

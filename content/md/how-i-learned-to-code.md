@@ -7,7 +7,8 @@
   "authorshipNote": "Claude Sonnet 4.6 via GitHub Copilot",
   "type": "post",
   "description": "I'm self-taught, and the path was anything but straight.",
-  "tags": ["career", "self-taught", "learning", "journey", "beginner"]
+  "tags": ["career", "self-taught", "learning", "journey", "beginner"],
+  "relatedPosts": ["accounting-to-dev"]
 }
 ---
 
@@ -33,7 +34,7 @@ So here is how I implemented this in AutoHotKey 👇
 
 ## My First Script Ever
 
-```
+```ahk
 ; Ctrl + Shift + = (email + calendar)
 
 ^+=::
@@ -62,7 +63,7 @@ That's when it clicked. That's what it means to execute a program. You write ins
 
 Then I discovered AutoHotkey could create right-click menus. These are kind of like how you might right-click to copy and paste. This made me realize making UI isn't as hard as I thought. You don't need to understand how to render pixels on the screen all the way down to binary instructions. You just... write some code that says "make a right-click menu." That's it. 👇 
 
-```
+```ahk
 Menu, MyMenu, Add, Copy, DoCopy
 Menu, MyMenu, Add, Paste, DoPaste
 Menu, MyMenu, Add, Cut, DoCut

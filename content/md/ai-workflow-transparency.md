@@ -6,7 +6,8 @@
   "author": ["Jay Griffin"],
   "type": "post",
   "description": "Why transparency about AI use ultimately respects your audience and yourself",
-  "tags": ["ai", "transparency", "workflow", "ethics"]
+  "tags": ["ai", "transparency", "workflow", "ethics"],
+  "relatedPosts": ["ai-calculator-moment", "how-i-use-ai"]
 }
 ---
 

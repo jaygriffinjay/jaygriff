@@ -10,6 +10,7 @@ export const metadata: PostMeta = {
   type: 'doc',
   description: 'Testing the new primitive table components with various data examples.',
   tags: ['components', 'primitives', 'tables', 'examples'],
+  relatedPosts: ['markdown-table-test'],
 };
 
 export default function TableExamples() {

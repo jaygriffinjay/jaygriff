@@ -7,7 +7,8 @@
   "authorshipNote": "🔧 AI-Assisted - Jay's perspective on AI adoption patterns, Claude articulated the argument",
   "type": "post",
   "description": "AI isn't categorically different from calculators or any tool innovation—it's just the calculator moment happening to every domain simultaneously at unprecedented speed",
-  "tags": ["ai", "tools", "adoption", "education", "perspective", "calculator-moment", "amplification"]
+  "tags": ["ai", "tools", "adoption", "education", "perspective", "calculator-moment", "amplification"],
+  "relatedPosts": ["how-i-use-ai", "ai-workflow-transparency"]
 }
 ---
 

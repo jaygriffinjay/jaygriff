@@ -7,7 +7,8 @@
   "authorshipNote": "🔧 AI-Assisted - Conversation synthesis of Jay's ideas that Claude structured and articulated",
   "type": "post",
   "description": "Exploring how to compress semantic meaning into symbolic syntax for more efficient AI prompting and higher-quality AI-generated outputs",
-  "tags": ["ai", "semantic-compression", "dsl", "markdown", "llm", "prompt-engineering", "code-generation"]
+  "tags": ["ai", "semantic-compression", "dsl", "markdown", "llm", "prompt-engineering", "code-generation"],
+  "relatedPosts": ["semantic-controls-for-ai-2", "structured-outputs"]
 }
 ---
 

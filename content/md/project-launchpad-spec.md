@@ -7,7 +7,8 @@
   "authorshipNote": "🤖 AI Generated",
   "type": "doc",
   "description": "Frictionless system for showcasing development projects - make adding new projects feel as easy as publishing a blog post",
-  "tags": ["feature-spec", "projects", "portfolio", "ux", "content-system", "showcase"]
+  "tags": ["feature-spec", "projects", "portfolio", "ux", "content-system", "showcase"],
+  "relatedPosts": ["thumbnail-metadata-spec"]
 }
 ---
 

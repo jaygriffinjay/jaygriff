@@ -6,7 +6,8 @@
   "author": ["Jay Griffin", "GPT-5.3-Codex"],
   "type": "doc",
   "description": "A focused workflow for capturing ideas into backlog storage when I intentionally want to stop implementing and preserve context for later.",
-  "tags": ["workflow", "ai", "backlog", "productivity", "meta", "spec"]
+  "tags": ["workflow", "ai", "backlog", "productivity", "meta", "spec"],
+  "relatedPosts": ["backlog-this-metadata-editor-workflow"]
 }
 ---
 

@@ -8,7 +8,8 @@
   "type": "post",
   "projectId": "jaygriff",
   "description": "Should every page have metadata? Should I automate adding metadata? Do I even need metadata on non-content pages? The irony of documenting this decision.",
-  "tags": ["meta", "automation", "yagni", "factoring", "developer-experience"]
+  "tags": ["meta", "automation", "yagni", "factoring", "developer-experience"],
+  "relatedPosts": ["todo-system-organization"]
 }
 ---
 

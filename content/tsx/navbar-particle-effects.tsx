@@ -13,6 +13,7 @@ export const metadata: PostMeta = {
   feature: 'navbar',
   author: ['Jay Griffin', 'Claude Sonnet 4.5'],
   authorshipNote: 'Collaboratively written with Claude by summarizing work done and analyzing the code',
+  relatedPosts: ['container-margin-map', 'navigator-feature'],
 };
 
 export default function NavBarComponentDoc() {

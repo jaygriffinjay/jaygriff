@@ -10,6 +10,7 @@ export const metadata: PostMeta = {
   type: 'post',
   description: 'The fundamental AI-assisted workflow: approve output, regenerate if wrong, edit to polish. Every bit of friction you remove compounds exponentially.',
   tags: ['ai', 'workflow', 'productivity', 'natural-language', 'development'],
+  relatedPosts: ['ai-code-editing', 'why-i-write-in-my-ide', 'how-i-use-ai'],
 };
 
 export default function ApproveRegenerateEditLoop() {

@@ -8,7 +8,8 @@
   "type": "doc",
   "description": "Replacing Fuse.js title-only search with server-side full-text search using SQLite FTS5 — paragraph-level results with highlighted snippet previews linking directly to headings.",
   "tags": ["search", "sqlite", "fts5", "spec", "architecture"],
-  "projectId": "jaygriff"
+  "projectId": "jaygriff",
+  "relatedPosts": ["migrating-to-sqlite", "content-layer-docs", "llm-seo-roadmap"]
 }
 ---
 

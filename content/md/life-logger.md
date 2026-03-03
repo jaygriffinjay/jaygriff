@@ -8,7 +8,8 @@
   "type": "doc",
   "description": "A frictionless life logging and time tracking system using natural language AI interface for effortless tracking and behavioral insights",
   "tags": ["product-vision", "ai", "life-logging", "time-tracking", "productivity", "natural-language"],
-  "status": "Planning"
+  "status": "Planning",
+  "relatedPosts": ["structured-outputs"]
 }
 ---
 

@@ -8,7 +8,8 @@
   "type": "doc",
   "description": "A development-only inline content editor for markdown files that enables quick content updates without manually editing files in an IDE.",
   "tags": ["feature-spec", "dev-tools", "content", "editor"],
-  "status": "Planning"
+  "status": "Planning",
+  "relatedPosts": ["backlog-this-metadata-editor-workflow"]
 }
 ---
 

@@ -7,7 +7,8 @@
   "authorshipNote": "Claude Sonnet 4.6 via GitHub Copilot",
   "type": "post",
   "description": "When you write a function you get one function. When you write a skill you get a new intern who works for you.",
-  "tags": ["ai", "skills", "agents", "workflow", "automation", "tools"]
+  "tags": ["ai", "skills", "agents", "workflow", "automation", "tools"],
+  "relatedPosts": ["claude-skills-and-hosting-html", "building-custom-copilot-skills", "copilot-sdk-explainer"]
 }
 ---
 

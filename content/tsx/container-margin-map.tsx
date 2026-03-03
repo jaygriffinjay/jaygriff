@@ -12,6 +12,7 @@ export const metadata: PostMeta = {
   tags: ['layout', 'css', 'spacing', 'primitives', 'docs'],
   type: 'doc',
   author: ['Jay Griffin', 'GPT-5.3-Codex'],
+  relatedPosts: ['safari-margin-hack', 'navbar-component'],
 };
 
 export default function ContainerMarginMap() {

@@ -10,6 +10,7 @@ export const metadata = {
   description: 'Comprehensive feature spec for private/offline content creation. Enables sensitive documents, personal todos, and local-only work within the same system used for public content.',
   type: 'doc' as const,
   tags: ['feature-spec', 'privacy', 'offline', 'architecture', 'productivity'],
+  relatedPosts: ['epic-dev-routes'],
 };
 
 export default function FeatureSpecPrivateContent() {

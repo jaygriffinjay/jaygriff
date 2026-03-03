@@ -7,7 +7,8 @@
   "authorshipNote": "Claude Sonnet 4.6 via Claude.ai — summarized from conversation and work done on bookmark launcher",
   "type": "doc",
   "description": "Debugging notes on building a bookmark that opens two URLs simultaneously in separate tabs — what Chrome blocks, what works, and why.",
-  "tags": ["browser", "bookmarks", "chrome", "debugging", "tools"]
+  "tags": ["browser", "bookmarks", "chrome", "debugging", "tools"],
+  "relatedPosts": ["epic-dev-routes"]
 }
 ---
 

@@ -12,6 +12,7 @@ export const metadata: PostMeta = {
   description:
     'How we structure URLs and content for multiple projects under one domain using metadata-based routing.',
   tags: ['architecture', 'nextjs', 'routing', 'multi-project'],
+  relatedPosts: ['docs-routing', 'app-routes-path-strategy'],
 };
 
 const RoutingStrategyDoc = () => {

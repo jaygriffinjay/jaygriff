@@ -12,6 +12,11 @@ import 'prismjs/components/prism-markup';
 import 'prismjs/components/prism-markdown';
 import 'prismjs/components/prism-bash';
 import 'prismjs/components/prism-sql';
+import 'prismjs/components/prism-json';
+import 'prismjs/components/prism-autohotkey';
+
+// Register language aliases
+Prism.languages['ahk'] = Prism.languages['autohotkey'];
 import {
   codeBlockTheme,
   headerStyles,
@@ -32,6 +37,7 @@ interface IconConfig {
   filename: string;
   adjustY?: number; // Vertical offset in pixels
   adjustX?: number; // Horizontal offset in pixels
+  adjustScale?: number; // Scale factor (e.g., 0.85)
   filter?: string;   // CSS filter (e.g., for inverting colors)
 }
 
@@ -52,6 +58,9 @@ const iconConfigs: Record<string, IconConfig> = {
   'markdown': { filename: 'markdown' },
   'md': { filename: 'markdown' },
   'sql': { filename: 'sql' },
+  'json': { filename: 'json', adjustScale: 0.75 },
+  'autohotkey': { filename: 'autohotkey', adjustScale: 0.85 },
+  'ahk': { filename: 'autohotkey', adjustScale: 0.85 },
   'default': { filename: 'default', filter: 'brightness(0) invert(1)' },
 };
 
@@ -95,6 +104,8 @@ function getDisplayName(filename: string | undefined, language: string | undefin
     'markdown': '.md',
     'json': '.json',
     'sql': '.sql',
+    'autohotkey': 'AutoHotkey.ahk',
+    'ahk': 'AutoHotkey.ahk',
   };
   
   return language ? languageToExtension[language] : undefined;
@@ -102,7 +113,6 @@ function getDisplayName(filename: string | undefined, language: string | undefin
 
 // Ensure Prism.js highlights the code correctly
 export function CodeBlock({ language, children, showHeader = true, filename }: CodeBlockProps) {
-  const codeRef = useRef<HTMLElement>(null);
   const preRef = useRef<HTMLPreElement>(null);
   const [copied, setCopied] = useState(false);
   const [isWrapped, setIsWrapped] = useState(false);
@@ -111,11 +121,9 @@ export function CodeBlock({ language, children, showHeader = true, filename }: C
   const iconConfig = getIconConfig(filename, language);
   const displayName = getDisplayName(filename, language);
 
-  useEffect(() => {
-    if (codeRef.current) {
-      Prism.highlightElement(codeRef.current);
-    }
-  }, [children, language]);
+  const highlighted = language && Prism.languages[language]
+    ? Prism.highlight(children, Prism.languages[language], language)
+    : children;
 
   useEffect(() => {
     // Check if content overflows horizontally
@@ -146,6 +154,7 @@ export function CodeBlock({ language, children, showHeader = true, filename }: C
     ...(iconConfig.filter && { filter: iconConfig.filter }),
     ...(iconConfig.adjustY && { transform: `translateY(${iconConfig.adjustY}px)` }),
     ...(iconConfig.adjustX && { marginLeft: `${iconConfig.adjustX}px` }),
+    ...(iconConfig.adjustScale && { transform: `scale(${iconConfig.adjustScale})` }),
   };
 
   return (
@@ -235,9 +244,7 @@ export function CodeBlock({ language, children, showHeader = true, filename }: C
         </div>
       )}
       <pre ref={preRef} className={`language-${language || 'text'}`} tabIndex={0} style={{ whiteSpace: isWrapped ? 'pre-wrap' : 'pre' }}>
-        <code ref={codeRef} className={`language-${language || 'text'}`}>
-          {children}
-        </code>
+        <code className={`language-${language || 'text'}`} dangerouslySetInnerHTML={{ __html: highlighted }} />
       </pre>
     </div>
   );

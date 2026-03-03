@@ -7,7 +7,8 @@
   "type": "doc",
   "tags": ["todo", "ui", "navigation", "search", "ux", "taskbar"],
   "status": "open",
-  "priority": "high"
+  "priority": "high",
+  "relatedPosts": ["navigator-feature", "search-feature-spec"]
 }
 ---
 

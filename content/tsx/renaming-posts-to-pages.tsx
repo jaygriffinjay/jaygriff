@@ -8,6 +8,7 @@ export const metadata = {
   date: '2026-01-17T23:00:00Z',
   author: 'Claude Sonnet 4.5',
   type: 'doc',
+  relatedPosts: ['content-system-refactor', 'docs-routing'],
 };
 
 export default function RenamingPostsToPages() {

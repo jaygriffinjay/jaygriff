@@ -7,7 +7,8 @@
   "type": "post",
   "tags": ["dev", "content", "architecture", "tsx", "markdown"],
   "author": ["Jay Griffin", "Claude Sonnet 4.6"],
-  "authorshipNote": "Claude Sonnet 4.6 via GitHub Copilot"
+  "authorshipNote": "Claude Sonnet 4.6 via GitHub Copilot",
+  "relatedPosts": ["programs-not-documents", "md-vs-tsx", "markdown-format-rant"]
 }
 ---
 

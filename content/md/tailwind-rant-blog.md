@@ -7,7 +7,8 @@
   "authorshipNote": "Jay ranted about Tailwind, Claude Sonnet 4.5 summarized and structured it",
   "type": "post",
   "description": "A personal defense of CSS-in-JS over Tailwind's utility-first approach",
-  "tags": ["css", "tailwind", "css-in-js", "emotion", "styling"]
+  "tags": ["css", "tailwind", "css-in-js", "emotion", "styling"],
+  "relatedPosts": ["why-no-tailwind", "styling-migration"]
 }
 ---
 

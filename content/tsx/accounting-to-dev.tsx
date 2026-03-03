@@ -10,6 +10,7 @@ export const metadata: PostMeta = {
   type: 'post',
   description: 'From Debits and Credits to TypeScript: My Journey from Accounting to Software Development',
   tags: ['career', 'accounting', 'self-taught', 'journey', 'excel'],
+  relatedPosts: ['how-i-learned-to-code'],
 };
 
 export default function AccountingToDevPost() {

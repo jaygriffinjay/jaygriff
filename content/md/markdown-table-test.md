@@ -7,7 +7,8 @@
   "authorshipNote": "🤖 AI-Generated",
   "type": "doc",
   "description": "Testing GFM table syntax rendering with primitive table components.",
-  "tags": ["markdown", "tables", "testing"]
+  "tags": ["markdown", "tables", "testing"],
+  "relatedPosts": ["table-examples", "markdown-renderer-implementation"]
 }
 ---
 

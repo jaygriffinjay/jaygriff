@@ -12,6 +12,7 @@ export const metadata: PostMeta = {
   tags: ['debug', 'testing'],
   author: 'Claude Sonnet 4.5',
   authorshipNote: '🤖 AI-Generated (100%)',
+  relatedPosts: ['app-routes-path-strategy', 'routing-strategy'],
 };
 
 export default async function DebugAppRoutes() {

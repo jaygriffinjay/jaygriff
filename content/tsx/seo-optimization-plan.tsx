@@ -11,6 +11,7 @@ export const metadata: PostMeta = {
   description: 'Comprehensive plan for implementing Next.js metadata API across the site for better SEO, including OpenGraph and Twitter Card support.',
   tags: ['seo', 'nextjs', 'optimization', 'roadmap', 'metadata'],
   path: '/docs/seo-optimization-plan',
+  relatedPosts: ['llm-seo-roadmap', 'thumbnail-metadata-spec', 'client-component-page-title-debt'],
 };
 
 export default function SEOOptimizationPlan() {

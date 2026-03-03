@@ -6,7 +6,8 @@
   "author": ["Jay Griffin"],
   "type": "post",
   "description": "Anti-Tailwind manifesto: why design tokens and CSS-in-JS beat utility classes",
-  "tags": ["css", "tailwind", "emotion", "styling", "design-tokens"]
+  "tags": ["css", "tailwind", "emotion", "styling", "design-tokens"],
+  "relatedPosts": ["tailwind-rant-blog", "styling-migration"]
 }
 ---
 

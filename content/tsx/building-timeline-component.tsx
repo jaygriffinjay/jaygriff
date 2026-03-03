@@ -11,6 +11,7 @@ export const metadata: PostMeta = {
   description: 'Deep dive into creating a custom SVG-based timeline component with hover interactions, dynamic positioning, and responsive year labels',
   tags: ['dev', 'react', 'components', 'svg', 'design'],
   path: '/posts/building-timeline-component',
+  relatedPosts: ['building-resume-with-react'],
 };
 
 export default function BuildingTimelineComponent() {

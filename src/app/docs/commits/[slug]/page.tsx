@@ -3,7 +3,9 @@ import { Container } from "@/components/Primitives";
 import { ContentHeader } from "@/components/ContentHeader";
 import { ContentWrapper } from "@/components/ContentWrapper";
 import MarkdownRenderer from "@/components/MarkdownRenderer";
+import RelatedPosts from "@/components/RelatedPosts";
 import { loadContentBySlug, getAllDocSlugs } from "@/lib/content-loader";
+import { getAllPosts, getAllDocs } from "@/lib/posts";
 
 // Pre-render all commit docs at build time
 export async function generateStaticParams() {
@@ -24,6 +26,10 @@ export default async function Page({
 
   const { metadata } = content;
 
+  const allPosts = await getAllPosts();
+  const allDocs = await getAllDocs();
+  const allContent = [...allPosts, ...allDocs];
+
   return (
     <Container size="sm">
       <article>
@@ -35,6 +41,9 @@ export default async function Page({
             <MarkdownRenderer content={content.markdownContent} />
           ) : null}
         </ContentWrapper>
+        {metadata.relatedPosts && metadata.relatedPosts.length > 0 && (
+          <RelatedPosts slugs={metadata.relatedPosts} allPosts={allContent} />
+        )}
       </article>
     </Container>
   );

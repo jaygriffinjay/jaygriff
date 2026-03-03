@@ -11,6 +11,7 @@ export const metadata: PostMeta = {
   projectId: 'jaygriff',
   description: 'Technical specification for parent-child page relationships with automatic routing and dev-mode creation.',
   tags: ['feature-spec', 'routing', 'content-system'],
+  relatedPosts: ['docs-routing', 'routing-strategy'],
 };
 
 const HierarchicalPagesSpec = () => {

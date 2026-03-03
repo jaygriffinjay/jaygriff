@@ -7,7 +7,8 @@
   "authorshipNote": "🔧 AI-Assisted - Jay's strategy research, Claude structured the roadmap",
   "type": "doc",
   "description": "A practical guide to optimizing your site for AI-powered search and LLM discoverability - actionable strategies for appearing in ChatGPT, Claude, Perplexity, and other LLM-generated responses",
-  "tags": ["seo", "llm", "ai-search", "optimization", "discoverability", "content-strategy", "roadmap"]
+  "tags": ["seo", "llm", "ai-search", "optimization", "discoverability", "content-strategy", "roadmap"],
+  "relatedPosts": ["search-feature-spec"]
 }
 ---
 

@@ -13,6 +13,7 @@ export const metadata: PostMeta = {
   description:
     'How documentation pages are separated from blog posts using type-based routing, allowing docs to live at /docs/ while posts stay at /posts/.',
   tags: ['routing', 'nextjs', 'architecture', 'dev-docs'],
+  relatedPosts: ['routing-strategy', 'app-routes-path-strategy', 'dynamic-routes-nextjs'],
 };
 
 const DocsRoutingArchitecture = () => {

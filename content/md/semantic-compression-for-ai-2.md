@@ -7,7 +7,8 @@
   "authorshipNote": "🔧 AI-Assisted - Conversation synthesis exploring schema-based AI control systems",
   "type": "post",
   "description": "AI as an intelligence building block",
-  "tags": ["ai", "semantic-compression", "schemas", "structured-outputs", "zod", "control-systems", "web-development"]
+  "tags": ["ai", "semantic-compression", "schemas", "structured-outputs", "zod", "control-systems", "web-development"],
+  "relatedPosts": ["semantic-controls-for-ai", "structured-outputs"]
 }
 ---
 

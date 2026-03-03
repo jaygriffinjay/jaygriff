@@ -6,7 +6,8 @@
   "author": ["Jay Griffin"],
   "type": "doc",
   "description": "Add optional metadata field to hide ContentHeader component for non-standard pages like about-me",
-  "tags": ["todo", "metadata", "ui", "content-system"]
+  "tags": ["todo", "metadata", "ui", "content-system"],
+  "relatedPosts": ["metadata-paradox"]
 }
 ---
 

@@ -7,7 +7,8 @@
   "authorshipNote": "Claude Sonnet 4.6 via GitHub Copilot",
   "type": "post",
   "description": "Claude.ai now has skills and connectors. I used one to build a generative art visualizer in a minute. Then figured out the cleanest way to ship it.",
-  "tags": ["ai", "claude", "generative-art", "next.js", "p5js", "tools"]
+  "tags": ["ai", "claude", "generative-art", "next.js", "p5js", "tools"],
+  "relatedPosts": ["vibecoding-plasma-cosmos-evolution", "agent-skills-are-insane"]
 }
 ---
 

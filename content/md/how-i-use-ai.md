@@ -7,7 +7,8 @@
   "authorshipNote": "Claude Sonnet 4.6 via GitHub Copilot — synthesized from my writing, projects, and ideas across the site into one document",
   "type": "post",
   "description": "Why I'm obssessed with AI and what I do with it",
-  "tags": ["ai", "copilot", "cline", "workflow", "vibe-coding", "tools"]
+  "tags": ["ai", "copilot", "cline", "workflow", "vibe-coding", "tools"],
+  "relatedPosts": ["ai-calculator-moment", "ai-code-editing", "why-i-write-in-my-ide", "approve-regenerate-edit-loop"]
 }
 ---
 

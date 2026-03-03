@@ -7,7 +7,8 @@
   "authorshipNote": "Written by Claude Sonnet 4.5 after Jay inquired about deployment notifications feature",
   "description": "My master plan to get a satisfying ding sound on my Mac every time a Vercel deployment goes live. Time to stop refresh-spamming and get notified automatically.",
   "tags": ["dev", "deployment", "automation", "vercel", "cloudflare"],
-  "type": "post"
+  "type": "post",
+  "relatedPosts": ["epic-dev-routes"]
 }
 ---
 

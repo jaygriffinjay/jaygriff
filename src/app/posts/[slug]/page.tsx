@@ -5,7 +5,7 @@ import { ContentWrapper } from "@/components/ContentWrapper";
 import RelatedPosts from "@/components/RelatedPosts";
 import MarkdownRenderer from "@/components/MarkdownRenderer";
 import { loadContentBySlug, getAllPostSlugs } from "@/lib/content-loader";
-import { getAllPosts } from "@/lib/posts";
+import { getAllPosts, getAllDocs } from "@/lib/posts";
 
 // Pre-render all posts at build time
 export async function generateStaticParams() {
@@ -36,6 +36,8 @@ export default async function Page({
 
   const { metadata } = content;
   const allPosts = await getAllPosts();
+  const allDocs = await getAllDocs();
+  const allContent = [...allPosts, ...allDocs];
 
   return (
     <Container size="sm">
@@ -49,7 +51,7 @@ export default async function Page({
           ) : null}
         </ContentWrapper>
         {metadata.relatedPosts && metadata.relatedPosts.length > 0 && (
-          <RelatedPosts slugs={metadata.relatedPosts} allPosts={allPosts} />
+          <RelatedPosts slugs={metadata.relatedPosts} allPosts={allContent} />
         )}
       </article>
     </Container>

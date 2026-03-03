@@ -11,6 +11,7 @@ export const metadata: PostMeta = {
   tags: ['architecture', 'routing', 'metadata', 'design-decision'],
   author: 'Claude Sonnet 4.5',
   authorshipNote: '🤖 AI-Generated (100%)',
+  relatedPosts: ['docs-routing', 'routing-strategy'],
 };
 
 export default function AppRoutesPathStrategy() {

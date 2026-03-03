@@ -9,6 +9,7 @@ export const metadata: PostMeta = {
   tags: ['dev', 'ai', 'workflow', 'tools'],
   author: ['Jay Griffin', 'Claude Sonnet 4.5'],
   authorshipNote: 'This article was written by GitHub Copilot based on a real debugging session where it fixed a JSX syntax error that Claude Code couldn\'t resolve. Jay asked Copilot to document the decision-making process, and this piece was created from that conversation—an example of the precision editing workflow described within.',
+  relatedPosts: ['ai-code-editing', 'how-i-use-ai'],
 };
 
 export default function ChoosingCopilotOverClaudeCode() {

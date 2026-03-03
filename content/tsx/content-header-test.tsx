@@ -22,6 +22,7 @@ export const metadata: PostMeta = {
     '2026-01-27T09:00:00Z',
     '2026-01-26T13:00:00Z',
   ],
+  relatedPosts: ['ui-polish'],
 };
 
 const testCases: PostMeta[] = [

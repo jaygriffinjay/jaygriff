@@ -16,6 +16,7 @@ export const metadata: PostMeta = {
     '2026-02-03T00:00:00Z',
     '2026-02-02T00:00:00Z',
   ],
+  relatedPosts: ['codeblock-backtick-bug', 'debug-codeblocks'],
 };
 
 export default function CodeBlockShowcase() {
@@ -352,6 +353,23 @@ FROM search_fts
 JOIN posts p ON p.id = search_fts.rowid
 WHERE search_fts MATCH ?
 ORDER BY rank;`}
+      </CodeBlock>
+
+      <Heading level={2}>AutoHotkey Files</Heading>
+      <CodeBlock language="autohotkey">
+        {`; Remap Caps Lock to Escape
+CapsLock::Escape
+
+; Launch Notepad with Win+N
+#n::Run "notepad.exe"
+
+; Hotstring
+::btw::by the way
+
+; Function
+Greet(name) {
+    return "Hey, " . name . "!"
+}`}
       </CodeBlock>
 
       <Heading level={2}>Without Filename (Language Fallback)</Heading>

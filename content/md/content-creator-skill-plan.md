@@ -8,7 +8,8 @@
   "authorshipNote": "Created collaboratively with GitHub Copilot while working on implementing the content creation system described in this document",
   "type": "doc",
   "description": "Implementation plan for building a GitHub Copilot skill that enables natural language content creation",
-  "tags": ["ai", "workflows", "github-copilot", "automation", "skills", "semantic-deterministic", "content-creation"]
+  "tags": ["ai", "workflows", "github-copilot", "automation", "skills", "semantic-deterministic", "content-creation"],
+  "relatedPosts": ["building-custom-copilot-skills", "copilot-sdk-explainer", "agent-skills-are-insane"]
 }
 ---
 

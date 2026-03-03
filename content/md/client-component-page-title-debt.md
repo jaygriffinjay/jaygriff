@@ -8,7 +8,8 @@
   "description": "I wired up page title metadata across the whole site — except for three pages that use 'use client'. I know the fix. I don't want to do it yet. Here's everything documented so I can come back to it.",
   "type": "doc",
   "tags": ["next.js", "metadata", "tech-debt", "client-components", "seo"],
-  "projectId": "jaygriff"
+  "projectId": "jaygriff",
+  "relatedPosts": ["seo-optimization-plan"]
 }
 ---
 

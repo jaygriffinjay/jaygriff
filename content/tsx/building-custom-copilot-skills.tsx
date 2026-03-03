@@ -9,6 +9,7 @@ export const metadata: PostMeta = {
   tags: ['dev', 'ai', 'workflow', 'tools', 'automation'],
   author: ['Jay Griffin', 'Claude Sonnet 4.5'],
   authorshipNote: 'Written collaboratively after realizing that custom AI skills aren\'t just productivity tools—they\'re a natural language command interface for encoding my entire development workflow. This article documents the vision.',
+  relatedPosts: ['content-creator-skill-plan', 'copilot-sdk-explainer', 'agent-skills-are-insane'],
 };
 
 export default function BuildingCustomCopilotSkills() {

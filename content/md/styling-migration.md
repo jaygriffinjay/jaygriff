@@ -7,7 +7,8 @@
   "authorshipNote": "GPT-5.3-Codex via GitHub Copilot",
   "description": "My migration plan from Emotion to Tailwind, CSS Modules, Shadcn, and CSS variables so styling stays fast, explicit, and AI-friendly.",
   "tags": ["css", "nextjs", "emotion", "tailwind", "shadcn", "architecture", "ai"],
-  "type": "post"
+  "type": "post",
+  "relatedPosts": ["making-my-own-ai-app-builder", "tailwind-rant-blog", "why-no-tailwind"]
 }
 ---
 

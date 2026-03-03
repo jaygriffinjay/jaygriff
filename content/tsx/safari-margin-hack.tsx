@@ -11,6 +11,7 @@ export const metadata: PostMeta = {
   projectId: 'jaygriff',
   description: 'Why we have a mysterious 1px padding on the body element',
   tags: ['safari', 'css', 'hack', 'margin-collapse'],
+  relatedPosts: ['container-margin-map'],
 };
 
 const SafariMarginHackDoc = () => {

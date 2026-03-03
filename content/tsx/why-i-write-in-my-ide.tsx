@@ -11,6 +11,7 @@ export const metadata: PostMeta = {
   description: 'AI coding assistants changed how I create content - repo-wide context, multi-file operations, and instant publishing make traditional writing tools obsolete for my workflow',
   tags: ['ai', 'writing', 'workflow', 'dev', 'productivity', 'ide', 'content-creation'],
   path: '/posts/why-i-write-in-my-ide',
+  relatedPosts: ['ai-code-editing', 'approve-regenerate-edit-loop', 'how-i-use-ai'],
 };
 
 export default function WhyIWriteInMyIDE() {

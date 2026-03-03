@@ -8,7 +8,8 @@
   "type": "doc",
   "description": "Spec for a /live route — a personal microblog feed powered by a write API and SQLite, postable from anywhere including a phone.",
   "tags": ["spec", "live", "microblog", "sqlite", "api", "roadmap"],
-  "projectId": "jaygriff"
+  "projectId": "jaygriff",
+  "relatedPosts": ["search-feature-spec", "migrating-to-sqlite"]
 }
 ---
 

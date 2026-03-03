@@ -11,6 +11,7 @@ export const metadata: PostMeta = {
   description: 'Comprehensive debugging tool for inspecting content metadata dates. Created to diagnose and fix the "invalid date" bug on the homepage.',
   tags: ['debug', 'tools', 'dates', 'metadata', 'troubleshooting'],
   type: 'doc',
+  relatedPosts: ['content-header-test'],
 };
 
 // Server component that loads and displays all dates

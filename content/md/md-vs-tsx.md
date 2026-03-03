@@ -6,7 +6,8 @@
   "author": ["Jay Griffin"],
   "type": "doc",
   "description": "TSX-first content system with markdown fallback: embracing coupled content and logic",
-  "tags": ["tsx", "markdown", "architecture", "content-system"]
+  "tags": ["tsx", "markdown", "architecture", "content-system"],
+  "relatedPosts": ["programs-not-documents", "mdx-does-not-win", "markdown-format-rant"]
 }
 ---
 

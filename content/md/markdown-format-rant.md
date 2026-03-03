@@ -6,7 +6,8 @@
   "author": ["Jay Griffin"],
   "type": "post",
   "description": "Markdown philosophy: constraints force clarity, syntax serves the parser, not the writer",
-  "tags": ["markdown", "obsidian", "writing", "constraints", "philosophy"]
+  "tags": ["markdown", "obsidian", "writing", "constraints", "philosophy"],
+  "relatedPosts": ["programs-not-documents", "md-vs-tsx", "mdx-does-not-win"]
 }
 ---
 

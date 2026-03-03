@@ -11,6 +11,7 @@ export const metadata: PostMeta = {
   type: 'post',
   description: 'Separating probabilistic thinking from deterministic execution',
   tags: ['ai', 'structured-outputs', 'json-schema', 'architecture', 'llm'],
+  relatedPosts: ['semantic-controls-for-ai', 'semantic-controls-for-ai-2', 'llm-component-designer'],
 };
 
 export default function StructuredOutputs() {
