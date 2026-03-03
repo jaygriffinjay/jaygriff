@@ -1,18 +1,16 @@
 ---json
 {
-  "title": "Roadmap: Full-Text Hybrid Search with SQLite FTS5",
-  "slug": "search-roadmap",
+  "title": "Feature Spec: Full-Text Hybrid Search with SQLite FTS5",
+  "slug": "search-feature-spec",
   "date": "2026-03-02T00:00:00Z",
   "author": ["Jay Griffin", "Claude Sonnet 4.6"],
   "authorshipNote": "Summarized from a Claude.ai conversation",
   "type": "doc",
   "description": "Replacing Fuse.js title-only search with server-side full-text search using SQLite FTS5 — paragraph-level results with highlighted snippet previews linking directly to headings.",
-  "tags": ["search", "sqlite", "fts5", "roadmap", "architecture"],
+  "tags": ["search", "sqlite", "fts5", "spec", "architecture"],
   "projectId": "jaygriff"
 }
 ---
-
-# Roadmap: Full-Text Hybrid Search with SQLite FTS5
 
 ## Overview
 
