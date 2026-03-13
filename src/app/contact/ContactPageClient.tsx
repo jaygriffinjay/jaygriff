@@ -19,6 +19,18 @@ const PageWrap = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 2rem 0 4rem;
+
+  @media (max-width: 768px) {
+    padding-bottom: 0;
+  }
+`;
+
+const ContactContainer = styled(Container)`
+  margin-bottom: 0 !important;
+
+  @media (max-width: 768px) {
+    margin-bottom: 0 !important;
+  }
 `;
 
 const Subtitle = styled.p`
@@ -127,7 +139,7 @@ const links = [
 
 export default function ContactPageClient() {
   return (
-    <Container size="sm">
+    <ContactContainer size="sm">
       <ContentWrapper>
         <PageWrap>
           <Image
@@ -160,6 +172,6 @@ export default function ContactPageClient() {
           </LinkStack>
         </PageWrap>
       </ContentWrapper>
-    </Container>
+    </ContactContainer>
   );
 }
