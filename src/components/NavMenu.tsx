@@ -116,6 +116,10 @@ export function NavMenu() {
           <DropdownMenu.Item css={itemStyles} asChild>
             <Link href="/about-me">About Me</Link>
           </DropdownMenu.Item>
+
+          <DropdownMenu.Item css={itemStyles} asChild>
+            <Link href="/contact">Contact</Link>
+          </DropdownMenu.Item>
           
           <DropdownMenu.Item css={itemStyles} asChild>
             <Link href="/about-this-site">About This Site</Link>
