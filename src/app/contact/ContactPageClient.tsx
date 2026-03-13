@@ -145,8 +145,8 @@ export default function ContactPageClient() {
           <Image
             src="/images/me.jpg"
             alt="Jay Griffin"
-            width={200}
-            height={200}
+            width={250}
+            height={250}
             priority
             style={{
               borderRadius: '5%',
