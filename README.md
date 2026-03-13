@@ -1,4 +1,4 @@
-<p align="center"><img src="public/faviconv2.svg" width="200" /></p>
+<p align="center"><img src="public/faviconv2.svg" width="75" /></p>
 
 # [jaygriff.com](https://jaygriff.com)
 
