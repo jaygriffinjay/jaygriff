@@ -6,6 +6,7 @@ import styled from '@emotion/styled';
 import { keyframes } from '@emotion/react';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 import { IoMailOutline, IoDocumentTextOutline } from 'react-icons/io5';
+import Image from 'next/image';
 
 const shimmer = keyframes`
   to {
@@ -129,6 +130,18 @@ export default function ContactPageClient() {
     <Container size="sm">
       <ContentWrapper>
         <PageWrap>
+          <Image
+            src="/images/me.jpg"
+            alt="Jay Griffin"
+            width={200}
+            height={200}
+            priority
+            style={{
+              borderRadius: '5%',
+              marginBottom: '1.5rem',
+              display: 'block',
+            }}
+          />
           <Heading level={1}>Contact Me</Heading>
 
           <LinkStack>
