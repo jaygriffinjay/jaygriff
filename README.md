@@ -1,3 +1,5 @@
+<p align="center"><img src="public/faviconv2.svg" width="200" /></p>
+
 # [jaygriff.com](https://jaygriff.com)
 
 This is my website where I publish all my software development work and some personal stuff too!
