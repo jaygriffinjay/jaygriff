@@ -39,6 +39,9 @@ export default function BootstrapFrontendPage() {
         <Paragraph>
           This template still gets used for things that genuinely don't need a server — browser extensions, standalone client tools, anything that needs to run without a host. <Link href="/projects/locus">Locus</Link> was built with it. But those cases are rarer than I thought they'd be.
         </Paragraph>
+        <Paragraph>
+          The source is on <Link href="https://github.com/jaygriffinjay/bootstrap-frontend-webapp">GitHub</Link>.
+        </Paragraph>
       </ContentWrapper>
     </Container>
   );

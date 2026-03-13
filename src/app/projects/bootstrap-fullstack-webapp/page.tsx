@@ -36,8 +36,20 @@ export default function BootstrapFullStackPage() {
           <ListItem><strong>Cline build-ui skill</strong> — autonomous UI generation guided by the registry</ListItem>
         </List>
         <Paragraph>
+          The source is on <Link href="https://github.com/jaygriffinjay/bootstrap-fullstack-webapp">GitHub</Link>.
+        </Paragraph>
+        <Paragraph>
           <Link href="/posts/making-my-own-ai-app-builder">Read about how and why I rebuilt it →</Link>
         </Paragraph>
+
+        <img src="/images/projects/bootstrap-fullstack-webapp3.png" alt="Landing page from a single prompt" style={{ width: '100%', borderRadius: '8px', marginBottom: '0.5rem' }} />
+        <p style={{ fontSize: '0.8rem', color: 'hsl(210, 20%, 55%)', textAlign: 'center', marginBottom: '1rem' }}>Landing page from a single prompt</p>
+
+        <img src="/images/projects/bootstrap-fullstack-webapp.png" alt="Gallery app" style={{ width: '100%', borderRadius: '8px', marginBottom: '0.5rem' }} />
+        <p style={{ fontSize: '0.8rem', color: 'hsl(210, 20%, 55%)', textAlign: 'center', marginBottom: '1rem' }}>Gallery app #1 — from a single prompt</p>
+
+        <img src="/images/projects/bootstrap-fullstack-webapp2.png" alt="Gallery app" style={{ width: '100%', borderRadius: '8px', marginBottom: '0.5rem' }} />
+        <p style={{ fontSize: '0.8rem', color: 'hsl(210, 20%, 55%)', textAlign: 'center', marginBottom: '1rem' }}>Gallery app #2 — from a single prompt</p>
       </ContentWrapper>
     </Container>
   );

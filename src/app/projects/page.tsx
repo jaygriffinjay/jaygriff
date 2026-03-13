@@ -105,6 +105,27 @@ const projects: ProjectData[] = [
     ],
   },
   {
+    id: 'jaygriff',
+    title: 'jaygriff.com',
+    description: 'My biggest project by far. I\'ve rebuilt this website over a dozen times across many stacks and programming languages. Each iteration is an excuse to grow as a developer, add more powerful features, and tackle more ambitious infrastructure.',
+    imageSrc: '/images/projects/jaygriff-banner.png',
+    imageAlt: 'jaygriff.com banner',
+    imageWidth: 1600,
+    imageHeight: 1000,
+    links: [
+      { label: 'Read more →', href: '/projects/jaygriff' },
+    ],
+  },
+  {
+    id: 'fitness-data-platform',
+    title: 'Fitness Data Platform',
+    description: 'Personal fitness analytics built on top of Garmin and Strava data. Strava Analyzer is the public piece — connect and visualize your running history. The Garmin sleep dashboard is local-first: a Python fetch pipeline into SQLite, read by Next.js server components.',
+    placeholderGradient: 'linear-gradient(135deg, #0d1f0d, #0a2e1a, #0f3d2a)',
+    links: [
+      { label: 'Read more →', href: '/projects/fitness-data-platform' },
+    ],
+  },
+  {
     id: 'bootstrap-frontend',
     title: 'Bootstrap Frontend Webapp',
     description: 'My personal frontend starter template for React + TypeScript projects. Copy this, customize the theme, start building features immediately. Projects spawned from this template: Locus (Chrome extension bookmark launcher).',
